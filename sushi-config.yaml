@@ -49,6 +49,10 @@ pages:
     title: Quick Start
   examples-first-contact.md:
     title: Examples First Contact
+  sushi-conversion.md:
+    title: SUSHI Conversion Changes
+  sushi-conversion-diff.md:
+    title: SUSHI Conversion Field-Level Diff
 
 menu:
   Home: index.html
@@ -70,16 +74,13 @@ releaseLabel: CI Build
 parameters:
   find-other-resources: true
   path-pages: input/pagecontent
-  # Resources kept as their original JSON/XML because their FSH would not
-  # round-trip to byte-identical JSON (see input/fsh/README.md).
+  # Folders that still hold resources kept as their original JSON/XML
+  # (see input/pagecontent/sushi-conversion.md).
   path-resource:
     - input/resources/activitydefinition
     - input/resources/library
     - input/resources/measure
     - input/resources/plandefinition
-    - input/profiles/base
-    - input/profiles/core
-    - input/extensions/core
     - input/vocabulary/codesystem
     - input/vocabulary/codesystem/manual
   path-liquid: templates/liquid

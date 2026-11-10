@@ -72,3 +72,6 @@ Alias: $v3-ReligiousAffiliation = http://terminology.hl7.org/ValueSet/v3-Religio
 Alias: $anc-b9-de164_1 = http://smart.who.int/anc/ValueSet/anc-b9-de164
 Alias: $anc-b9-de165_1 = http://smart.who.int/anc/ValueSet/anc-b9-de165
 Alias: $anc-b9-de166_1 = http://smart.who.int/anc/ValueSet/anc-b9-de166
+Alias: $observation-category = http://terminology.hl7.org/CodeSystem/observation-category
+Alias: $condition-category = http://terminology.hl7.org/CodeSystem/condition-category
+Alias: $v3-ActCode = http://terminology.hl7.org/CodeSystem/v3-ActCode
