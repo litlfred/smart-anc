@@ -16,3 +16,5 @@ input/l2/Temp Archive/*
 /bootstrap/
 /bootstrap-tools/
 # END index mounts
+node_modules/
+fsh-generated/
