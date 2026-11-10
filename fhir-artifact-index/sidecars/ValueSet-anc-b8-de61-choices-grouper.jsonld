@@ -1,0 +1,59 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "@base": "http://smart.who.int/anc/ValueSet-anc-b8-de61-choices-grouper.jsonld",
+    "name": "http://www.w3.org/2000/01/rdf-schema#label",
+    "fhir": "https://smart.who.int/base/DataTypes.jsonld#",
+    "id": "@id",
+    "generatedAt": {
+      "@id": "http://www.w3.org/ns/prov#generatedAtTime",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "fhir:CodeSystem": {
+      "@type": "@id"
+    },
+    "cs": "http://smart.who.int/anc/CodeSystem-anc-custom-codes"
+  },
+  "@id": "http://smart.who.int/anc/ValueSet-anc-b8-de61-choices-grouper.jsonld",
+  "@type": "http://www.w3.org/ns/prov#Entity",
+  "generatedAt": "2026-11-10T20:58:48.895944763Z",
+  "@graph": [
+    {
+      "id": "#ANC.B8.DE62",
+      "name": "Breast exam not done"
+    },
+    {
+      "id": "#ANC.B8.DE63",
+      "name": "Normal breast exam result"
+    },
+    {
+      "id": "#ANC.B8.DE64",
+      "name": "Nodule"
+    },
+    {
+      "id": "#ANC.B8.DE65",
+      "name": "Discharge"
+    },
+    {
+      "id": "#ANC.B8.DE66",
+      "name": "Flushing"
+    },
+    {
+      "id": "#ANC.B8.DE67",
+      "name": "Local pain"
+    },
+    {
+      "id": "#ANC.B8.DE68",
+      "name": "Bleeding"
+    },
+    {
+      "id": "#ANC.B8.DE69",
+      "name": "Increased temperature"
+    },
+    {
+      "id": "#ANC.B8.DE70",
+      "name": "Other breast exam result (specify)"
+    }
+  ],
+  "fhir:CodeSystem": "cs"
+}

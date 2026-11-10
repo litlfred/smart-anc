@@ -1,0 +1,43 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "@base": "http://smart.who.int/anc/ValueSet-anc-b10-de205.jsonld",
+    "name": "http://www.w3.org/2000/01/rdf-schema#label",
+    "fhir": "https://smart.who.int/base/DataTypes.jsonld#",
+    "id": "@id",
+    "generatedAt": {
+      "@id": "http://www.w3.org/ns/prov#generatedAtTime",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "fhir:CodeSystem": {
+      "@type": "@id"
+    },
+    "cs": "http://smart.who.int/anc/CodeSystem-anc-custom-codes"
+  },
+  "@id": "http://smart.who.int/anc/ValueSet-anc-b10-de205.jsonld",
+  "@type": "http://www.w3.org/ns/prov#Entity",
+  "generatedAt": "2026-11-10T20:58:48.895944763Z",
+  "@graph": [
+    {
+      "id": "#ANC.B10.DE205",
+      "name": "Client was referred"
+    },
+    {
+      "id": "#ANC.B10.DE206",
+      "name": "Trained provider unavailable"
+    },
+    {
+      "id": "#ANC.B10.DE207",
+      "name": "Private/safe space unavailable"
+    },
+    {
+      "id": "#ANC.B10.DE208",
+      "name": "Confidentiality could not be assured"
+    },
+    {
+      "id": "#ANC.B10.DE209",
+      "name": "Other reason first-line support not done (specify)"
+    }
+  ],
+  "fhir:CodeSystem": "cs"
+}

@@ -1,0 +1,89 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "ANC Activity Codes Schema API",
+    "description": "JSON Schema for ANC Activity Codes ValueSet codes. Values are represented as Coding objects with 'system' and 'code' properties.",
+    "version": "1.0.0"
+  },
+  "paths": {
+    "/ValueSet-anc-activity-codes.schema.json": {
+      "get": {
+        "summary": "JSON Schema definition for the enumeration ValueSet-anc-activity-codes",
+        "description": "This endpoint serves the JSON Schema definition for the enumeration ValueSet-anc-activity-codes.",
+        "responses": {
+          "200": {
+            "description": "The JSON Schema for ValueSet-anc-activity-codes",
+            "content": {
+              "application/schema+json": {
+                "schema": {
+                  "$ref": "./ValueSet-anc-activity-codes.schema.json"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "ValueSet-anc-activity-codes": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "$id": "http://smart.who.int/anc/ValueSet-anc-activity-codes.schema.json",
+        "title": "ANC Activity Codes Schema",
+        "description": "JSON Schema for ANC Activity Codes ValueSet codes. Values are represented as Coding objects with 'system' and 'code' properties.",
+        "type": "object",
+        "required": [
+          "system",
+          "code"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "system": {
+            "type": "string",
+            "const": "http://smart.who.int/anc/CodeSystem/anc-activity-codes"
+          },
+          "code": {
+            "type": "string",
+            "enum": [
+              "ANC.A",
+              "ANC.A4",
+              "ANC.A7",
+              "ANC.B",
+              "ANC.B4",
+              "ANC.B5",
+              "ANC.B6",
+              "ANC.B7",
+              "ANC.B8",
+              "ANC.B9",
+              "ANC.B10",
+              "ANC.B10.1",
+              "ANC.B10.2",
+              "ANC.B10.3",
+              "ANC.B10.4",
+              "ANC.B10.5",
+              "ANC.B10.6",
+              "ANC.B10.7",
+              "ANC.B10.8",
+              "ANC.B10.9",
+              "ANC.B11",
+              "ANC.B12",
+              "ANC.C",
+              "ANC.C1",
+              "ANC.C6",
+              "ANC.D",
+              "ANC.E",
+              "ANC.Confirugation",
+              "ANC.End"
+            ]
+          }
+        },
+        "narrative": "This schema validates Coding-shaped objects for the ANC Activity Codes ValueSet. Each value must be an object with 'system' (CodeSystem URI) and 'code' (fragment after '#') properties. Display values are available at http://smart.who.int/anc/ValueSet-anc-activity-codes.displays.json. The canonical IRI for a code can be reconstructed as system + '#' + code. For a complete listing of all ValueSets, see artifacts.html#terminology-value-sets.",
+        "fhir:displays": "http://smart.who.int/anc/ValueSet-anc-activity-codes.displays.json",
+        "fhir:valueSet": "http://smart.who.int/anc/ValueSet/anc-activity-codes",
+        "fhir:version": "0.3.0",
+        "fhir:expansionTimestamp": "2026-11-10T20:49:47+00:00"
+      }
+    }
+  }
+}

@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+<script data-folio-saved-scheme>(function(){var d=document.documentElement,s=null,c="dark";try{s=localStorage.getItem("fa-color-scheme")}catch(e){}if(s!=="light"&&s!=="dark"){s="light";try{if(window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)s="dark"}catch(e){}}try{var n=document.getElementById("fa-site-scheme");if(n)c=JSON.parse(n.textContent).scheme==="light"?"light":"dark"}catch(e){}d.setAttribute("data-fa-scheme",s);var j=window.jtd;if(s!==c&&j&&typeof j.setTheme==="function"){try{j.setTheme(s)}catch(e){}}})();</script>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>examples-first-contact — WHO Antenatal Care Guideline Implementation Guide</title>
+<link rel="canonical" href="./examples-first-contact.html">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' rx='3' fill='%23276749'/%3E%3C/svg%3E">
+<meta name="folio-navbar" content="linked">
+<meta name="fa-visualiser-label" content="WHO Antenatal Care Guideline Implementation Guide">
+<link rel="stylesheet" href="./assets/page-layout.css" data-fa-page-layout>
+<script src="./assets/page-layout.js" defer data-fa-page-layout></script>
+<link rel="stylesheet" href="./assets/ig-artifact.css">
+<link rel="stylesheet" href="./assets/css/docs-ui.css" data-fa-folio-mount>
+<script src="./assets/navbar/row-2acuhncsmbg.js" defer></script><script src="./assets/js/docs-ui.js" defer data-fa-folio-mount></script>
+<script type="application/json" id="fa-translation-meta">{"lang":"en","translationStatus":"","translationSource":"","supportedLocales":["ar","zh","en","fr","ru","es"],"availableLocales":[]}</script><link rel="stylesheet" href="./assets/css/navbar.css"><script src="./assets/navbar/rail-2fsxdspe5sb.js" defer></script><script src="./assets/js/navbar.js" defer></script><link rel="stylesheet" href="./assets/css/navbar-row.css"><script src="./assets/js/navbar-row.js" defer></script><meta name="fa-pinned-data" content="."></head>
+<body><script type="application/json" id="fa-navbar-row" data-fa-root="." data-fa-row-src="row-2acuhncsmbg"></script><script type="application/json" id="fa-rail" data-fa-root="https://litlfred.github.io/folio-assistant" data-fa-to-root=".">{"data":"rail-2fsxdspe5sb","here":"/examples-first-contact.html"}</script><nav class="fa-nav" aria-label="folio-assistant" data-fa-rail="pending"><a href="./">WHO Antenatal Care Guideline Implementation Guide</a></nav>
+
+<div class="ig-topbar fa-page-bar" role="navigation" aria-label="WHO Antenatal Care Guideline Implementation Guide menu"><a class="ig-topbar-home" href="./index.html">WHO Antenatal Care Guideline Implementation Guide</a><a class="ig-topbar-group ig-topbar-link" href="./index.html">Home</a><a class="ig-topbar-group ig-topbar-link" href="./toc.html">Table of Contents</a><a class="ig-topbar-group ig-topbar-link" href="./documentation.html">Documentation</a><a class="ig-topbar-group ig-topbar-link" href="./guidance.html">Guidance</a><a class="ig-topbar-group ig-topbar-link" href="./artifacts.html">Artifact Index</a><a class="ig-topbar-group ig-topbar-link" href="./downloads.html">Downloads</a><details class="ig-topbar-group"><summary>Support</summary><ul><li><a href="./new-tab index.html">FHIR Spec</a></li><li><a href="./new-tab http://cql.hl7.org/index.html">CQL Spec</a></li><li><a href="./new-tab http://hl7.org/fhir/uv/cpg">FHIR Clinical Guidelines</a></li><li><a href="./downloads.html">Downloads</a></li><li><a href="./license.html">License</a></li></ul></details><form class="ig-search" role="search" data-ig-search-index="./assets/ig-search.json"><label class="ig-search-label" for="search-input">Search WHO Antenatal Care Guideline Implementation Guide</label><input type="search" id="search-input" class="ig-search-input" placeholder="Search pages and artefacts" autocomplete="off" aria-controls="ig-search-results" aria-expanded="false"><ul id="ig-search-results" class="ig-search-results" hidden></ul></form><span class="ig-locale-slot" data-fa-slot="locale"></span><script src="./assets/ig-search.js" defer></script></div>
+<main class="ig-main main-content fa-page-main" id="main-content">
+<p><span hidden="" data-fa-figure-images="ig"></span></p>
+
+<h1 id="first-contact">First Contact</h1>
+
+<h2 id="overview">Overview</h2>
+
+<p>This section provides example FHIR resources for the <em>first contact</em> user scenario (Scenario 1). The examples are broken down into steps, one for each activity performed during the contact.</p>
+
+<h3 id="narrative">Narrative</h3>
+
+<p>After missing her last menstrual cycle and feeling nauseous, Charity seeks care at the nearby government health centre. This is Charity’s first time coming to this health-care facility, and the clerk (Abraham) confirms that they have no record of her on file. He asks her to provide him with basic demographic information, including her date of birth, alternative contact information, and address, to register Charity into the system and provide her with a QR code that she can use in case she returns to the facility for her following ANC appointments.</p>
+
+<p>Once Charity is fully registered, she waits for a nurse (Jane) to call her into the counselling room. While Jane closes the door and lowers the shade on the window to provide privacy, Jane begins to ask questions regarding Charity’s reason for coming to the facility, as well as the date of her last menstrual period (LMP). Charity is unsure of the exact date but recalls that it was around the new year holiday. Jane administers a test to confirm Charity’s pregnancy. Upon confirming the positive pregnancy test, Jane proceeds to ask more detailed questions on Charity’s occupation, behaviours (such as smoking and caffeine intake), general health status, and obstetric history. This process could also include questions on support systems (such as family, women’s groups, financial or nutritional assistance). Based on the information Charity provides regarding her LMP, Jane is not able to conclude the exact gestational age but estimates her to be between 12 and 15 weeks. Jane lets Charity know that she would need an ultrasound as soon as possible, before her 24th week of pregnancy, to better estimate her gestational age and due date.</p>
+
+<p>After recording Charity’s background information in the digital system, Jane asks additional questions about any current symptoms. Jane also records Charity’s weight and height measurements and conducts a physical exam, including taking her blood pressure to check that it is within the normal range. As Jane is recording these results in the digital system, she receives prompts to make sure she is providing the appropriate counselling and action. These prompts can also include reminders such as treating all pregnant women respectfully and without judgement, regardless of background or health status. Jane also orders any required additional tests such as those for diabetes, hepatitis and HIV, being sure to inform Charity about all the tests being done and to answer any questions she has about them.</p>
+
+<p>Jane completes the counselling and advises Charity to reduce her caffeine intake and use a condom as she is still at risk from sexually transmitted infections (STIs) while pregnant. Jane also provides Charity with a supply of iron and folic acid (IFA) tablets to take daily. Jane also discusses different options for managing symptoms (e.g. nausea, lower back pain) as well as how to recognise danger signs that require contacting a health-care facility right away; Jane gives this information in a manner that encourages Charity to feel confident about making informed decisions about her and her baby’s health. After checking whether Charity has any questions, Jane schedules the next ANC contact based on the suggested dates proposed by the digital system. Since there is no ultrasound at Jane’s facility, Jane also provides Charity with a referral slip so that she can get her ultrasound done at the imaging centre before she returns for her next contact. Charity will also receive a text (SMS) reminder (assuming she has given consent during her registration) ahead of her next scheduled contact.</p>
+
+<h3 id="step-01-registration">Step 01 Registration</h3>
+
+<p>The result of this step is the completed Patient resource with basic demographics recorded</p>
+
+<h2 id="step-02-enrollment">Step 02 Enrollment</h2>
+
+<p>The result of this step is the creation of Condition (suspected pregnancy), EpisodeOfCare (case), Goal (healthy pregnancy), and the CareTeam, referencing the practitioner Jane (Nurse). In addition, the pathway (Contact Schedule) is applied to produce the Care Plan of Record.</p>
+
+<h2 id="step-03-contact">Step 03 Contact</h2>
+
+<p>The result of this step is an in-progress Encounter representing the first contact, as well as the Transient CarePlan with proposed Tasks (as contained resources) representing the tasks to be performed during the contact.</p>
+
+<h2 id="step-04-confirm-pregnancy">Step 04 Confirm Pregnancy</h2>
+
+<p>The result of this step is the completed QuestionnaireResponse and an Observation generated from that response to establish the pregnancy status.</p>
+
+<h2 id="step-05-quick-check">Step 05 Quick Check</h2>
+
+<p>The result of this step is the completed QuestionnaireResponse for the quick check, as well as the Transient CarePlan resulting from DT01 - Danger Signs indicating no danger signs, contact should proceed as normal.</p>
+
+<h2 id="step-06-profile">Step 06 Profile</h2>
+
+<p>The result of this step is the completed QuestionnaireResponse for the profile activity, as well as the Transient CarePlan resulting from decision support associated with activty ANC.B6</p>
+
+<h2 id="step-07-symptoms-and-followup">Step 07 Symptoms and Followup</h2>
+
+<p>TODO: The result of this step is the completed QuestionnaireResponse for the symptoms and followup activity, as well as the Transient CarePlan resulting from decision support associated with activity ANC.B7</p>
+
+<h2 id="step-08-physical-exam">Step 08 Physical Exam</h2>
+
+<p>TODO: The result of this step is the completed QuestionnaireResponse for the physical exam activity, as well as the Transient CarePlan resulting from decision support associated with activity ANC.B8</p>
+
+<h2 id="step-09-lab-tests-and-imaging">Step 09 Lab Tests and Imaging</h2>
+
+<p>TODO: The result of this step is the completed QuestionnaireResponse for the lab tests and imaging activity, as well as the Transient CarePlan resulting from decision support associated with activity ANC.B9</p>
+
+<h2 id="step-10-counselling-and-treatment">Step 10 Counselling and Treatment</h2>
+
+<p>TODO: The result of this step is the completed QuestionnaireResponse for the counselling and treatment activity, as well as the Transient CarePlan resulting from decision support associated with activity ANC.B10</p>
+
+<h2 id="step-11-referral-needed">Step 11 Referral Needed</h2>
+
+<p>TODO: The result of this step is the completed QuestionnaireResponse for the referral needed activity, as well as the Transient CarePlan resulting from decision support associated with activity ANC.B11</p>
+
+<h2 id="step-12-scheduling">Step 12 Scheduling</h2>
+
+<p>TODO: The result of this step is the completed QuestionnaireResponse for the scheduling activity, as well as the Transient CarePlan resulting from decision support associated with activity ANC.B12</p>
+
+<p class="ig-edit"><a data-fa-link="edit" data-src="input/pagecontent/examples-first-contact.md" data-repo="litlfred/smart-anc" href="https://github.com/litlfred/smart-anc/edit/master/input/pagecontent/examples-first-contact.md">Edit this page on GitHub</a></p>
+<script type="application/json" id="ig-source-lines">{"blob": "https://github.com/litlfred/smart-anc/blob/master/input/pagecontent/examples-first-contact.md", "repo": "litlfred/smart-anc", "branch": "master", "path": "input/pagecontent/examples-first-contact.md", "lines": [{"t":"First Contact","l":1},{"t":"Overview","l":3},{"t":"Narrative","l":7},{"t":"Step 01 Registration","l":17},{"t":"Step 02 Enrollment","l":21},{"t":"Step 03 Contact","l":25},{"t":"Step 04 Confirm Pregnancy","l":29},{"t":"Step 05 Quick Check","l":33},{"t":"Step 06 Profile","l":37},{"t":"Step 07 Symptoms and Followup","l":41},{"t":"Step 08 Physical Exam","l":45},{"t":"Step 09 Lab Tests and Imaging","l":49},{"t":"Step 10 Counselling and Treatment","l":53},{"t":"Step 11 Referral Needed","l":57},{"t":"Step 12 Scheduling","l":61}]}</script>
+
+<script src="./assets/ig-source-links.js"></script>
+
+
+</main>
+<link rel="stylesheet" href="assets/ig-pages.css">
+<footer id="ig-footer">
+<p class="ig-footer-nav"><a href="license.html">&lt;prev</a> | <a href="#">top</a> | <a href="sushi-conversion.html">next&gt;</a></p>
+<p class="ig-footer-band">IG © 2019+ World Health Organization (WHO). Package <code>smart.who.int.anc#0.3.0</code> based on <a href="http://hl7.org/fhir/R4/" rel="external">FHIR 4.0.1</a>. Generated 2026-11-10</p>
+<p class="ig-footer-links">Links: <a href="toc.html">Table of Contents</a> | <a href="qa.html">QA Report</a> | <a href="https://spdx.org/licenses/CC0-1.0.html" rel="external">License</a></p>
+</footer>
+
+</body>
+</html>

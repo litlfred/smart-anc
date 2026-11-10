@@ -1,0 +1,79 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "@base": "http://smart.who.int/anc/ValueSet-anc-b5-de48-choices-grouper.jsonld",
+    "name": "http://www.w3.org/2000/01/rdf-schema#label",
+    "fhir": "https://smart.who.int/base/DataTypes.jsonld#",
+    "id": "@id",
+    "generatedAt": {
+      "@id": "http://www.w3.org/ns/prov#generatedAtTime",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "fhir:CodeSystem": {
+      "@type": "@id"
+    },
+    "cs": "http://smart.who.int/anc/CodeSystem-anc-custom-codes"
+  },
+  "@id": "http://smart.who.int/anc/ValueSet-anc-b5-de48-choices-grouper.jsonld",
+  "@type": "http://www.w3.org/ns/prov#Entity",
+  "generatedAt": "2026-11-10T20:58:48.895944763Z",
+  "@graph": [
+    {
+      "id": "#ANC.B5.DE49",
+      "name": "No danger signs"
+    },
+    {
+      "id": "#ANC.B5.DE50",
+      "name": "Bleeding vaginally"
+    },
+    {
+      "id": "#ANC.B5.DE52",
+      "name": "Convulsing"
+    },
+    {
+      "id": "#ANC.B5.DE53",
+      "name": "Fever"
+    },
+    {
+      "id": "#ANC.B5.DE54",
+      "name": "Imminent delivery"
+    },
+    {
+      "id": "#ANC.B5.DE55",
+      "name": "Labour"
+    },
+    {
+      "id": "#ANC.B5.DE56",
+      "name": "Looks very ill"
+    },
+    {
+      "id": "#ANC.B5.DE57",
+      "name": "Severe headache"
+    },
+    {
+      "id": "#ANC.B5.DE58",
+      "name": "Severe pain"
+    },
+    {
+      "id": "#ANC.B5.DE59",
+      "name": "Severe vomiting"
+    },
+    {
+      "id": "#ANC.B5.DE60",
+      "name": "Severe abdominal pain"
+    },
+    {
+      "id": "#ANC.B5.DE61",
+      "name": "Unconscious"
+    },
+    {
+      "id": "#ANC.B5.DE62",
+      "name": "Visual disturbance"
+    },
+    {
+      "id": "#ANC.B5.DE51",
+      "name": "Central cyanosis"
+    }
+  ],
+  "fhir:CodeSystem": "cs"
+}

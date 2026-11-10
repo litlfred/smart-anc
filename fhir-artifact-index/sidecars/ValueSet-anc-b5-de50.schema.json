@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "http://smart.who.int/anc/ValueSet-anc-b5-de50.schema.json",
+  "title": "Danger signs Choices Schema",
+  "description": "JSON Schema for Danger signs Choices ValueSet codes. Values are represented as Coding objects with 'system' and 'code' properties.",
+  "type": "object",
+  "required": [
+    "system",
+    "code"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "system": {
+      "type": "string",
+      "const": "http://smart.who.int/anc/CodeSystem/anc-custom-codes"
+    },
+    "code": {
+      "type": "string",
+      "enum": [
+        "ANC.B5.DE50",
+        "ANC.B5.DE52",
+        "ANC.B5.DE53",
+        "ANC.B5.DE54",
+        "ANC.B5.DE55",
+        "ANC.B5.DE56",
+        "ANC.B5.DE57",
+        "ANC.B5.DE58",
+        "ANC.B5.DE59",
+        "ANC.B5.DE60",
+        "ANC.B5.DE61",
+        "ANC.B5.DE62"
+      ]
+    }
+  },
+  "narrative": "This schema validates Coding-shaped objects for the Danger signs Choices ValueSet. Each value must be an object with 'system' (CodeSystem URI) and 'code' (fragment after '#') properties. Display values are available at http://smart.who.int/anc/ValueSet-anc-b5-de50.displays.json. The canonical IRI for a code can be reconstructed as system + '#' + code. For a complete listing of all ValueSets, see artifacts.html#terminology-value-sets.",
+  "fhir:displays": "http://smart.who.int/anc/ValueSet-anc-b5-de50.displays.json",
+  "fhir:valueSet": "http://smart.who.int/anc/ValueSet/anc-b5-de50",
+  "fhir:version": "0.3.0",
+  "fhir:expansionTimestamp": "2021-11-30T07:11:22-07:00"
+}

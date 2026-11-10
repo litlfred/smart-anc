@@ -1,0 +1,55 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "@base": "http://smart.who.int/anc/ValueSet-anc-b9-de197.jsonld",
+    "name": "http://www.w3.org/2000/01/rdf-schema#label",
+    "fhir": "https://smart.who.int/base/DataTypes.jsonld#",
+    "id": "@id",
+    "generatedAt": {
+      "@id": "http://www.w3.org/ns/prov#generatedAtTime",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "fhir:CodeSystem": {
+      "@type": "@id"
+    },
+    "cs": "http://smart.who.int/anc/CodeSystem-anc-custom-codes"
+  },
+  "@id": "http://smart.who.int/anc/ValueSet-anc-b9-de197.jsonld",
+  "@type": "http://www.w3.org/ns/prov#Entity",
+  "generatedAt": "2026-11-10T20:58:48.895944763Z",
+  "@graph": [
+    {
+      "id": "#ANC.B9.DE197",
+      "name": "Sputum smear not available"
+    },
+    {
+      "id": "#ANC.B9.DE198",
+      "name": "Sputum culture not available"
+    },
+    {
+      "id": "#ANC.B9.DE199",
+      "name": "GeneXpert machine not available"
+    },
+    {
+      "id": "#ANC.B9.DE200",
+      "name": "X-ray machine not available"
+    },
+    {
+      "id": "#ANC.B9.DE201",
+      "name": "No sputum testing supplies available"
+    },
+    {
+      "id": "#ANC.B9.DE202",
+      "name": "Machine not functioning"
+    },
+    {
+      "id": "#ANC.B9.DE203",
+      "name": "Technician not available"
+    },
+    {
+      "id": "#ANC.B9.DE204",
+      "name": "Other reason TB screening not done (specify)"
+    }
+  ],
+  "fhir:CodeSystem": "cs"
+}

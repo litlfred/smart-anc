@@ -1,0 +1,168 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "http://smart.who.int/anc/ValueSet-anc-b5-de6.displays.json",
+  "title": "Specific health concern(s) Choices Display Values",
+  "description": "Display values for Specific health concern(s) Choices ValueSet codes. Generated from FHIR expansions. Keys are code fragments (the part after '#' in the canonical IRI). The full IRI can be reconstructed as system + '#' + code.",
+  "type": "object",
+  "properties": {
+    "fhir:displays": {
+      "type": "object",
+      "description": "Multilingual display values for ValueSet codes keyed by code fragment",
+      "patternProperties": {
+        "^.+$": {
+          "type": "object",
+          "description": "Display values for a specific code fragment by language",
+          "properties": {
+            "en": {
+              "type": "string",
+              "description": "English display value"
+            }
+          },
+          "patternProperties": {
+            "^[a-z]{2}(-[A-Z]{2})?$": {
+              "type": "string",
+              "description": "Display value in the specified language (ISO 639-1 code)"
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "fhir:displays"
+  ],
+  "additionalProperties": true,
+  "fhir:displays": {
+    "ANC.B5.DE6": {
+      "en": "Abnormal vaginal discharge (physiological) (foul smelling) (curd like)"
+    },
+    "ANC.B5.DE7": {
+      "en": "Change in blood pressure - up (hypertension)"
+    },
+    "ANC.B5.DE8": {
+      "en": "Change in blood pressure - down (hypotension)"
+    },
+    "ANC.B5.DE9": {
+      "en": "Constipation"
+    },
+    "ANC.B5.DE10": {
+      "en": "Contractions"
+    },
+    "ANC.B5.DE11": {
+      "en": "Cough"
+    },
+    "ANC.B5.DE12": {
+      "en": "Diarrhoea"
+    },
+    "ANC.B5.DE13": {
+      "en": "Dizziness"
+    },
+    "ANC.B5.DE14": {
+      "en": "Intimate partner violence"
+    },
+    "ANC.B5.DE15": {
+      "en": "Fetal movements - none"
+    },
+    "ANC.B5.DE16": {
+      "en": "Fetal movements - reduced/poor"
+    },
+    "ANC.B5.DE17": {
+      "en": "Fever"
+    },
+    "ANC.B5.DE18": {
+      "en": "Flu symptoms"
+    },
+    "ANC.B5.DE19": {
+      "en": "Fluid loss (leaking)"
+    },
+    "ANC.B5.DE20": {
+      "en": "Headache"
+    },
+    "ANC.B5.DE21": {
+      "en": "Heartburn"
+    },
+    "ANC.B5.DE22": {
+      "en": "Injury"
+    },
+    "ANC.B5.DE23": {
+      "en": "Jaundice"
+    },
+    "ANC.B5.DE24": {
+      "en": "Leg cramps"
+    },
+    "ANC.B5.DE25": {
+      "en": "Leg redness"
+    },
+    "ANC.B5.DE26": {
+      "en": "Mental health - Anxiety"
+    },
+    "ANC.B5.DE27": {
+      "en": "Mental health - Depression"
+    },
+    "ANC.B5.DE28": {
+      "en": "Mental health - Other psychological symptoms"
+    },
+    "ANC.B5.DE29": {
+      "en": "Nausea"
+    },
+    "ANC.B5.DE30": {
+      "en": "Oedema"
+    },
+    "ANC.B5.DE31": {
+      "en": "Pain - Abdominal"
+    },
+    "ANC.B5.DE32": {
+      "en": "Pain - During urination (dysuria)"
+    },
+    "ANC.B5.DE33": {
+      "en": "Pain - Leg"
+    },
+    "ANC.B5.DE34": {
+      "en": "Pain - Low back"
+    },
+    "ANC.B5.DE35": {
+      "en": "Pain - Pelvic"
+    },
+    "ANC.B5.DE36": {
+      "en": "Pain - Extreme pelvic pain/cannot walk (symphysis pubis dysfunction)"
+    },
+    "ANC.B5.DE37": {
+      "en": "Pain - Other"
+    },
+    "ANC.B5.DE38": {
+      "en": "Pruritus"
+    },
+    "ANC.B5.DE39": {
+      "en": "Shortness of breath"
+    },
+    "ANC.B5.DE40": {
+      "en": "Tiredness"
+    },
+    "ANC.B5.DE41": {
+      "en": "Vaginal bleeding"
+    },
+    "ANC.B5.DE42": {
+      "en": "Visual disturbance"
+    },
+    "ANC.B5.DE43": {
+      "en": "Vomiting"
+    },
+    "ANC.B5.DE44": {
+      "en": "Other bleeding"
+    },
+    "ANC.B5.DE45": {
+      "en": "Other skin disorder"
+    },
+    "ANC.B5.DE46": {
+      "en": "Other types of violence"
+    },
+    "ANC.B5.DE47": {
+      "en": "Other complaint (specify)"
+    }
+  },
+  "fhir:valueSet": "http://smart.who.int/anc/ValueSet/anc-b5-de6",
+  "fhir:version": "0.3.0",
+  "fhir:expansionTimestamp": "2021-11-30T07:11:22-07:00"
+}

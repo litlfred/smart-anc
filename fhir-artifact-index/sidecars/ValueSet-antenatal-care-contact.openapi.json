@@ -1,0 +1,61 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Antenatal care contact Schema API",
+    "description": "JSON Schema for Antenatal care contact ValueSet codes. Values are represented as Coding objects with 'system' and 'code' properties.",
+    "version": "1.0.0"
+  },
+  "paths": {
+    "/ValueSet-antenatal-care-contact.schema.json": {
+      "get": {
+        "summary": "JSON Schema definition for the enumeration ValueSet-antenatal-care-contact",
+        "description": "This endpoint serves the JSON Schema definition for the enumeration ValueSet-antenatal-care-contact.",
+        "responses": {
+          "200": {
+            "description": "The JSON Schema for ValueSet-antenatal-care-contact",
+            "content": {
+              "application/schema+json": {
+                "schema": {
+                  "$ref": "./ValueSet-antenatal-care-contact.schema.json"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "ValueSet-antenatal-care-contact": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "$id": "http://smart.who.int/anc/ValueSet-antenatal-care-contact.schema.json",
+        "title": "Antenatal care contact Schema",
+        "description": "JSON Schema for Antenatal care contact ValueSet codes. Values are represented as Coding objects with 'system' and 'code' properties.",
+        "type": "object",
+        "required": [
+          "system",
+          "code"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "system": {
+            "type": "string",
+            "const": "http://smart.who.int/anc/CodeSystem/anc-care-codes"
+          },
+          "code": {
+            "type": "string",
+            "enum": [
+              "ANC.Contact"
+            ]
+          }
+        },
+        "narrative": "This schema validates Coding-shaped objects for the Antenatal care contact ValueSet. Each value must be an object with 'system' (CodeSystem URI) and 'code' (fragment after '#') properties. Display values are available at http://smart.who.int/anc/ValueSet-antenatal-care-contact.displays.json. The canonical IRI for a code can be reconstructed as system + '#' + code. For a complete listing of all ValueSets, see artifacts.html#terminology-value-sets.",
+        "fhir:displays": "http://smart.who.int/anc/ValueSet-antenatal-care-contact.displays.json",
+        "fhir:valueSet": "http://smart.who.int/anc/ValueSet/antenatal-care-contact",
+        "fhir:version": "0.3.0",
+        "fhir:expansionTimestamp": "2021-11-30T07:13:39-07:00"
+      }
+    }
+  }
+}

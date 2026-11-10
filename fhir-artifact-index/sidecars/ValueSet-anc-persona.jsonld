@@ -1,0 +1,55 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "@base": "http://smart.who.int/anc/ValueSet-anc-persona.jsonld",
+    "name": "http://www.w3.org/2000/01/rdf-schema#label",
+    "fhir": "https://smart.who.int/base/DataTypes.jsonld#",
+    "id": "@id",
+    "generatedAt": {
+      "@id": "http://www.w3.org/ns/prov#generatedAtTime",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "fhir:CodeSystem": {
+      "@type": "@id"
+    },
+    "cs": "http://smart.who.int/anc/CodeSystem-anc-persona"
+  },
+  "@id": "http://smart.who.int/anc/ValueSet-anc-persona.jsonld",
+  "@type": "http://www.w3.org/ns/prov#Entity",
+  "generatedAt": "2026-11-10T20:58:48.895944763Z",
+  "@graph": [
+    {
+      "id": "#Patient",
+      "name": "PAT"
+    },
+    {
+      "id": "#ANM",
+      "name": "Auxiliary Nurse Midwife"
+    },
+    {
+      "id": "#MW",
+      "name": "Midwife"
+    },
+    {
+      "id": "#NRS",
+      "name": "Nurse"
+    },
+    {
+      "id": "#LHW",
+      "name": "Lay Health Worker"
+    },
+    {
+      "id": "#CHW",
+      "name": "Community Health Worker"
+    },
+    {
+      "id": "#NMWS",
+      "name": "Nurse/Midwife Supervisor"
+    },
+    {
+      "id": "#FM",
+      "name": "Facility Manager"
+    }
+  ],
+  "fhir:CodeSystem": "cs"
+}

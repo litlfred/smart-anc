@@ -1,0 +1,68 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "ANC Persona Schema API",
+    "description": "JSON Schema for ANC Persona ValueSet codes. Values are represented as Coding objects with 'system' and 'code' properties.",
+    "version": "1.0.0"
+  },
+  "paths": {
+    "/ValueSet-anc-persona.schema.json": {
+      "get": {
+        "summary": "JSON Schema definition for the enumeration ValueSet-anc-persona",
+        "description": "This endpoint serves the JSON Schema definition for the enumeration ValueSet-anc-persona.",
+        "responses": {
+          "200": {
+            "description": "The JSON Schema for ValueSet-anc-persona",
+            "content": {
+              "application/schema+json": {
+                "schema": {
+                  "$ref": "./ValueSet-anc-persona.schema.json"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "ValueSet-anc-persona": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "$id": "http://smart.who.int/anc/ValueSet-anc-persona.schema.json",
+        "title": "ANC Persona Schema",
+        "description": "JSON Schema for ANC Persona ValueSet codes. Values are represented as Coding objects with 'system' and 'code' properties.",
+        "type": "object",
+        "required": [
+          "system",
+          "code"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "system": {
+            "type": "string",
+            "const": "http://smart.who.int/anc/CodeSystem/anc-persona"
+          },
+          "code": {
+            "type": "string",
+            "enum": [
+              "Patient",
+              "ANM",
+              "MW",
+              "NRS",
+              "LHW",
+              "CHW",
+              "NMWS",
+              "FM"
+            ]
+          }
+        },
+        "narrative": "This schema validates Coding-shaped objects for the ANC Persona ValueSet. Each value must be an object with 'system' (CodeSystem URI) and 'code' (fragment after '#') properties. Display values are available at http://smart.who.int/anc/ValueSet-anc-persona.displays.json. The canonical IRI for a code can be reconstructed as system + '#' + code. For a complete listing of all ValueSets, see artifacts.html#terminology-value-sets.",
+        "fhir:displays": "http://smart.who.int/anc/ValueSet-anc-persona.displays.json",
+        "fhir:valueSet": "http://smart.who.int/anc/ValueSet/anc-persona",
+        "fhir:version": "0.3.0",
+        "fhir:expansionTimestamp": "2026-11-10T20:50:19+00:00"
+      }
+    }
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "http://smart.who.int/anc/ValueSet-anc-b5-de6.schema.json",
+  "title": "Specific health concern(s) Choices Schema",
+  "description": "JSON Schema for Specific health concern(s) Choices ValueSet codes. Values are represented as Coding objects with 'system' and 'code' properties.",
+  "type": "object",
+  "required": [
+    "system",
+    "code"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "system": {
+      "type": "string",
+      "const": "http://smart.who.int/anc/CodeSystem/anc-custom-codes"
+    },
+    "code": {
+      "type": "string",
+      "enum": [
+        "ANC.B5.DE6",
+        "ANC.B5.DE7",
+        "ANC.B5.DE8",
+        "ANC.B5.DE9",
+        "ANC.B5.DE10",
+        "ANC.B5.DE11",
+        "ANC.B5.DE12",
+        "ANC.B5.DE13",
+        "ANC.B5.DE14",
+        "ANC.B5.DE15",
+        "ANC.B5.DE16",
+        "ANC.B5.DE17",
+        "ANC.B5.DE18",
+        "ANC.B5.DE19",
+        "ANC.B5.DE20",
+        "ANC.B5.DE21",
+        "ANC.B5.DE22",
+        "ANC.B5.DE23",
+        "ANC.B5.DE24",
+        "ANC.B5.DE25",
+        "ANC.B5.DE26",
+        "ANC.B5.DE27",
+        "ANC.B5.DE28",
+        "ANC.B5.DE29",
+        "ANC.B5.DE30",
+        "ANC.B5.DE31",
+        "ANC.B5.DE32",
+        "ANC.B5.DE33",
+        "ANC.B5.DE34",
+        "ANC.B5.DE35",
+        "ANC.B5.DE36",
+        "ANC.B5.DE37",
+        "ANC.B5.DE38",
+        "ANC.B5.DE39",
+        "ANC.B5.DE40",
+        "ANC.B5.DE41",
+        "ANC.B5.DE42",
+        "ANC.B5.DE43",
+        "ANC.B5.DE44",
+        "ANC.B5.DE45",
+        "ANC.B5.DE46",
+        "ANC.B5.DE47"
+      ]
+    }
+  },
+  "narrative": "This schema validates Coding-shaped objects for the Specific health concern(s) Choices ValueSet. Each value must be an object with 'system' (CodeSystem URI) and 'code' (fragment after '#') properties. Display values are available at http://smart.who.int/anc/ValueSet-anc-b5-de6.displays.json. The canonical IRI for a code can be reconstructed as system + '#' + code. For a complete listing of all ValueSets, see artifacts.html#terminology-value-sets.",
+  "fhir:displays": "http://smart.who.int/anc/ValueSet-anc-b5-de6.displays.json",
+  "fhir:valueSet": "http://smart.who.int/anc/ValueSet/anc-b5-de6",
+  "fhir:version": "0.3.0",
+  "fhir:expansionTimestamp": "2021-11-30T07:11:22-07:00"
+}

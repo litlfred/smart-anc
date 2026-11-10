@@ -1,0 +1,93 @@
+{
+  "@context": {
+    "fhir": "http://hl7.org/fhir/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "schema": "https://schema.org/",
+    "prov": "http://www.w3.org/ns/prov#"
+  },
+  "$schema": "folio-ig-artifact-jsonld/v1",
+  "@id": "Condition-anc-b10-de76-example.jsonld",
+  "@type": "fhir:Condition",
+  "dcterms:identifier": "Condition/anc-b10-de76-example",
+  "dcterms:title": "anc-b10-de76-example",
+  "dcterms:type": "Other",
+  "schema:creativeWorkStatus": "materialized",
+  "schema:encoding": [
+    {
+      "@type": "schema:MediaObject",
+      "schema:contentUrl": {
+        "@id": "https://raw.githubusercontent.com/litlfred/smart-anc/96953b8648f91c5d650e135f4d4018166e976c42/resources/Condition/anc-b10-de76-example--734fa838.json"
+      },
+      "schema:encodingFormat": "application/fhir+json",
+      "dcterms:source": "local"
+    }
+  ],
+  "prov:wasGeneratedBy": {
+    "@type": "prov:Activity",
+    "schema:instrument": "ig-publisher 3.0.0 / core 7.0.1",
+    "prov:used": "4f3bea121a24999b236c7b9c5687f7626f85b077"
+  },
+  "dcterms:isPartOf": {
+    "@type": "fhir:ImplementationGuide",
+    "dcterms:identifier": "smart.who.int.anc",
+    "schema:version": "0.3.0",
+    "schema:sameAs": {
+      "@id": "http://smart.who.int/anc"
+    }
+  },
+  "dcterms:conformsTo": [
+    {
+      "@id": "http://smart.who.int/anc/StructureDefinition/anc-b10-de76"
+    }
+  ],
+  "dcterms:subject": [
+    {
+      "@type": "schema:DefinedTerm",
+      "schema:termCode": "ANC.B10.DE76",
+      "schema:name": "Severe pre-eclampsia",
+      "schema:inDefinedTermSet": {
+        "@id": "http://smart.who.int/anc/CodeSystem/anc-custom-codes"
+      }
+    },
+    {
+      "@type": "schema:DefinedTerm",
+      "schema:termCode": "O14.1",
+      "schema:name": "Severe pre-eclampsia",
+      "schema:inDefinedTermSet": {
+        "@id": "http://hl7.org/fhir/sid/icd-10"
+      }
+    },
+    {
+      "@type": "schema:DefinedTerm",
+      "schema:termCode": "JA24.1",
+      "schema:name": "Severe pre-eclampsia",
+      "schema:inDefinedTermSet": {
+        "@id": "http://id.who.int/icd11/mms"
+      }
+    },
+    {
+      "@type": "schema:DefinedTerm",
+      "schema:termCode": "4484000",
+      "schema:name": "Severe (severity modifier) (qualifier value)",
+      "schema:inDefinedTermSet": {
+        "@id": "http://snomed.info/sct"
+      }
+    },
+    {
+      "@type": "schema:DefinedTerm",
+      "schema:termCode": "58297-3",
+      "schema:name": "Diagnosis of high blood pressure during pregnancy only",
+      "schema:inDefinedTermSet": {
+        "@id": "http://loinc.org"
+      }
+    },
+    {
+      "@type": "schema:DefinedTerm",
+      "schema:termCode": "b420",
+      "schema:name": "Blood pressure functions",
+      "schema:inDefinedTermSet": {
+        "@id": "http://hl7.org/fhir/sid/icf-nl"
+      }
+    }
+  ]
+}

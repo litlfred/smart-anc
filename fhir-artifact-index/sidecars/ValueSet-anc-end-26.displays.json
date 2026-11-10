@@ -1,0 +1,78 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "http://smart.who.int/anc/ValueSet-anc-end-26.displays.json",
+  "title": "Delivery complications Choices Display Values",
+  "description": "Display values for Delivery complications Choices ValueSet codes. Generated from FHIR expansions. Keys are code fragments (the part after '#' in the canonical IRI). The full IRI can be reconstructed as system + '#' + code.",
+  "type": "object",
+  "properties": {
+    "fhir:displays": {
+      "type": "object",
+      "description": "Multilingual display values for ValueSet codes keyed by code fragment",
+      "patternProperties": {
+        "^.+$": {
+          "type": "object",
+          "description": "Display values for a specific code fragment by language",
+          "properties": {
+            "en": {
+              "type": "string",
+              "description": "English display value"
+            }
+          },
+          "patternProperties": {
+            "^[a-z]{2}(-[A-Z]{2})?$": {
+              "type": "string",
+              "description": "Display value in the specified language (ISO 639-1 code)"
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "fhir:displays"
+  ],
+  "additionalProperties": true,
+  "fhir:displays": {
+    "ANC.End.26": {
+      "en": "No complications"
+    },
+    "ANC.End.27": {
+      "en": "Postpartum haemorrhage"
+    },
+    "ANC.End.28": {
+      "en": "Antepartum haemorrhage"
+    },
+    "ANC.End.29": {
+      "en": "Placenta praevia"
+    },
+    "ANC.End.30": {
+      "en": "Placental abruption"
+    },
+    "ANC.End.31": {
+      "en": "Cord prolapse"
+    },
+    "ANC.End.32": {
+      "en": "Obstructed labour"
+    },
+    "ANC.End.33": {
+      "en": "Abnormal presentation"
+    },
+    "ANC.End.34": {
+      "en": "Pre-eclampsia"
+    },
+    "ANC.End.35": {
+      "en": "Eclampsia"
+    },
+    "ANC.End.36": {
+      "en": "Perineal tear (3rd, or 4th degree)"
+    },
+    "ANC.End.37": {
+      "en": "Other (specify)"
+    }
+  },
+  "fhir:valueSet": "http://smart.who.int/anc/ValueSet/anc-end-26",
+  "fhir:version": "0.3.0",
+  "fhir:expansionTimestamp": "2021-11-30T07:11:23-07:00"
+}

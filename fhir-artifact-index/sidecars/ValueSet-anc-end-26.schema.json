@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "http://smart.who.int/anc/ValueSet-anc-end-26.schema.json",
+  "title": "Delivery complications Choices Schema",
+  "description": "JSON Schema for Delivery complications Choices ValueSet codes. Values are represented as Coding objects with 'system' and 'code' properties.",
+  "type": "object",
+  "required": [
+    "system",
+    "code"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "system": {
+      "type": "string",
+      "const": "http://smart.who.int/anc/CodeSystem/anc-custom-codes"
+    },
+    "code": {
+      "type": "string",
+      "enum": [
+        "ANC.End.26",
+        "ANC.End.27",
+        "ANC.End.28",
+        "ANC.End.29",
+        "ANC.End.30",
+        "ANC.End.31",
+        "ANC.End.32",
+        "ANC.End.33",
+        "ANC.End.34",
+        "ANC.End.35",
+        "ANC.End.36",
+        "ANC.End.37"
+      ]
+    }
+  },
+  "narrative": "This schema validates Coding-shaped objects for the Delivery complications Choices ValueSet. Each value must be an object with 'system' (CodeSystem URI) and 'code' (fragment after '#') properties. Display values are available at http://smart.who.int/anc/ValueSet-anc-end-26.displays.json. The canonical IRI for a code can be reconstructed as system + '#' + code. For a complete listing of all ValueSets, see artifacts.html#terminology-value-sets.",
+  "fhir:displays": "http://smart.who.int/anc/ValueSet-anc-end-26.displays.json",
+  "fhir:valueSet": "http://smart.who.int/anc/ValueSet/anc-end-26",
+  "fhir:version": "0.3.0",
+  "fhir:expansionTimestamp": "2021-11-30T07:11:23-07:00"
+}

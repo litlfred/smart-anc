@@ -1,0 +1,98 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Procedure Not Done Reason Choices Schema API",
+    "description": "JSON Schema for Procedure Not Done Reason Choices ValueSet codes. Values are represented as Coding objects with 'system' and 'code' properties.",
+    "version": "1.0.0"
+  },
+  "paths": {
+    "/ValueSet-anc-b10-de3.schema.json": {
+      "get": {
+        "summary": "JSON Schema definition for the enumeration ValueSet-anc-b10-de3",
+        "description": "This endpoint serves the JSON Schema definition for the enumeration ValueSet-anc-b10-de3.",
+        "responses": {
+          "200": {
+            "description": "The JSON Schema for ValueSet-anc-b10-de3",
+            "content": {
+              "application/schema+json": {
+                "schema": {
+                  "$ref": "./ValueSet-anc-b10-de3.schema.json"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "ValueSet-anc-b10-de3": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "$id": "http://smart.who.int/anc/ValueSet-anc-b10-de3.schema.json",
+        "title": "Procedure Not Done Reason Choices Schema",
+        "description": "JSON Schema for Procedure Not Done Reason Choices ValueSet codes. Values are represented as Coding objects with 'system' and 'code' properties.",
+        "type": "object",
+        "required": [
+          "system",
+          "code"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "system": {
+            "type": "string",
+            "const": "http://smart.who.int/anc/CodeSystem/anc-custom-codes"
+          },
+          "code": {
+            "type": "string",
+            "enum": [
+              "ANC.B10.DE3",
+              "ANC.B10.DE4",
+              "ANC.B10.DE7",
+              "ANC.B10.DE8",
+              "ANC.B10.DE11",
+              "ANC.B10.DE12",
+              "ANC.B10.DE15",
+              "ANC.B10.DE16",
+              "ANC.B10.DE19",
+              "ANC.B10.DE20",
+              "ANC.B10.DE23",
+              "ANC.B10.DE24",
+              "ANC.B10.DE27",
+              "ANC.B10.DE28",
+              "ANC.B10.DE31",
+              "ANC.B10.DE32",
+              "ANC.B10.DE35",
+              "ANC.B10.DE36",
+              "ANC.B10.DE39",
+              "ANC.B10.DE40",
+              "ANC.B10.DE43",
+              "ANC.B10.DE44",
+              "ANC.B10.DE47",
+              "ANC.B10.DE48",
+              "ANC.B10.DE51",
+              "ANC.B10.DE52",
+              "ANC.B10.DE55",
+              "ANC.B10.DE56",
+              "ANC.B10.DE59",
+              "ANC.B10.DE60",
+              "ANC.B10.DE63",
+              "ANC.B10.DE64",
+              "ANC.B10.DE67",
+              "ANC.B10.DE68",
+              "ANC.B10.DE71",
+              "ANC.B10.DE72",
+              "ANC.B10.DE243",
+              "ANC.B10.DE244"
+            ]
+          }
+        },
+        "narrative": "This schema validates Coding-shaped objects for the Procedure Not Done Reason Choices ValueSet. Each value must be an object with 'system' (CodeSystem URI) and 'code' (fragment after '#') properties. Display values are available at http://smart.who.int/anc/ValueSet-anc-b10-de3.displays.json. The canonical IRI for a code can be reconstructed as system + '#' + code. For a complete listing of all ValueSets, see artifacts.html#terminology-value-sets.",
+        "fhir:displays": "http://smart.who.int/anc/ValueSet-anc-b10-de3.displays.json",
+        "fhir:valueSet": "http://smart.who.int/anc/ValueSet/anc-b10-de3",
+        "fhir:version": "0.3.0",
+        "fhir:expansionTimestamp": "2021-11-30T07:11:22-07:00"
+      }
+    }
+  }
+}

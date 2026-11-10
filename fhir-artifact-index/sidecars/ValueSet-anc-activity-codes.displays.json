@@ -1,0 +1,129 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "http://smart.who.int/anc/ValueSet-anc-activity-codes.displays.json",
+  "title": "ANC Activity Codes Display Values",
+  "description": "Display values for ANC Activity Codes ValueSet codes. Generated from FHIR expansions. Keys are code fragments (the part after '#' in the canonical IRI). The full IRI can be reconstructed as system + '#' + code.",
+  "type": "object",
+  "properties": {
+    "fhir:displays": {
+      "type": "object",
+      "description": "Multilingual display values for ValueSet codes keyed by code fragment",
+      "patternProperties": {
+        "^.+$": {
+          "type": "object",
+          "description": "Display values for a specific code fragment by language",
+          "properties": {
+            "en": {
+              "type": "string",
+              "description": "English display value"
+            }
+          },
+          "patternProperties": {
+            "^[a-z]{2}(-[A-Z]{2})?$": {
+              "type": "string",
+              "description": "Display value in the specified language (ISO 639-1 code)"
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "fhir:displays"
+  ],
+  "additionalProperties": true,
+  "fhir:displays": {
+    "ANC.A": {
+      "en": "Registration"
+    },
+    "ANC.A4": {
+      "en": "Gather client details"
+    },
+    "ANC.A7": {
+      "en": "Create client record?OR?ANC.A8. Validate client details"
+    },
+    "ANC.B": {
+      "en": "Routine contact"
+    },
+    "ANC.B4": {
+      "en": "Confirm pregnancy"
+    },
+    "ANC.B5": {
+      "en": "Quick check"
+    },
+    "ANC.B6": {
+      "en": "Profile"
+    },
+    "ANC.B7": {
+      "en": "Symptoms & follow-up"
+    },
+    "ANC.B8": {
+      "en": "Physical exam"
+    },
+    "ANC.B9": {
+      "en": "Lab tests & imaging"
+    },
+    "ANC.B10": {
+      "en": "Counselling & treatment"
+    },
+    "ANC.B10.1": {
+      "en": "Behaviour counselling"
+    },
+    "ANC.B10.2": {
+      "en": "Physiological symptoms counselling"
+    },
+    "ANC.B10.3": {
+      "en": "Diet counselling"
+    },
+    "ANC.B10.4": {
+      "en": "Diagnosis & treatment"
+    },
+    "ANC.B10.5": {
+      "en": "Nutrition supplementation"
+    },
+    "ANC.B10.6": {
+      "en": "Risk reduction & general counselling"
+    },
+    "ANC.B10.7": {
+      "en": "Immunizations"
+    },
+    "ANC.B10.8": {
+      "en": "Intimate partner violence first-line support and care"
+    },
+    "ANC.B10.9": {
+      "en": "Deworming & malaria prophylaxis"
+    },
+    "ANC.B11": {
+      "en": "Urgent referral needed?"
+    },
+    "ANC.B12": {
+      "en": "Scheduling"
+    },
+    "ANC.C": {
+      "en": "Referral"
+    },
+    "ANC.C1": {
+      "en": "Emergency referral?"
+    },
+    "ANC.C6": {
+      "en": "Provide information to referral facility"
+    },
+    "ANC.D": {
+      "en": "Antenatal health promotion, follow-up in the community"
+    },
+    "ANC.E": {
+      "en": "Reporting on aggregate indicators"
+    },
+    "ANC.Confirugation": {
+      "en": "Configuration"
+    },
+    "ANC.End": {
+      "en": "End"
+    }
+  },
+  "fhir:valueSet": "http://smart.who.int/anc/ValueSet/anc-activity-codes",
+  "fhir:version": "0.3.0",
+  "fhir:expansionTimestamp": "2026-11-10T20:49:47+00:00"
+}

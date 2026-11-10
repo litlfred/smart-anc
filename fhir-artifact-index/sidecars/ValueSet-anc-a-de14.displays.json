@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "http://smart.who.int/anc/ValueSet-anc-a-de14.displays.json",
+  "title": "Co-habitants Choices Display Values",
+  "description": "Display values for Co-habitants Choices ValueSet codes. Generated from FHIR expansions. Keys are code fragments (the part after '#' in the canonical IRI). The full IRI can be reconstructed as system + '#' + code.",
+  "type": "object",
+  "properties": {
+    "fhir:displays": {
+      "type": "object",
+      "description": "Multilingual display values for ValueSet codes keyed by code fragment",
+      "patternProperties": {
+        "^.+$": {
+          "type": "object",
+          "description": "Display values for a specific code fragment by language",
+          "properties": {
+            "en": {
+              "type": "string",
+              "description": "English display value"
+            }
+          },
+          "patternProperties": {
+            "^[a-z]{2}(-[A-Z]{2})?$": {
+              "type": "string",
+              "description": "Display value in the specified language (ISO 639-1 code)"
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "fhir:displays"
+  ],
+  "additionalProperties": true,
+  "fhir:displays": {
+    "ANC.A.DE14": {
+      "en": "Parents"
+    },
+    "ANC.A.DE15": {
+      "en": "Siblings"
+    },
+    "ANC.A.DE16": {
+      "en": "Extended family"
+    },
+    "ANC.A.DE17": {
+      "en": "Partner"
+    },
+    "ANC.A.DE18": {
+      "en": "Friend(s)"
+    },
+    "ANC.A.DE19": {
+      "en": "No one"
+    }
+  },
+  "fhir:valueSet": "http://smart.who.int/anc/ValueSet/anc-a-de14",
+  "fhir:version": "0.3.0",
+  "fhir:expansionTimestamp": "2021-11-30T07:11:22-07:00"
+}

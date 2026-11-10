@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "http://smart.who.int/anc/ValueSet-anc-b6-de34-choices-grouper.schema.json",
+  "title": "Past pregnancy complications Choices Grouper Schema",
+  "description": "JSON Schema for Past pregnancy complications Choices Grouper ValueSet codes. Values are represented as Coding objects with 'system' and 'code' properties.",
+  "type": "object",
+  "required": [
+    "system",
+    "code"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "system": {
+      "type": "string",
+      "const": "http://smart.who.int/anc/CodeSystem/anc-custom-codes"
+    },
+    "code": {
+      "type": "string",
+      "enum": [
+        "ANC.B6.DE35",
+        "ANC.B6.DE36",
+        "ANC.B6.DE39",
+        "ANC.B6.DE40",
+        "ANC.B6.DE47",
+        "ANC.B6.DE48",
+        "ANC.B6.DE49",
+        "ANC.B6.DE50",
+        "ANC.B6.DE37",
+        "ANC.B6.DE38",
+        "ANC.B6.DE41",
+        "ANC.B6.DE42",
+        "ANC.B6.DE43",
+        "ANC.B6.DE44",
+        "ANC.B6.DE45",
+        "ANC.B6.DE46"
+      ]
+    }
+  },
+  "narrative": "This schema validates Coding-shaped objects for the Past pregnancy complications Choices Grouper ValueSet. Each value must be an object with 'system' (CodeSystem URI) and 'code' (fragment after '#') properties. Display values are available at http://smart.who.int/anc/ValueSet-anc-b6-de34-choices-grouper.displays.json. The canonical IRI for a code can be reconstructed as system + '#' + code. For a complete listing of all ValueSets, see artifacts.html#terminology-value-sets.",
+  "fhir:displays": "http://smart.who.int/anc/ValueSet-anc-b6-de34-choices-grouper.displays.json",
+  "fhir:valueSet": "http://smart.who.int/anc/ValueSet/anc-b6-de34-choices-grouper",
+  "fhir:version": "0.3.0",
+  "fhir:expansionTimestamp": "2021-09-07T20:15:19-06:00"
+}

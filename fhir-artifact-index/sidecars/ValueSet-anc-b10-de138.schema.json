@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "http://smart.who.int/anc/ValueSet-anc-b10-de138.schema.json",
+  "title": "Planned birth place Choices Schema",
+  "description": "JSON Schema for Planned birth place Choices ValueSet codes. Values are represented as Coding objects with 'system' and 'code' properties.",
+  "type": "object",
+  "required": [
+    "system",
+    "code"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "system": {
+      "type": "string",
+      "const": "http://smart.who.int/anc/CodeSystem/anc-custom-codes"
+    },
+    "code": {
+      "type": "string",
+      "enum": [
+        "ANC.B10.DE138",
+        "ANC.B10.DE139",
+        "ANC.B10.DE141"
+      ]
+    }
+  },
+  "narrative": "This schema validates Coding-shaped objects for the Planned birth place Choices ValueSet. Each value must be an object with 'system' (CodeSystem URI) and 'code' (fragment after '#') properties. Display values are available at http://smart.who.int/anc/ValueSet-anc-b10-de138.displays.json. The canonical IRI for a code can be reconstructed as system + '#' + code. For a complete listing of all ValueSets, see artifacts.html#terminology-value-sets.",
+  "fhir:displays": "http://smart.who.int/anc/ValueSet-anc-b10-de138.displays.json",
+  "fhir:valueSet": "http://smart.who.int/anc/ValueSet/anc-b10-de138",
+  "fhir:version": "0.3.0",
+  "fhir:expansionTimestamp": "2021-11-30T07:11:22-07:00"
+}

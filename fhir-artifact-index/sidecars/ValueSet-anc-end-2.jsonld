@@ -1,0 +1,63 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "@base": "http://smart.who.int/anc/ValueSet-anc-end-2.jsonld",
+    "name": "http://www.w3.org/2000/01/rdf-schema#label",
+    "fhir": "https://smart.who.int/base/DataTypes.jsonld#",
+    "id": "@id",
+    "generatedAt": {
+      "@id": "http://www.w3.org/ns/prov#generatedAtTime",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "fhir:CodeSystem": {
+      "@type": "@id"
+    },
+    "cs": "http://smart.who.int/anc/CodeSystem-anc-custom-codes"
+  },
+  "@id": "http://smart.who.int/anc/ValueSet-anc-end-2.jsonld",
+  "@type": "http://www.w3.org/ns/prov#Entity",
+  "generatedAt": "2026-11-10T20:58:48.895944763Z",
+  "@graph": [
+    {
+      "id": "#ANC.End.2",
+      "name": "Live birth"
+    },
+    {
+      "id": "#ANC.End.3",
+      "name": "Stillbirth"
+    },
+    {
+      "id": "#ANC.End.4",
+      "name": "Miscarriage"
+    },
+    {
+      "id": "#ANC.End.5",
+      "name": "Abortion"
+    },
+    {
+      "id": "#ANC.End.6",
+      "name": "Death"
+    },
+    {
+      "id": "#ANC.End.7",
+      "name": "Lost to follow-up"
+    },
+    {
+      "id": "#ANC.End.8",
+      "name": "Moved away"
+    },
+    {
+      "id": "#ANC.End.9",
+      "name": "False pregnancy"
+    },
+    {
+      "id": "#ANC.End.10",
+      "name": "Wrong entry"
+    },
+    {
+      "id": "#ANC.End.11",
+      "name": "Other (specify)"
+    }
+  ],
+  "fhir:CodeSystem": "cs"
+}

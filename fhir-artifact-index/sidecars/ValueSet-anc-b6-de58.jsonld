@@ -1,0 +1,79 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "@base": "http://smart.who.int/anc/ValueSet-anc-b6-de58.jsonld",
+    "name": "http://www.w3.org/2000/01/rdf-schema#label",
+    "fhir": "https://smart.who.int/base/DataTypes.jsonld#",
+    "id": "@id",
+    "generatedAt": {
+      "@id": "http://www.w3.org/ns/prov#generatedAtTime",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "fhir:CodeSystem": {
+      "@type": "@id"
+    },
+    "cs": "http://smart.who.int/anc/CodeSystem-anc-custom-codes"
+  },
+  "@id": "http://smart.who.int/anc/ValueSet-anc-b6-de58.jsonld",
+  "@type": "http://www.w3.org/ns/prov#Entity",
+  "generatedAt": "2026-11-10T20:58:48.895944763Z",
+  "@graph": [
+    {
+      "id": "#ANC.B6.DE58",
+      "name": "No known allergies"
+    },
+    {
+      "id": "#ANC.B6.DE59",
+      "name": "Albendazole"
+    },
+    {
+      "id": "#ANC.B6.DE60",
+      "name": "Aluminium hydroxide"
+    },
+    {
+      "id": "#ANC.B6.DE61",
+      "name": "Calcium"
+    },
+    {
+      "id": "#ANC.B6.DE62",
+      "name": "Chamomile"
+    },
+    {
+      "id": "#ANC.B6.DE63",
+      "name": "Folic acid"
+    },
+    {
+      "id": "#ANC.B6.DE64",
+      "name": "Ginger"
+    },
+    {
+      "id": "#ANC.B6.DE65",
+      "name": "Iron"
+    },
+    {
+      "id": "#ANC.B6.DE66",
+      "name": "Magnesium carbonate"
+    },
+    {
+      "id": "#ANC.B6.DE67",
+      "name": "Malaria medication (sulfadoxine-pyrimethamine)"
+    },
+    {
+      "id": "#ANC.B6.DE68",
+      "name": "Mebendazole"
+    },
+    {
+      "id": "#ANC.B6.DE69",
+      "name": "Penicillin"
+    },
+    {
+      "id": "#ANC.B6.DE70",
+      "name": "PrEP tenofovir disoproxil fumarate (TDF)"
+    },
+    {
+      "id": "#ANC.B6.DE71",
+      "name": "Other allergies (specify)"
+    }
+  ],
+  "fhir:CodeSystem": "cs"
+}

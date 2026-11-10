@@ -1,0 +1,63 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Reason urine test not done Choices Schema API",
+    "description": "JSON Schema for Reason urine test not done Choices ValueSet codes. Values are represented as Coding objects with 'system' and 'code' properties.",
+    "version": "1.0.0"
+  },
+  "paths": {
+    "/ValueSet-anc-b9-de121.schema.json": {
+      "get": {
+        "summary": "JSON Schema definition for the enumeration ValueSet-anc-b9-de121",
+        "description": "This endpoint serves the JSON Schema definition for the enumeration ValueSet-anc-b9-de121.",
+        "responses": {
+          "200": {
+            "description": "The JSON Schema for ValueSet-anc-b9-de121",
+            "content": {
+              "application/schema+json": {
+                "schema": {
+                  "$ref": "./ValueSet-anc-b9-de121.schema.json"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "ValueSet-anc-b9-de121": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "$id": "http://smart.who.int/anc/ValueSet-anc-b9-de121.schema.json",
+        "title": "Reason urine test not done Choices Schema",
+        "description": "JSON Schema for Reason urine test not done Choices ValueSet codes. Values are represented as Coding objects with 'system' and 'code' properties.",
+        "type": "object",
+        "required": [
+          "system",
+          "code"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "system": {
+            "type": "string",
+            "const": "http://smart.who.int/anc/CodeSystem/anc-custom-codes"
+          },
+          "code": {
+            "type": "string",
+            "enum": [
+              "ANC.B9.DE121",
+              "ANC.B9.DE122",
+              "ANC.B9.DE123"
+            ]
+          }
+        },
+        "narrative": "This schema validates Coding-shaped objects for the Reason urine test not done Choices ValueSet. Each value must be an object with 'system' (CodeSystem URI) and 'code' (fragment after '#') properties. Display values are available at http://smart.who.int/anc/ValueSet-anc-b9-de121.displays.json. The canonical IRI for a code can be reconstructed as system + '#' + code. For a complete listing of all ValueSets, see artifacts.html#terminology-value-sets.",
+        "fhir:displays": "http://smart.who.int/anc/ValueSet-anc-b9-de121.displays.json",
+        "fhir:valueSet": "http://smart.who.int/anc/ValueSet/anc-b9-de121",
+        "fhir:version": "0.3.0",
+        "fhir:expansionTimestamp": "2021-11-30T07:11:23-07:00"
+      }
+    }
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "http://smart.who.int/anc/ValueSet-anc-b10-de148.displays.json",
+  "title": "Family planning method selected Choices Display Values",
+  "description": "Display values for Family planning method selected Choices ValueSet codes. Generated from FHIR expansions. Keys are code fragments (the part after '#' in the canonical IRI). The full IRI can be reconstructed as system + '#' + code.",
+  "type": "object",
+  "properties": {
+    "fhir:displays": {
+      "type": "object",
+      "description": "Multilingual display values for ValueSet codes keyed by code fragment",
+      "patternProperties": {
+        "^.+$": {
+          "type": "object",
+          "description": "Display values for a specific code fragment by language",
+          "properties": {
+            "en": {
+              "type": "string",
+              "description": "English display value"
+            }
+          },
+          "patternProperties": {
+            "^[a-z]{2}(-[A-Z]{2})?$": {
+              "type": "string",
+              "description": "Display value in the specified language (ISO 639-1 code)"
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "fhir:displays"
+  ],
+  "additionalProperties": true,
+  "fhir:displays": {
+    "ANC.B10.DE148": {
+      "en": "Etonogestrel (ETG) one-rod implant"
+    },
+    "ANC.B10.DE149": {
+      "en": "Levonorgestrel (LNG) two-rod implant"
+    },
+    "ANC.B10.DE150": {
+      "en": "DMPA-IM"
+    },
+    "ANC.B10.DE151": {
+      "en": "DMPA-SC"
+    },
+    "ANC.B10.DE152": {
+      "en": "NET-EN norethisterone enanthate"
+    },
+    "ANC.B10.DE153": {
+      "en": "Progestogen-only pills (POP)"
+    },
+    "ANC.B10.DE154": {
+      "en": "Combined oral contraceptives (COCs)"
+    },
+    "ANC.B10.DE155": {
+      "en": "Combined contraceptive patch"
+    },
+    "ANC.B10.DE156": {
+      "en": "Combined contraceptive vaginal ring (CVR)"
+    },
+    "ANC.B10.DE157": {
+      "en": "Progesterone-releasing vaginal ring (PVR)"
+    },
+    "ANC.B10.DE158": {
+      "en": "Lactational amenorrhea method (LAM)"
+    },
+    "ANC.B10.DE159": {
+      "en": "Male condoms"
+    },
+    "ANC.B10.DE160": {
+      "en": "Female condoms"
+    },
+    "ANC.B10.DE161": {
+      "en": "Male sterilization"
+    },
+    "ANC.B10.DE163": {
+      "en": "No method provided"
+    }
+  },
+  "fhir:valueSet": "http://smart.who.int/anc/ValueSet/anc-b10-de148",
+  "fhir:version": "0.3.0",
+  "fhir:expansionTimestamp": "2021-11-30T07:11:22-07:00"
+}

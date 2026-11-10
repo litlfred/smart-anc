@@ -1,0 +1,87 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "http://smart.who.int/anc/ValueSet-anc-b6-de83-choices-grouper.displays.json",
+  "title": "Existing chronic health conditions Choices Grouper Display Values",
+  "description": "Display values for Existing chronic health conditions Choices Grouper ValueSet codes. Generated from FHIR expansions. Keys are code fragments (the part after '#' in the canonical IRI). The full IRI can be reconstructed as system + '#' + code.",
+  "type": "object",
+  "properties": {
+    "fhir:displays": {
+      "type": "object",
+      "description": "Multilingual display values for ValueSet codes keyed by code fragment",
+      "patternProperties": {
+        "^.+$": {
+          "type": "object",
+          "description": "Display values for a specific code fragment by language",
+          "properties": {
+            "en": {
+              "type": "string",
+              "description": "English display value"
+            }
+          },
+          "patternProperties": {
+            "^[a-z]{2}(-[A-Z]{2})?$": {
+              "type": "string",
+              "description": "Display value in the specified language (ISO 639-1 code)"
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "fhir:displays"
+  ],
+  "additionalProperties": true,
+  "fhir:displays": {
+    "ANC.B6.DE84": {
+      "en": "No chronic or past health conditions"
+    },
+    "ANC.B6.DE85": {
+      "en": "Don't know if there are any chronic or past health conditions"
+    },
+    "ANC.B6.DE87": {
+      "en": "Blood disorder (e.g. sickle cell, anaemia, thalassemia)"
+    },
+    "ANC.B6.DE88": {
+      "en": "Cancer - gynaecological"
+    },
+    "ANC.B6.DE89": {
+      "en": "Cancer - other site (specify)"
+    },
+    "ANC.B6.DE94": {
+      "en": "Epilepsy"
+    },
+    "ANC.B6.DE95": {
+      "en": "HIV positive"
+    },
+    "ANC.B6.DE98": {
+      "en": "Other (specify)"
+    },
+    "ANC.B6.DE86": {
+      "en": "Autoimmune disease"
+    },
+    "ANC.B6.DE90": {
+      "en": "Diabetes arising in pregnancy (gestational diabetes)"
+    },
+    "ANC.B6.DE91": {
+      "en": "Diabetes, other or unspecified"
+    },
+    "ANC.B6.DE92": {
+      "en": "Diabetes, pre-existing type 1"
+    },
+    "ANC.B6.DE93": {
+      "en": "Diabetes, pre-existing type 2"
+    },
+    "ANC.B6.DE96": {
+      "en": "Hypertension"
+    },
+    "ANC.B6.DE97": {
+      "en": "Kidney disease"
+    }
+  },
+  "fhir:valueSet": "http://smart.who.int/anc/ValueSet/anc-b6-de83-choices-grouper",
+  "fhir:version": "0.3.0",
+  "fhir:expansionTimestamp": "2021-09-07T20:15:19-06:00"
+}

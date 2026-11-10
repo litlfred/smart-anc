@@ -1,0 +1,61 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Persistent physiological symptoms - Pain - during urination (dysuria) Choices Schema API",
+    "description": "JSON Schema for Persistent physiological symptoms - Pain - during urination (dysuria) Choices ValueSet codes. Values are represented as Coding objects with 'system' and 'code' properties.",
+    "version": "1.0.0"
+  },
+  "paths": {
+    "/ValueSet-anc-b7-de34.schema.json": {
+      "get": {
+        "summary": "JSON Schema definition for the enumeration ValueSet-anc-b7-de34",
+        "description": "This endpoint serves the JSON Schema definition for the enumeration ValueSet-anc-b7-de34.",
+        "responses": {
+          "200": {
+            "description": "The JSON Schema for ValueSet-anc-b7-de34",
+            "content": {
+              "application/schema+json": {
+                "schema": {
+                  "$ref": "./ValueSet-anc-b7-de34.schema.json"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "ValueSet-anc-b7-de34": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "$id": "http://smart.who.int/anc/ValueSet-anc-b7-de34.schema.json",
+        "title": "Persistent physiological symptoms - Pain - during urination (dysuria) Choices Schema",
+        "description": "JSON Schema for Persistent physiological symptoms - Pain - during urination (dysuria) Choices ValueSet codes. Values are represented as Coding objects with 'system' and 'code' properties.",
+        "type": "object",
+        "required": [
+          "system",
+          "code"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "system": {
+            "type": "string",
+            "const": "http://smart.who.int/anc/CodeSystem/anc-custom-codes"
+          },
+          "code": {
+            "type": "string",
+            "enum": [
+              "ANC.B7.DE34"
+            ]
+          }
+        },
+        "narrative": "This schema validates Coding-shaped objects for the Persistent physiological symptoms - Pain - during urination (dysuria) Choices ValueSet. Each value must be an object with 'system' (CodeSystem URI) and 'code' (fragment after '#') properties. Display values are available at http://smart.who.int/anc/ValueSet-anc-b7-de34.displays.json. The canonical IRI for a code can be reconstructed as system + '#' + code. For a complete listing of all ValueSets, see artifacts.html#terminology-value-sets.",
+        "fhir:displays": "http://smart.who.int/anc/ValueSet-anc-b7-de34.displays.json",
+        "fhir:valueSet": "http://smart.who.int/anc/ValueSet/anc-b7-de34",
+        "fhir:version": "0.3.0",
+        "fhir:expansionTimestamp": "2021-11-30T07:11:23-07:00"
+      }
+    }
+  }
+}

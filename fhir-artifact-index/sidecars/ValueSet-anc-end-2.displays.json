@@ -1,0 +1,72 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "http://smart.who.int/anc/ValueSet-anc-end-2.displays.json",
+  "title": "Reason for closing ANC record Choices Display Values",
+  "description": "Display values for Reason for closing ANC record Choices ValueSet codes. Generated from FHIR expansions. Keys are code fragments (the part after '#' in the canonical IRI). The full IRI can be reconstructed as system + '#' + code.",
+  "type": "object",
+  "properties": {
+    "fhir:displays": {
+      "type": "object",
+      "description": "Multilingual display values for ValueSet codes keyed by code fragment",
+      "patternProperties": {
+        "^.+$": {
+          "type": "object",
+          "description": "Display values for a specific code fragment by language",
+          "properties": {
+            "en": {
+              "type": "string",
+              "description": "English display value"
+            }
+          },
+          "patternProperties": {
+            "^[a-z]{2}(-[A-Z]{2})?$": {
+              "type": "string",
+              "description": "Display value in the specified language (ISO 639-1 code)"
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "fhir:displays"
+  ],
+  "additionalProperties": true,
+  "fhir:displays": {
+    "ANC.End.2": {
+      "en": "Live birth"
+    },
+    "ANC.End.3": {
+      "en": "Stillbirth"
+    },
+    "ANC.End.4": {
+      "en": "Miscarriage"
+    },
+    "ANC.End.5": {
+      "en": "Abortion"
+    },
+    "ANC.End.6": {
+      "en": "Death"
+    },
+    "ANC.End.7": {
+      "en": "Lost to follow-up"
+    },
+    "ANC.End.8": {
+      "en": "Moved away"
+    },
+    "ANC.End.9": {
+      "en": "False pregnancy"
+    },
+    "ANC.End.10": {
+      "en": "Wrong entry"
+    },
+    "ANC.End.11": {
+      "en": "Other (specify)"
+    }
+  },
+  "fhir:valueSet": "http://smart.who.int/anc/ValueSet/anc-end-2",
+  "fhir:version": "0.3.0",
+  "fhir:expansionTimestamp": "2021-11-30T07:11:23-07:00"
+}

@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "http://smart.who.int/anc/ValueSet-anc-end-41.schema.json",
+  "title": "Cause of death Choices Schema",
+  "description": "JSON Schema for Cause of death Choices ValueSet codes. Values are represented as Coding objects with 'system' and 'code' properties.",
+  "type": "object",
+  "required": [
+    "system",
+    "code"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "system": {
+      "type": "string",
+      "const": "http://smart.who.int/anc/CodeSystem/anc-custom-codes"
+    },
+    "code": {
+      "type": "string",
+      "enum": [
+        "ANC.End.41",
+        "ANC.End.42",
+        "ANC.End.43",
+        "ANC.End.44",
+        "ANC.End.45",
+        "ANC.End.46",
+        "ANC.End.47",
+        "ANC.End.48",
+        "ANC.End.49",
+        "ANC.End.50"
+      ]
+    }
+  },
+  "narrative": "This schema validates Coding-shaped objects for the Cause of death Choices ValueSet. Each value must be an object with 'system' (CodeSystem URI) and 'code' (fragment after '#') properties. Display values are available at http://smart.who.int/anc/ValueSet-anc-end-41.displays.json. The canonical IRI for a code can be reconstructed as system + '#' + code. For a complete listing of all ValueSets, see artifacts.html#terminology-value-sets.",
+  "fhir:displays": "http://smart.who.int/anc/ValueSet-anc-end-41.displays.json",
+  "fhir:valueSet": "http://smart.who.int/anc/ValueSet/anc-end-41",
+  "fhir:version": "0.3.0",
+  "fhir:expansionTimestamp": "2021-11-30T07:11:23-07:00"
+}

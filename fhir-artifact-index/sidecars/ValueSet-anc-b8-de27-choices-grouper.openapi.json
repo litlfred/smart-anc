@@ -1,0 +1,66 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Symptoms of severe pre-eclampsia Choices Grouper Schema API",
+    "description": "JSON Schema for Symptoms of severe pre-eclampsia Choices Grouper ValueSet codes. Values are represented as Coding objects with 'system' and 'code' properties.",
+    "version": "1.0.0"
+  },
+  "paths": {
+    "/ValueSet-anc-b8-de27-choices-grouper.schema.json": {
+      "get": {
+        "summary": "JSON Schema definition for the enumeration ValueSet-anc-b8-de27-choices-grouper",
+        "description": "This endpoint serves the JSON Schema definition for the enumeration ValueSet-anc-b8-de27-choices-grouper.",
+        "responses": {
+          "200": {
+            "description": "The JSON Schema for ValueSet-anc-b8-de27-choices-grouper",
+            "content": {
+              "application/schema+json": {
+                "schema": {
+                  "$ref": "./ValueSet-anc-b8-de27-choices-grouper.schema.json"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "ValueSet-anc-b8-de27-choices-grouper": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "$id": "http://smart.who.int/anc/ValueSet-anc-b8-de27-choices-grouper.schema.json",
+        "title": "Symptoms of severe pre-eclampsia Choices Grouper Schema",
+        "description": "JSON Schema for Symptoms of severe pre-eclampsia Choices Grouper ValueSet codes. Values are represented as Coding objects with 'system' and 'code' properties.",
+        "type": "object",
+        "required": [
+          "system",
+          "code"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "system": {
+            "type": "string",
+            "const": "http://smart.who.int/anc/CodeSystem/anc-custom-codes"
+          },
+          "code": {
+            "type": "string",
+            "enum": [
+              "ANC.B8.DE28",
+              "ANC.B8.DE29",
+              "ANC.B8.DE30",
+              "ANC.B8.DE31",
+              "ANC.B8.DE32",
+              "ANC.B8.DE33"
+            ]
+          }
+        },
+        "narrative": "This schema validates Coding-shaped objects for the Symptoms of severe pre-eclampsia Choices Grouper ValueSet. Each value must be an object with 'system' (CodeSystem URI) and 'code' (fragment after '#') properties. Display values are available at http://smart.who.int/anc/ValueSet-anc-b8-de27-choices-grouper.displays.json. The canonical IRI for a code can be reconstructed as system + '#' + code. For a complete listing of all ValueSets, see artifacts.html#terminology-value-sets.",
+        "fhir:displays": "http://smart.who.int/anc/ValueSet-anc-b8-de27-choices-grouper.displays.json",
+        "fhir:valueSet": "http://smart.who.int/anc/ValueSet/anc-b8-de27-choices-grouper",
+        "fhir:version": "0.3.0",
+        "fhir:expansionTimestamp": "2021-09-07T20:15:19-06:00"
+      }
+    }
+  }
+}

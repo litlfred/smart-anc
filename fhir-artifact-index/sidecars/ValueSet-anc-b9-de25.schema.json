@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "http://smart.who.int/anc/ValueSet-anc-b9-de25.schema.json",
+  "title": "Blood type Choices Schema",
+  "description": "JSON Schema for Blood type Choices ValueSet codes. Values are represented as Coding objects with 'system' and 'code' properties.",
+  "type": "object",
+  "required": [
+    "system",
+    "code"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "system": {
+      "type": "string",
+      "const": "http://smart.who.int/anc/CodeSystem/anc-custom-codes"
+    },
+    "code": {
+      "type": "string",
+      "enum": [
+        "ANC.B9.DE25",
+        "ANC.B9.DE26",
+        "ANC.B9.DE27",
+        "ANC.B9.DE28"
+      ]
+    }
+  },
+  "narrative": "This schema validates Coding-shaped objects for the Blood type Choices ValueSet. Each value must be an object with 'system' (CodeSystem URI) and 'code' (fragment after '#') properties. Display values are available at http://smart.who.int/anc/ValueSet-anc-b9-de25.displays.json. The canonical IRI for a code can be reconstructed as system + '#' + code. For a complete listing of all ValueSets, see artifacts.html#terminology-value-sets.",
+  "fhir:displays": "http://smart.who.int/anc/ValueSet-anc-b9-de25.displays.json",
+  "fhir:valueSet": "http://smart.who.int/anc/ValueSet/anc-b9-de25",
+  "fhir:version": "0.3.0",
+  "fhir:expansionTimestamp": "2021-11-30T07:11:23-07:00"
+}

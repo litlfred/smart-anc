@@ -1,0 +1,65 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Hepatitis B test result Choices Grouper Schema API",
+    "description": "JSON Schema for Hepatitis B test result Choices Grouper ValueSet codes. Values are represented as Coding objects with 'system' and 'code' properties.",
+    "version": "1.0.0"
+  },
+  "paths": {
+    "/ValueSet-anc-b9-de66-choices-grouper.schema.json": {
+      "get": {
+        "summary": "JSON Schema definition for the enumeration ValueSet-anc-b9-de66-choices-grouper",
+        "description": "This endpoint serves the JSON Schema definition for the enumeration ValueSet-anc-b9-de66-choices-grouper.",
+        "responses": {
+          "200": {
+            "description": "The JSON Schema for ValueSet-anc-b9-de66-choices-grouper",
+            "content": {
+              "application/schema+json": {
+                "schema": {
+                  "$ref": "./ValueSet-anc-b9-de66-choices-grouper.schema.json"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "ValueSet-anc-b9-de66-choices-grouper": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "$id": "http://smart.who.int/anc/ValueSet-anc-b9-de66-choices-grouper.schema.json",
+        "title": "Hepatitis B test result Choices Grouper Schema",
+        "description": "JSON Schema for Hepatitis B test result Choices Grouper ValueSet codes. Values are represented as Coding objects with 'system' and 'code' properties.",
+        "type": "object",
+        "required": [
+          "system",
+          "code"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "system": {
+            "type": "string",
+            "const": "http://smart.who.int/anc/CodeSystem/anc-custom-codes"
+          },
+          "code": {
+            "type": "string",
+            "enum": [
+              "ANC.B9.DE67",
+              "ANC.B9.DE68",
+              "ANC.B9.DE69",
+              "ANC.B9.DE72",
+              "ANC.B9.DE73"
+            ]
+          }
+        },
+        "narrative": "This schema validates Coding-shaped objects for the Hepatitis B test result Choices Grouper ValueSet. Each value must be an object with 'system' (CodeSystem URI) and 'code' (fragment after '#') properties. Display values are available at http://smart.who.int/anc/ValueSet-anc-b9-de66-choices-grouper.displays.json. The canonical IRI for a code can be reconstructed as system + '#' + code. For a complete listing of all ValueSets, see artifacts.html#terminology-value-sets.",
+        "fhir:displays": "http://smart.who.int/anc/ValueSet-anc-b9-de66-choices-grouper.displays.json",
+        "fhir:valueSet": "http://smart.who.int/anc/ValueSet/anc-b9-de66-choices-grouper",
+        "fhir:version": "0.3.0",
+        "fhir:expansionTimestamp": "2021-09-07T20:15:19-06:00"
+      }
+    }
+  }
+}

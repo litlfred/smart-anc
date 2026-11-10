@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "http://fhir.org/guides/who/core/ValueSet-who-identifier-types.schema.json",
+  "title": "ANC Identifier Types Schema",
+  "description": "JSON Schema for ANC Identifier Types ValueSet codes. Values are represented as Coding objects with 'system' and 'code' properties.",
+  "type": "object",
+  "required": [
+    "system",
+    "code"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "system": {
+      "type": "string",
+      "const": "http://fhir.org/guides/who/core/CodeSystem/who-identifier-types"
+    },
+    "code": {
+      "type": "string",
+      "enum": [
+        "client-assigned",
+        "server-assigned"
+      ]
+    }
+  },
+  "narrative": "This schema validates Coding-shaped objects for the ANC Identifier Types ValueSet. Each value must be an object with 'system' (CodeSystem URI) and 'code' (fragment after '#') properties. Display values are available at http://fhir.org/guides/who/core/ValueSet-who-identifier-types.displays.json. The canonical IRI for a code can be reconstructed as system + '#' + code. For a complete listing of all ValueSets, see artifacts.html#terminology-value-sets.",
+  "fhir:displays": "http://fhir.org/guides/who/core/ValueSet-who-identifier-types.displays.json",
+  "fhir:valueSet": "http://fhir.org/guides/who/core/ValueSet/who-identifier-types",
+  "fhir:version": "0.3.0",
+  "fhir:expansionTimestamp": "2026-11-10T20:50:19+00:00"
+}

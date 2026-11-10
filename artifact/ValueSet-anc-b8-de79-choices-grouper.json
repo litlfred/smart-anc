@@ -1,0 +1,44 @@
+{
+  "@context": {
+    "fhir": "http://hl7.org/fhir/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "schema": "https://schema.org/",
+    "prov": "http://www.w3.org/ns/prov#"
+  },
+  "$schema": "folio-ig-artifact-jsonld/v1",
+  "@id": "ValueSet-anc-b8-de79-choices-grouper.jsonld",
+  "@type": "fhir:ValueSet",
+  "dcterms:identifier": "ValueSet/anc-b8-de79-choices-grouper",
+  "schema:name": "PelvicexamresultvisualChoicesGrouper",
+  "dcterms:title": "Pelvic exam result (visual) Choices Grouper",
+  "dcterms:description": "Group Valueset with codes representing possible values for the Pelvic exam result (visual) Choices Grouper element",
+  "schema:version": "0.3.0",
+  "dcterms:type": "Terminology: Value Sets",
+  "schema:sameAs": {
+    "@id": "http://smart.who.int/anc/ValueSet/anc-b8-de79-choices-grouper"
+  },
+  "schema:creativeWorkStatus": "materialized",
+  "schema:encoding": [
+    {
+      "@type": "schema:MediaObject",
+      "schema:contentUrl": {
+        "@id": "https://raw.githubusercontent.com/litlfred/smart-anc/96953b8648f91c5d650e135f4d4018166e976c42/resources/ValueSet/anc-b8-de79-choices-grouper--001cb047.json"
+      },
+      "schema:encodingFormat": "application/fhir+json",
+      "dcterms:source": "local"
+    }
+  ],
+  "prov:wasGeneratedBy": {
+    "@type": "prov:Activity",
+    "schema:instrument": "ig-publisher 3.0.0 / core 7.0.1",
+    "prov:used": "4f3bea121a24999b236c7b9c5687f7626f85b077"
+  },
+  "dcterms:isPartOf": {
+    "@type": "fhir:ImplementationGuide",
+    "dcterms:identifier": "smart.who.int.anc",
+    "schema:version": "0.3.0",
+    "schema:sameAs": {
+      "@id": "http://smart.who.int/anc"
+    }
+  }
+}

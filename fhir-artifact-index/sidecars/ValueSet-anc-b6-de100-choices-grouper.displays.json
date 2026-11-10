@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "http://smart.who.int/anc/ValueSet-anc-b6-de100-choices-grouper.displays.json",
+  "title": "Tetanus toxoid-containing vaccine (TTCV) immunization history Choices Grouper Display Values",
+  "description": "Display values for Tetanus toxoid-containing vaccine (TTCV) immunization history Choices Grouper ValueSet codes. Generated from FHIR expansions. Keys are code fragments (the part after '#' in the canonical IRI). The full IRI can be reconstructed as system + '#' + code.",
+  "type": "object",
+  "properties": {
+    "fhir:displays": {
+      "type": "object",
+      "description": "Multilingual display values for ValueSet codes keyed by code fragment",
+      "patternProperties": {
+        "^.+$": {
+          "type": "object",
+          "description": "Display values for a specific code fragment by language",
+          "properties": {
+            "en": {
+              "type": "string",
+              "description": "English display value"
+            }
+          },
+          "patternProperties": {
+            "^[a-z]{2}(-[A-Z]{2})?$": {
+              "type": "string",
+              "description": "Display value in the specified language (ISO 639-1 code)"
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "fhir:displays"
+  ],
+  "additionalProperties": true,
+  "fhir:displays": {
+    "ANC.B6.DE101": {
+      "en": "Fully immunized"
+    },
+    "ANC.B6.DE102": {
+      "en": "Under-immunized"
+    },
+    "ANC.B6.DE103": {
+      "en": "No doses"
+    },
+    "ANC.B6.DE104": {
+      "en": "Unknown"
+    }
+  },
+  "fhir:valueSet": "http://smart.who.int/anc/ValueSet/anc-b6-de100-choices-grouper",
+  "fhir:version": "0.3.0",
+  "fhir:expansionTimestamp": "2021-09-07T20:15:19-06:00"
+}

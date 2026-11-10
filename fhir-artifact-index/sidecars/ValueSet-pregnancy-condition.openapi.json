@@ -1,0 +1,61 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Pregnancy condition Schema API",
+    "description": "JSON Schema for Pregnancy condition ValueSet codes. Values are represented as Coding objects with 'system' and 'code' properties.",
+    "version": "1.0.0"
+  },
+  "paths": {
+    "/ValueSet-pregnancy-condition.schema.json": {
+      "get": {
+        "summary": "JSON Schema definition for the enumeration ValueSet-pregnancy-condition",
+        "description": "This endpoint serves the JSON Schema definition for the enumeration ValueSet-pregnancy-condition.",
+        "responses": {
+          "200": {
+            "description": "The JSON Schema for ValueSet-pregnancy-condition",
+            "content": {
+              "application/schema+json": {
+                "schema": {
+                  "$ref": "./ValueSet-pregnancy-condition.schema.json"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "ValueSet-pregnancy-condition": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "$id": "http://smart.who.int/anc/ValueSet-pregnancy-condition.schema.json",
+        "title": "Pregnancy condition Schema",
+        "description": "JSON Schema for Pregnancy condition ValueSet codes. Values are represented as Coding objects with 'system' and 'code' properties.",
+        "type": "object",
+        "required": [
+          "system",
+          "code"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "system": {
+            "type": "string",
+            "const": "http://smart.who.int/anc/CodeSystem/anc-care-codes"
+          },
+          "code": {
+            "type": "string",
+            "enum": [
+              "ANC.Case"
+            ]
+          }
+        },
+        "narrative": "This schema validates Coding-shaped objects for the Pregnancy condition ValueSet. Each value must be an object with 'system' (CodeSystem URI) and 'code' (fragment after '#') properties. Display values are available at http://smart.who.int/anc/ValueSet-pregnancy-condition.displays.json. The canonical IRI for a code can be reconstructed as system + '#' + code. For a complete listing of all ValueSets, see artifacts.html#terminology-value-sets.",
+        "fhir:displays": "http://smart.who.int/anc/ValueSet-pregnancy-condition.displays.json",
+        "fhir:valueSet": "http://smart.who.int/anc/ValueSet/pregnancy-condition",
+        "fhir:version": "0.3.0",
+        "fhir:expansionTimestamp": "2021-11-30T07:13:39-07:00"
+      }
+    }
+  }
+}

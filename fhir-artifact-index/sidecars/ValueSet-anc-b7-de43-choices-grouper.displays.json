@@ -1,0 +1,123 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "http://smart.who.int/anc/ValueSet-anc-b7-de43-choices-grouper.displays.json",
+  "title": "Current physiological symptoms Choices Grouper Display Values",
+  "description": "Display values for Current physiological symptoms Choices Grouper ValueSet codes. Generated from FHIR expansions. Keys are code fragments (the part after '#' in the canonical IRI). The full IRI can be reconstructed as system + '#' + code.",
+  "type": "object",
+  "properties": {
+    "fhir:displays": {
+      "type": "object",
+      "description": "Multilingual display values for ValueSet codes keyed by code fragment",
+      "patternProperties": {
+        "^.+$": {
+          "type": "object",
+          "description": "Display values for a specific code fragment by language",
+          "properties": {
+            "en": {
+              "type": "string",
+              "description": "English display value"
+            }
+          },
+          "patternProperties": {
+            "^[a-z]{2}(-[A-Z]{2})?$": {
+              "type": "string",
+              "description": "Display value in the specified language (ISO 639-1 code)"
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "fhir:displays"
+  ],
+  "additionalProperties": true,
+  "fhir:displays": {
+    "ANC.B7.DE44": {
+      "en": "None"
+    },
+    "ANC.B7.DE45": {
+      "en": "Abnormal pulse rate"
+    },
+    "ANC.B7.DE46": {
+      "en": "Abnormal vaginal discharge (physiological) (foul smelling) (curd like)"
+    },
+    "ANC.B7.DE47": {
+      "en": "Breathing difficulty"
+    },
+    "ANC.B7.DE48": {
+      "en": "Breathless during routine activities"
+    },
+    "ANC.B7.DE49": {
+      "en": "Constipation"
+    },
+    "ANC.B7.DE50": {
+      "en": "Contractions"
+    },
+    "ANC.B7.DE51": {
+      "en": "Cough lasting more than 3 weeks"
+    },
+    "ANC.B7.DE52": {
+      "en": "Fever"
+    },
+    "ANC.B7.DE53": {
+      "en": "Gets tired easily"
+    },
+    "ANC.B7.DE54": {
+      "en": "Headache"
+    },
+    "ANC.B7.DE55": {
+      "en": "Heartburn"
+    },
+    "ANC.B7.DE56": {
+      "en": "Leg cramps"
+    },
+    "ANC.B7.DE57": {
+      "en": "Leg redness"
+    },
+    "ANC.B7.DE58": {
+      "en": "Nausea"
+    },
+    "ANC.B7.DE69": {
+      "en": "Vomiting"
+    },
+    "ANC.B7.DE59": {
+      "en": "Oedema"
+    },
+    "ANC.B7.DE60": {
+      "en": "Pain - during urination (dysuria)"
+    },
+    "ANC.B7.DE61": {
+      "en": "Pain - Leg"
+    },
+    "ANC.B7.DE62": {
+      "en": "Pain - Low back"
+    },
+    "ANC.B7.DE63": {
+      "en": "Pain - Pelvic"
+    },
+    "ANC.B7.DE64": {
+      "en": "Pain - Extreme pelvic pain/can't walk (symphysis pubis dysfunction)"
+    },
+    "ANC.B7.DE65": {
+      "en": "Pain - Other"
+    },
+    "ANC.B7.DE66": {
+      "en": "Vaginal bleeding"
+    },
+    "ANC.B7.DE67": {
+      "en": "Varicose veins"
+    },
+    "ANC.B7.DE68": {
+      "en": "Visual disturbance"
+    },
+    "ANC.B7.DE70": {
+      "en": "Other current physiological symptoms (specify)"
+    }
+  },
+  "fhir:valueSet": "http://smart.who.int/anc/ValueSet/anc-b7-de43-choices-grouper",
+  "fhir:version": "0.3.0",
+  "fhir:expansionTimestamp": "2021-09-07T20:15:19-06:00"
+}

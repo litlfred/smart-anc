@@ -1,0 +1,131 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "@base": "http://smart.who.int/anc/ValueSet-anc-b7-de43-choices-grouper.jsonld",
+    "name": "http://www.w3.org/2000/01/rdf-schema#label",
+    "fhir": "https://smart.who.int/base/DataTypes.jsonld#",
+    "id": "@id",
+    "generatedAt": {
+      "@id": "http://www.w3.org/ns/prov#generatedAtTime",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "fhir:CodeSystem": {
+      "@type": "@id"
+    },
+    "cs": "http://smart.who.int/anc/CodeSystem-anc-custom-codes"
+  },
+  "@id": "http://smart.who.int/anc/ValueSet-anc-b7-de43-choices-grouper.jsonld",
+  "@type": "http://www.w3.org/ns/prov#Entity",
+  "generatedAt": "2026-11-10T20:58:48.895944763Z",
+  "@graph": [
+    {
+      "id": "#ANC.B7.DE44",
+      "name": "None"
+    },
+    {
+      "id": "#ANC.B7.DE45",
+      "name": "Abnormal pulse rate"
+    },
+    {
+      "id": "#ANC.B7.DE46",
+      "name": "Abnormal vaginal discharge (physiological) (foul smelling) (curd like)"
+    },
+    {
+      "id": "#ANC.B7.DE47",
+      "name": "Breathing difficulty"
+    },
+    {
+      "id": "#ANC.B7.DE48",
+      "name": "Breathless during routine activities"
+    },
+    {
+      "id": "#ANC.B7.DE49",
+      "name": "Constipation"
+    },
+    {
+      "id": "#ANC.B7.DE50",
+      "name": "Contractions"
+    },
+    {
+      "id": "#ANC.B7.DE51",
+      "name": "Cough lasting more than 3 weeks"
+    },
+    {
+      "id": "#ANC.B7.DE52",
+      "name": "Fever"
+    },
+    {
+      "id": "#ANC.B7.DE53",
+      "name": "Gets tired easily"
+    },
+    {
+      "id": "#ANC.B7.DE54",
+      "name": "Headache"
+    },
+    {
+      "id": "#ANC.B7.DE55",
+      "name": "Heartburn"
+    },
+    {
+      "id": "#ANC.B7.DE56",
+      "name": "Leg cramps"
+    },
+    {
+      "id": "#ANC.B7.DE57",
+      "name": "Leg redness"
+    },
+    {
+      "id": "#ANC.B7.DE58",
+      "name": "Nausea"
+    },
+    {
+      "id": "#ANC.B7.DE69",
+      "name": "Vomiting"
+    },
+    {
+      "id": "#ANC.B7.DE59",
+      "name": "Oedema"
+    },
+    {
+      "id": "#ANC.B7.DE60",
+      "name": "Pain - during urination (dysuria)"
+    },
+    {
+      "id": "#ANC.B7.DE61",
+      "name": "Pain - Leg"
+    },
+    {
+      "id": "#ANC.B7.DE62",
+      "name": "Pain - Low back"
+    },
+    {
+      "id": "#ANC.B7.DE63",
+      "name": "Pain - Pelvic"
+    },
+    {
+      "id": "#ANC.B7.DE64",
+      "name": "Pain - Extreme pelvic pain/can't walk (symphysis pubis dysfunction)"
+    },
+    {
+      "id": "#ANC.B7.DE65",
+      "name": "Pain - Other"
+    },
+    {
+      "id": "#ANC.B7.DE66",
+      "name": "Vaginal bleeding"
+    },
+    {
+      "id": "#ANC.B7.DE67",
+      "name": "Varicose veins"
+    },
+    {
+      "id": "#ANC.B7.DE68",
+      "name": "Visual disturbance"
+    },
+    {
+      "id": "#ANC.B7.DE70",
+      "name": "Other current physiological symptoms (specify)"
+    }
+  ],
+  "fhir:CodeSystem": "cs"
+}

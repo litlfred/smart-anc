@@ -1,0 +1,1185 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "ANCB6",
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Questionnaire ANCB6</b></p><a name=\"ANCB6\"> </a><a name=\"hcANCB6\"> </a><table border=\"1\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 2px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th scope=\"col\" style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"The linkID for the item\">LinkID</a></th><th scope=\"col\" style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Text for the item\">Text</a></th><th scope=\"col\" style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Minimum and Maximum # of times the item can appear in the instance\">Cardinality</a></th><th scope=\"col\" style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"The type of the item\">Type</a></th><th scope=\"col\" style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Additional information about the item\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_q_root.gif\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"QuestionnaireRoot\" class=\"hierarchy\"/> ANCB6</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">If this is the woman’s first ANC contact, the health worker records information on her current pregnancy, past medical and obstetric history, medications, behaviour, immunization status and other background information.</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Questionnaire</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">http://smart.who.int/anc/Questionnaire/ANCB6#0.3.0</td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.1\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"coding\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">ANCB6 / </span>1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Highest level of education achieved</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Definition: <a href=\"StructureDefinition-anc-patient.html#Patient.educationLevel\">Patient.educationLevel</a><br/>Value Set: <a href=\"ValueSet-anc-b6-de2.html\">Highest level of education achieved Choices</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.2\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"coding\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">ANCB6 / </span>2</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Occupation</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Definition: <a href=\"StructureDefinition-anc-patient.html#Patient.occupation\">Patient.occupation</a><br/>Value Set: <a href=\"ValueSet-anc-b6-de7-choices-grouper.html\">Occupation Choices Grouper</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.3\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-date.png\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"date\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">ANCB6 / </span>3</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Last menstrual period (LMP) date</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-date\">date</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Definition: <a href=\"StructureDefinition-anc-b6-de14.html#Observation.value[x]\">Observation.value[x]</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.4\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-boolean.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"boolean\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">ANCB6 / </span>4</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Ultrasound done</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Definition: <a href=\"StructureDefinition-anc-b6-de15.html#Observation.value[x]\">Observation.value[x]</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.5\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-date.png\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"date\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">ANCB6 / </span>5</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Ultrasound date</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-date\">date</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Definition: <a href=\"StructureDefinition-ultrasound.html#Procedure.performed[x]\">Procedure.performed[x]</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.6\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-quantity.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"quantity\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">ANCB6 / </span>6</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Gestational age</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-quantity\">quantity</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Definition: <a href=\"StructureDefinition-anc-b6-de17.html#Observation.value[x]\">Observation.value[x]</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.7\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"coding\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">ANCB6 / </span>7</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Source of gestational age</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Definition: <a href=\"StructureDefinition-anc-b6-de18.html#Observation.value[x]\">Observation.value[x]</a><br/>Value Set: <a href=\"ValueSet-anc-b6-de19.html\">Source of gestational age Choices</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.8\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-date.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"date\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">ANCB6 / </span>8</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Expected date of delivery (EDD)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-date\">date</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Definition: <a href=\"StructureDefinition-anc-b6-de22.html#Observation.value[x]\">Observation.value[x]</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.9\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-integer.png\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"integer\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">ANCB6 / </span>9</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Number of pregnancies (gravida)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-integer\">integer</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Definition: <a href=\"StructureDefinition-anc-b6-de24.html#Observation.value[x]\">Observation.value[x]</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.10\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-integer.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"integer\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">ANCB6 / </span>10</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Number of miscarriages and/or abortions</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-integer\">integer</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Definition: <a href=\"StructureDefinition-anc-b6-de25.html#Observation.value[x]\">Observation.value[x]</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.11\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-integer.png\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"integer\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">ANCB6 / </span>11</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Number of live births</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-integer\">integer</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Definition: <a href=\"StructureDefinition-anc-b6-de26.html#Observation.value[x]\">Observation.value[x]</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.12\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"coding\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">ANCB6 / </span>12</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Whether last live birth was preterm</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Definition: <a href=\"StructureDefinition-anc-b6-de27.html#Observation.value[x]\">Observation.value[x]</a><br/>Value Set: <a href=\"ValueSet-anc-b6-de28.html\">Whether last live birth was preterm Choices</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.13\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-integer.png\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"integer\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">ANCB6 / </span>13</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Number of stillbirths</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-integer\">integer</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Definition: <a href=\"StructureDefinition-anc-b6-de31.html#Observation.value[x]\">Observation.value[x]</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.14\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-integer.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"integer\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">ANCB6 / </span>14</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Parity</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-integer\">integer</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Definition: <a href=\"StructureDefinition-anc-b6-de32.html#Observation.value[x]\">Observation.value[x]</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.15\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-integer.png\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"integer\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">ANCB6 / </span>15</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Number of caesarian sections</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-integer\">integer</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Definition: <a href=\"StructureDefinition-anc-b6-de33.html#Observation.value[x]\">Observation.value[x]</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.16\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"coding\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">ANCB6 / </span>16</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Past pregnancy complications</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Definition: <a href=\"StructureDefinition-anc-b6-de34.html#Observation.value[x]\">Observation.value[x]</a><br/>Value Set: <a href=\"ValueSet-anc-b6-de34-choices-grouper.html\">Past pregnancy complications Choices Grouper</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.17\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"coding\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">ANCB6 / </span>17</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Substance use during past pregnancy specification</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Definition: <a href=\"StructureDefinition-anc-b6-de51.html#Observation.value[x]\">Observation.value[x]</a><br/>Value Set: <a href=\"ValueSet-anc-b6-de53.html\">Substance use during past pregnancy specification Choices</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.18\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"coding\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">ANCB6 / </span>18</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Allergies</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Definition: <a href=\"StructureDefinition-anc-b6-de57.html#Observation.value[x]\">Observation.value[x]</a><br/>Value Set: <a href=\"ValueSet-anc-b6-de58.html\">Allergies Choices</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.19\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"coding\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">ANCB6 / </span>19</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Past surgeries</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Definition: <a href=\"StructureDefinition-anc-b6-de72.html#Observation.value[x]\">Observation.value[x]</a><br/>Value Set: <a href=\"ValueSet-anc-b6-de73.html\">Past surgeries Choices</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.20\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"coding\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">ANCB6 / </span>20</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Existing chronic health conditions</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Definition: <a href=\"StructureDefinition-anc-b6-de83.html#Observation.value[x]\">Observation.value[x]</a><br/>Value Set: <a href=\"ValueSet-anc-b6-de83-choices-grouper.html\">Existing chronic health conditions Choices Grouper</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.21\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"coding\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">ANCB6 / </span>21</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">HIV diagnosis date</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Definition: <a href=\"StructureDefinition-anc-b6-de99.html#Observation.value[x]\">Observation.value[x]</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.22\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"coding\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">ANCB6 / </span>22</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Tetanus toxoid-containing vaccine (TTCV) immunization history</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Definition: <a href=\"StructureDefinition-anc-b6-de100.html#Observation.value[x]\">Observation.value[x]</a><br/>Value Set: <a href=\"ValueSet-anc-b6-de100-choices-grouper.html\">Tetanus toxoid-containing vaccine (TTCV) immunization history Choices Grouper</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.23\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"coding\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">ANCB6 / </span>23</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Flu immunization history</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Definition: <a href=\"StructureDefinition-anc-b6-de105.html#Observation.value[x]\">Observation.value[x]</a><br/>Value Set: <a href=\"ValueSet-anc-b6-de105-choices-grouper.html\">Flu immunization history Choices Grouper</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.24\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"coding\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">ANCB6 / </span>24</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Current medications</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Definition: <a href=\"StructureDefinition-anc-b6-de109.html#Observation.value[x]\">Observation.value[x]</a><br/>Value Set: <a href=\"ValueSet-anc-b6-de109-choices-grouper.html\">Current medications Choices Grouper</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.25\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"coding\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">ANCB6 / </span>25</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Daily caffeine intake</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Definition: <a href=\"StructureDefinition-anc-b6-de139.html#Observation.value[x]\">Observation.value[x]</a><br/>Value Set: <a href=\"ValueSet-anc-b6-de139-choices-grouper.html\">Daily caffeine intake Choices Grouper</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.26\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"coding\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">ANCB6 / </span>26</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Clinical enquiry for alcohol and other substance use done</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Definition: <a href=\"StructureDefinition-anc-b6-de145.html#Observation.value[x]\">Observation.value[x]</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.27\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"coding\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">ANCB6 / </span>27</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Current alcohol and/or other substance use</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Definition: <a href=\"StructureDefinition-anc-b6-de146.html#Observation.value[x]\">Observation.value[x]</a><br/>Value Set: <a href=\"ValueSet-anc-b6-de146-choices-grouper.html\">Current alcohol and/or other substance use Choices Grouper</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.28\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-boolean.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"boolean\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">ANCB6 / </span>28</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Tobacco use</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Definition: <a href=\"StructureDefinition-anc-b6-de153.html#Observation.value[x]\">Observation.value[x]</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.29\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-boolean.png\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"boolean\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">ANCB6 / </span>29</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Recently quit tobacco products</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Definition: <a href=\"StructureDefinition-anc-b6-de154.html#Observation.value[x]\">Observation.value[x]</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.30\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-boolean.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"boolean\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">ANCB6 / </span>30</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Exposure to second-hand smoke</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Definition: <a href=\"StructureDefinition-anc-b6-de155.html#Observation.value[x]\">Observation.value[x]</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.31\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"coding\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">ANCB6 / </span>31</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Partner HIV status (reported)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Definition: <a href=\"StructureDefinition-anc-b6-de156.html#Observation.value[x]\">Observation.value[x]</a><br/>Value Set: <a href=\"ValueSet-anc-b6-de156-choices-grouper.html\">Partner HIV status (reported) Choices Grouper</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.32\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-boolean.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"boolean\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">ANCB6 / </span>32</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Contraceptive use of male condoms</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Definition: <a href=\"StructureDefinition-anc-b6-de160.html#Observation.value[x]\">Observation.value[x]</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)\" id=\"item.33\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-boolean.png\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"boolean\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">ANCB6 / </span>33</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Contraceptive use of female condoms</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Definition: <a href=\"StructureDefinition-anc-b6-de161.html#Observation.value[x]\">Observation.value[x]</a></td></tr>\r\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+      "valueCode": "shareable"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+      "valueCode": "computable"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+      "valueCode": "publishable"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel",
+      "valueCode": "structured"
+    }
+  ],
+  "url": "http://smart.who.int/anc/Questionnaire/ANCB6",
+  "version": "0.3.0",
+  "name": "ANCB6",
+  "title": "ANC.B6 Profile",
+  "status": "active",
+  "experimental": false,
+  "date": "2026-11-10T20:42:47+00:00",
+  "publisher": "World Health Organization (WHO)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.who.int"
+        }
+      ]
+    }
+  ],
+  "description": "If this is the woman’s first ANC contact, the health worker records information on her current pregnancy, past medical and obstetric history, medications, behaviour, immunization status and other background information.",
+  "useContext": [
+    {
+      "code": {
+        "system": "http://terminology.hl7.org/CodeSystem/usage-context-type",
+        "code": "task",
+        "display": "Workflow Task"
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://smart.who.int/anc/CodeSystem/anc-activity-codes",
+            "code": "ANC.B6",
+            "display": "Profile"
+          }
+        ]
+      }
+    }
+  ],
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001"
+        }
+      ]
+    }
+  ],
+  "item": [
+    {
+      "linkId": "1",
+      "definition": "http://smart.who.int/anc/StructureDefinition/anc-patient#Patient.educationLevel",
+      "text": "Highest level of education achieved",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "system": "http://smart.who.int/anc/CodeSystem/anc-custom-codes",
+            "code": "ANC.B6.DE2",
+            "display": "Does not know level of education"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://smart.who.int/anc/CodeSystem/anc-custom-codes",
+            "code": "ANC.B6.DE3",
+            "display": "No education"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://smart.who.int/anc/CodeSystem/anc-custom-codes",
+            "code": "ANC.B6.DE4",
+            "display": "Primary school"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://smart.who.int/anc/CodeSystem/anc-custom-codes",
+            "code": "ANC.B6.DE5",
+            "display": "Secondary school"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://smart.who.int/anc/CodeSystem/anc-custom-codes",
+            "code": "ANC.B6.DE6",
+            "display": "Higher education"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "2",
+      "definition": "http://smart.who.int/anc/StructureDefinition/anc-patient#Patient.occupation",
+      "text": "Occupation",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "system": "http://smart.who.int/anc/CodeSystem/anc-custom-codes",
+            "code": "ANC.B6.DE8",
+            "display": "Student"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://smart.who.int/anc/CodeSystem/anc-custom-codes",
+            "code": "ANC.B6.DE9",
+            "display": "Unemployed"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://smart.who.int/anc/CodeSystem/anc-custom-codes",
+            "code": "ANC.B6.DE10",
+            "display": "Formal employment"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://smart.who.int/anc/CodeSystem/anc-custom-codes",
+            "code": "ANC.B6.DE13",
+            "display": "Other (specify)"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://smart.who.int/anc/CodeSystem/anc-custom-codes",
+            "code": "ANC.B6.DE11",
+            "display": "Employment that puts woman at increased risk for HIV (e.g. sex worker)"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://smart.who.int/anc/CodeSystem/anc-custom-codes",
+            "code": "ANC.B6.DE12",
+            "display": "Informal employment (other)"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "3",
+      "definition": "http://smart.who.int/anc/StructureDefinition/anc-b6-de14#Observation.value[x]",
+      "text": "Last menstrual period (LMP) date",
+      "type": "date"
+    },
+    {
+      "linkId": "4",
+      "definition": "http://smart.who.int/anc/StructureDefinition/anc-b6-de15#Observation.value[x]",
+      "text": "Ultrasound done",
+      "type": "boolean"
+    },
+    {
+      "linkId": "5",
+      "definition": "http://smart.who.int/anc/StructureDefinition/ultrasound#Procedure.performed[x]",
+      "text": "Ultrasound date",
+      "type": "date"
+    },
+    {
+      "linkId": "6",
+      "definition": "http://smart.who.int/anc/StructureDefinition/anc-b6-de17#Observation.value[x]",
+      "text": "Gestational age",
+      "type": "quantity"
+    },
+    {
+      "linkId": "7",
+      "definition": "http://smart.who.int/anc/StructureDefinition/anc-b6-de18#Observation.value[x]",
+      "text": "Source of gestational age",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "system": "http://smart.who.int/anc/CodeSystem/anc-custom-codes",
+            "code": "ANC.B6.DE19",
+            "display": "Last menstrual period (LMP)"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://smart.who.int/anc/CodeSystem/anc-custom-codes",
+            "code": "ANC.B6.DE20",
+            "display": "Ultrasound"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://smart.who.int/anc/CodeSystem/anc-custom-codes",
+            "code": "ANC.B6.DE21",
+            "display": "Symphysis fundal height (SFH) or abdominal palpation"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "8",
+      "definition": "http://smart.who.int/anc/StructureDefinition/anc-b6-de22#Observation.value[x]",
+      "text": "Expected date of delivery (EDD)",
+      "type": "date"
+    },
+    {
+      "linkId": "9",
+      "definition": "http://smart.who.int/anc/StructureDefinition/anc-b6-de24#Observation.value[x]",
+      "text": "Number of pregnancies (gravida)",
+      "type": "integer"
+    },
+    {
+      "linkId": "10",
+      "definition": "http://smart.who.int/anc/StructureDefinition/anc-b6-de25#Observation.value[x]",
+      "text": "Number of miscarriages and/or abortions",
+      "type": "integer"
+    },
+    {
+      "linkId": "11",
+      "definition": "http://smart.who.int/anc/StructureDefinition/anc-b6-de26#Observation.value[x]",
+      "text": "Number of live births",
+      "type": "integer"
+    },
+    {
+      "linkId": "12",
+      "definition": "http://smart.who.int/anc/StructureDefinition/anc-b6-de27#Observation.value[x]",
+      "text": "Whether last live birth was preterm",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "system": "http://smart.who.int/anc/CodeSystem/anc-custom-codes",
+            "code": "ANC.B6.DE28",
+            "display": "Last live birth was preterm"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://smart.who.int/anc/CodeSystem/anc-custom-codes",
+            "code": "ANC.B6.DE29",
+            "display": "Last live birth was not preterm"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://smart.who.int/anc/CodeSystem/anc-custom-codes",
+            "code": "ANC.B6.DE30",
+            "display": "Don't know if last live birth was preterm"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "13",
+      "definition": "http://smart.who.int/anc/StructureDefinition/anc-b6-de31#Observation.value[x]",
+      "text": "Number of stillbirths",
+      "type": "integer"
+    },
+    {
+      "linkId": "14",
+      "definition": "http://smart.who.int/anc/StructureDefinition/anc-b6-de32#Observation.value[x]",
+      "text": "Parity",
+      "type": "integer"
+    },
+    {
+      "linkId": "15",
+      "definition": "http://smart.who.int/anc/StructureDefinition/anc-b6-de33#Observation.value[x]",
+      "text": "Number of caesarian sections",
+      "type": "integer"
+    },
+    {
+      "linkId": "16",
+      "definition": "http://smart.who.int/anc/StructureDefinition/anc-b6-de34#Observation.value[x]",
+      "text": "Past pregnancy complications",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "system": "http://smart.who.int/anc/CodeSystem/anc-custom-codes",
+            "code": "ANC.B6.DE35",
+            "display": "No past pregnancy complications"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://smart.who.int/anc/CodeSystem/anc-custom-codes",
+            "code": "ANC.B6.DE36",
+            "display": "Does not know of any past pregnancy complications"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://smart.who.int/anc/CodeSystem/anc-custom-codes",
+            "code": "ANC.B6.DE39",
+            "display": "Alcohol use"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://smart.who.int/anc/CodeSystem/anc-custom-codes",
+            "code": "ANC.B6.DE40",
+            "display": "Baby died within 24 hours of birth"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://smart.who.int/anc/CodeSystem/anc-custom-codes",
+            "code": "ANC.B6.DE47",
+            "display": "Substance use"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://smart.who.int/anc/CodeSystem/anc-custom-codes",
+            "code": "ANC.B6.DE48",
+            "display": "Tobacco use"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://smart.who.int/anc/CodeSystem/anc-custom-codes",
+            "code": "ANC.B6.DE49",
+            "display": "Vacuum delivery"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://smart.who.int/anc/CodeSystem/anc-custom-codes",
+            "code": "ANC.B6.DE50",
+            "display": "Other past pregnancy problems (specify)"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://smart.who.int/anc/CodeSystem/anc-custom-codes",
+            "code": "ANC.B6.DE37",
+            "display": "Pre-eclampsia"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://smart.who.int/anc/CodeSystem/anc-custom-codes",
+            "code": "ANC.B6.DE38",
+            "display": "Eclampsia"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://smart.who.int/anc/CodeSystem/anc-custom-codes",
+            "code": "ANC.B6.DE41",
+            "display": "Convulsions"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://smart.who.int/anc/CodeSystem/anc-custom-codes",
+            "code": "ANC.B6.DE42",
+            "display": "Forceps"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://smart.who.int/anc/CodeSystem/anc-custom-codes",
+            "code": "ANC.B6.DE43",
+            "display": "Gestational diabetes mellitus"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://smart.who.int/anc/CodeSystem/anc-custom-codes",
+            "code": "ANC.B6.DE44",
+            "display": "Heavy bleeding (during or after delivery)"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://smart.who.int/anc/CodeSystem/anc-custom-codes",
+            "code": "ANC.B6.DE45",
+            "display": "Macrosomia"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://smart.who.int/anc/CodeSystem/anc-custom-codes",
+            "code": "ANC.B6.DE46",
+            "display": "Perineal tear (3rd or 4th degree)"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "17",
+      "definition": "http://smart.who.int/anc/StructureDefinition/anc-b6-de51#Observation.value[x]",
+      "text": "Substance use during past pregnancy specification",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "system": "http://smart.who.int/anc/CodeSystem/anc-custom-codes",
+            "code": "ANC.B6.DE53",
+            "display": "Cocaine"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://smart.who.int/anc/CodeSystem/anc-custom-codes",
+            "code": "ANC.B6.DE54",
+            "display": "Injectable drugs"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://smart.who.int/anc/CodeSystem/anc-custom-codes",
+            "code": "ANC.B6.DE55",
+            "display": "Marijuana"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://smart.who.int/anc/CodeSystem/anc-custom-codes",
+            "code": "ANC.B6.DE56",
+            "display": "Other illicit substance use (specify)"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "18",
+      "definition": "http://smart.who.int/anc/StructureDefinition/anc-b6-de57#Observation.value[x]",
+      "text": "Allergies",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "system": "http://smart.who.int/anc/CodeSystem/anc-custom-codes",
+            "code": "ANC.B6.DE58",
+            "display": "No known allergies"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://smart.who.int/anc/CodeSystem/anc-custom-codes",
+            "code": "ANC.B6.DE59",
+            "display": "Albendazole"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://smart.who.int/anc/CodeSystem/anc-custom-codes",
+            "code": "ANC.B6.DE60",
+            "display": "Aluminium hydroxide"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://smart.who.int/anc/CodeSystem/anc-custom-codes",
+            "code": "ANC.B6.DE61",
+            "display": "Calcium"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://smart.who.int/anc/CodeSystem/anc-custom-codes",
+            "code": "ANC.B6.DE62",
+            "display": "Chamomile"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://smart.who.int/anc/CodeSystem/anc-custom-codes",
+            "code": "ANC.B6.DE63",
+            "display": "Folic acid"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://smart.who.int/anc/CodeSystem/anc-custom-codes",
+            "code": "ANC.B6.DE64",
+            "display": "Ginger"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://smart.who.int/anc/CodeSystem/anc-custom-codes",
+            "code": "ANC.B6.DE65",
+            "display": "Iron"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://smart.who.int/anc/CodeSystem/anc-custom-codes",
+            "code": "ANC.B6.DE66",
+            "display": "Magnesium carbonate"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://smart.who.int/anc/CodeSystem/anc-custom-codes",
+            "code": "ANC.B6.DE67",
+            "display": "Malaria medication (sulfadoxine-pyrimethamine)"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://smart.who.int/anc/CodeSystem/anc-custom-codes",
+            "code": "ANC.B6.DE68",
+            "display": "Mebendazole"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://smart.who.int/anc/CodeSystem/anc-custom-codes",
+            "code": "ANC.B6.DE69",
+            "display": "Penicillin"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://smart.who.int/anc/CodeSystem/anc-custom-codes",
+            "code": "ANC.B6.DE70",
+            "display": "PrEP tenofovir disoproxil fumarate (TDF)"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://smart.who.int/anc/CodeSystem/anc-custom-codes",
+            "code": "ANC.B6.DE71",
+            "display": "Other allergies (specify)"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "19",
+      "definition": "http://smart.who.int/anc/StructureDefinition/anc-b6-de72#Observation.value[x]",
+      "text": "Past surgeries",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "system": "http://smart.who.int/anc/CodeSystem/anc-custom-codes",
+            "code": "ANC.B6.DE73",
+            "display": "No known past surgeries"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://smart.who.int/anc/CodeSystem/anc-custom-codes",
+            "code": "ANC.B6.DE74",
+            "display": "Does not know of any past surgeries"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://smart.who.int/anc/CodeSystem/anc-custom-codes",
+            "code": "ANC.B6.DE75",
+            "display": "Dilation and curettage"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://smart.who.int/anc/CodeSystem/anc-custom-codes",
+            "code": "ANC.B6.DE76",
+            "display": "Myomectomy"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://smart.who.int/anc/CodeSystem/anc-custom-codes",
+            "code": "ANC.B6.DE77",
+            "display": "Removal of ovarian cysts"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://smart.who.int/anc/CodeSystem/anc-custom-codes",
+            "code": "ANC.B6.DE78",
+            "display": "Oophorectomy"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://smart.who.int/anc/CodeSystem/anc-custom-codes",
+            "code": "ANC.B6.DE79",
+            "display": "Salpingectomy"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://smart.who.int/anc/CodeSystem/anc-custom-codes",
+            "code": "ANC.B6.DE80",
+            "display": "Cervical cone"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://smart.who.int/anc/CodeSystem/anc-custom-codes",
+            "code": "ANC.B6.DE81",
+            "display": "Other gynecological procedures (specify)"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://smart.who.int/anc/CodeSystem/anc-custom-codes",
+            "code": "ANC.B6.DE82",
+            "display": "Other surgeries (specify)"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "20",
+      "definition": "http://smart.who.int/anc/StructureDefinition/anc-b6-de83#Observation.value[x]",
+      "text": "Existing chronic health conditions",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "system": "http://smart.who.int/anc/CodeSystem/anc-custom-codes",
+            "code": "ANC.B6.DE84",
+            "display": "No chronic or past health conditions"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://smart.who.int/anc/CodeSystem/anc-custom-codes",
+            "code": "ANC.B6.DE85",
+            "display": "Don't know if there are any chronic or past health conditions"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://smart.who.int/anc/CodeSystem/anc-custom-codes",
+            "code": "ANC.B6.DE87",
+            "display": "Blood disorder (e.g. sickle cell, anaemia, thalassemia)"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://smart.who.int/anc/CodeSystem/anc-custom-codes",
+            "code": "ANC.B6.DE88",
+            "display": "Cancer - gynaecological"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://smart.who.int/anc/CodeSystem/anc-custom-codes",
+            "code": "ANC.B6.DE89",
+            "display": "Cancer - other site (specify)"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://smart.who.int/anc/CodeSystem/anc-custom-codes",
+            "code": "ANC.B6.DE94",
+            "display": "Epilepsy"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://smart.who.int/anc/CodeSystem/anc-custom-codes",
+            "code": "ANC.B6.DE95",
+            "display": "HIV positive"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://smart.who.int/anc/CodeSystem/anc-custom-codes",
+            "code": "ANC.B6.DE98",
+            "display": "Other (specify)"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://smart.who.int/anc/CodeSystem/anc-custom-codes",
+            "code": "ANC.B6.DE86",
+            "display": "Autoimmune disease"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://smart.who.int/anc/CodeSystem/anc-custom-codes",
+            "code": "ANC.B6.DE90",
+            "display": "Diabetes arising in pregnancy (gestational diabetes)"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://smart.who.int/anc/CodeSystem/anc-custom-codes",
+            "code": "ANC.B6.DE91",
+            "display": "Diabetes, other or unspecified"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://smart.who.int/anc/CodeSystem/anc-custom-codes",
+            "code": "ANC.B6.DE92",
+            "display": "Diabetes, pre-existing type 1"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://smart.who.int/anc/CodeSystem/anc-custom-codes",
+            "code": "ANC.B6.DE93",
+            "display": "Diabetes, pre-existing type 2"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://smart.who.int/anc/CodeSystem/anc-custom-codes",
+            "code": "ANC.B6.DE96",
+            "display": "Hypertension"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://smart.who.int/anc/CodeSystem/anc-custom-codes",
+            "code": "ANC.B6.DE97",
+            "display": "Kidney disease"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "21",
+      "definition": "http://smart.who.int/anc/StructureDefinition/anc-b6-de99#Observation.value[x]",
+      "text": "HIV diagnosis date",
+      "type": "choice"
+    },
+    {
+      "linkId": "22",
+      "definition": "http://smart.who.int/anc/StructureDefinition/anc-b6-de100#Observation.value[x]",
+      "text": "Tetanus toxoid-containing vaccine (TTCV) immunization history",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "system": "http://smart.who.int/anc/CodeSystem/anc-custom-codes",
+            "code": "ANC.B6.DE101",
+            "display": "Fully immunized"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://smart.who.int/anc/CodeSystem/anc-custom-codes",
+            "code": "ANC.B6.DE102",
+            "display": "Under-immunized"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://smart.who.int/anc/CodeSystem/anc-custom-codes",
+            "code": "ANC.B6.DE103",
+            "display": "No doses"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://smart.who.int/anc/CodeSystem/anc-custom-codes",
+            "code": "ANC.B6.DE104",
+            "display": "Unknown"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "23",
+      "definition": "http://smart.who.int/anc/StructureDefinition/anc-b6-de105#Observation.value[x]",
+      "text": "Flu immunization history",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "system": "http://smart.who.int/anc/CodeSystem/anc-custom-codes",
+            "code": "ANC.B6.DE106",
+            "display": "Fully immunized"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://smart.who.int/anc/CodeSystem/anc-custom-codes",
+            "code": "ANC.B6.DE107",
+            "display": "No doses"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://smart.who.int/anc/CodeSystem/anc-custom-codes",
+            "code": "ANC.B6.DE108",
+            "display": "Unknown"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "24",
+      "definition": "http://smart.who.int/anc/StructureDefinition/anc-b6-de109#Observation.value[x]",
+      "text": "Current medications",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "system": "http://smart.who.int/anc/CodeSystem/anc-custom-codes",
+            "code": "ANC.B6.DE110",
+            "display": "No medications"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://smart.who.int/anc/CodeSystem/anc-custom-codes",
+            "code": "ANC.B6.DE111",
+            "display": "Does not know of any current medications"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://smart.who.int/anc/CodeSystem/anc-custom-codes",
+            "code": "ANC.B6.DE112",
+            "display": "Analgesic"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://smart.who.int/anc/CodeSystem/anc-custom-codes",
+            "code": "ANC.B6.DE113",
+            "display": "Antacids"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://smart.who.int/anc/CodeSystem/anc-custom-codes",
+            "code": "ANC.B6.DE114",
+            "display": "Anti-convulsive"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://smart.who.int/anc/CodeSystem/anc-custom-codes",
+            "code": "ANC.B6.DE115",
+            "display": "Anti-diabetic"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://smart.who.int/anc/CodeSystem/anc-custom-codes",
+            "code": "ANC.B6.DE116",
+            "display": "Antihelmintic"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://smart.who.int/anc/CodeSystem/anc-custom-codes",
+            "code": "ANC.B6.DE117",
+            "display": "Anti-hypertensive"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://smart.who.int/anc/CodeSystem/anc-custom-codes",
+            "code": "ANC.B6.DE118",
+            "display": "Anti-malarials"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://smart.who.int/anc/CodeSystem/anc-custom-codes",
+            "code": "ANC.B6.DE119",
+            "display": "Antiretrovirals (ARVs)"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://smart.who.int/anc/CodeSystem/anc-custom-codes",
+            "code": "ANC.B6.DE120",
+            "display": "Antitussive"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://smart.who.int/anc/CodeSystem/anc-custom-codes",
+            "code": "ANC.B6.DE121",
+            "display": "Antivirals"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://smart.who.int/anc/CodeSystem/anc-custom-codes",
+            "code": "ANC.B6.DE122",
+            "display": "Aspirin"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://smart.who.int/anc/CodeSystem/anc-custom-codes",
+            "code": "ANC.B6.DE123",
+            "display": "Asthma"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://smart.who.int/anc/CodeSystem/anc-custom-codes",
+            "code": "ANC.B6.DE124",
+            "display": "Calcium"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://smart.who.int/anc/CodeSystem/anc-custom-codes",
+            "code": "ANC.B6.DE126",
+            "display": "Doxylamine"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://smart.who.int/anc/CodeSystem/anc-custom-codes",
+            "code": "ANC.B6.DE127",
+            "display": "Folic acid"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://smart.who.int/anc/CodeSystem/anc-custom-codes",
+            "code": "ANC.B6.DE128",
+            "display": "Hematinic"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://smart.who.int/anc/CodeSystem/anc-custom-codes",
+            "code": "ANC.B6.DE129",
+            "display": "Hemorrhoidal medication"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://smart.who.int/anc/CodeSystem/anc-custom-codes",
+            "code": "ANC.B6.DE130",
+            "display": "Iron"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://smart.who.int/anc/CodeSystem/anc-custom-codes",
+            "code": "ANC.B6.DE131",
+            "display": "Magnesium"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://smart.who.int/anc/CodeSystem/anc-custom-codes",
+            "code": "ANC.B6.DE132",
+            "display": "Metoclopramide"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://smart.who.int/anc/CodeSystem/anc-custom-codes",
+            "code": "ANC.B6.DE133",
+            "display": "Multivitamin"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://smart.who.int/anc/CodeSystem/anc-custom-codes",
+            "code": "ANC.B6.DE134",
+            "display": "Oral pre-exposure prophylaxis (PrEP) for HIV"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://smart.who.int/anc/CodeSystem/anc-custom-codes",
+            "code": "ANC.B6.DE135",
+            "display": "Other antibiotics"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://smart.who.int/anc/CodeSystem/anc-custom-codes",
+            "code": "ANC.B6.DE136",
+            "display": "Thyroid medication"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://smart.who.int/anc/CodeSystem/anc-custom-codes",
+            "code": "ANC.B6.DE137",
+            "display": "Vitamin A"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://smart.who.int/anc/CodeSystem/anc-custom-codes",
+            "code": "ANC.B6.DE138",
+            "display": "Other medications (specify)"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://smart.who.int/anc/CodeSystem/anc-custom-codes",
+            "code": "ANC.B6.DE125",
+            "display": "Co-trimoxazole"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "25",
+      "definition": "http://smart.who.int/anc/StructureDefinition/anc-b6-de139#Observation.value[x]",
+      "text": "Daily caffeine intake",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "system": "http://smart.who.int/anc/CodeSystem/anc-custom-codes",
+            "code": "ANC.B6.DE140",
+            "display": "More than 2 cups of coffee (brewed, filtered, instant or espresso)"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://smart.who.int/anc/CodeSystem/anc-custom-codes",
+            "code": "ANC.B6.DE141",
+            "display": "More than 4 cups of tea"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://smart.who.int/anc/CodeSystem/anc-custom-codes",
+            "code": "ANC.B6.DE142",
+            "display": "More than 12 bars (50 g) of chocolate"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://smart.who.int/anc/CodeSystem/anc-custom-codes",
+            "code": "ANC.B6.DE143",
+            "display": "More than one can of soda or energy drink"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://smart.who.int/anc/CodeSystem/anc-custom-codes",
+            "code": "ANC.B6.DE144",
+            "display": "None of the above daily caffeine intake"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "26",
+      "definition": "http://smart.who.int/anc/StructureDefinition/anc-b6-de145#Observation.value[x]",
+      "text": "Clinical enquiry for alcohol and other substance use done",
+      "type": "choice"
+    },
+    {
+      "linkId": "27",
+      "definition": "http://smart.who.int/anc/StructureDefinition/anc-b6-de146#Observation.value[x]",
+      "text": "Current alcohol and/or other substance use",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "system": "http://smart.who.int/anc/CodeSystem/anc-custom-codes",
+            "code": "ANC.B6.DE147",
+            "display": "No alcohol and/or substances"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://smart.who.int/anc/CodeSystem/anc-custom-codes",
+            "code": "ANC.B6.DE148",
+            "display": "Alcohol"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://smart.who.int/anc/CodeSystem/anc-custom-codes",
+            "code": "ANC.B6.DE149",
+            "display": "Cocaine"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://smart.who.int/anc/CodeSystem/anc-custom-codes",
+            "code": "ANC.B6.DE150",
+            "display": "Injectable drugs"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://smart.who.int/anc/CodeSystem/anc-custom-codes",
+            "code": "ANC.B6.DE151",
+            "display": "Marijuana"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://smart.who.int/anc/CodeSystem/anc-custom-codes",
+            "code": "ANC.B6.DE152",
+            "display": "Other substance use (specify)"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "28",
+      "definition": "http://smart.who.int/anc/StructureDefinition/anc-b6-de153#Observation.value[x]",
+      "text": "Tobacco use",
+      "type": "boolean"
+    },
+    {
+      "linkId": "29",
+      "definition": "http://smart.who.int/anc/StructureDefinition/anc-b6-de154#Observation.value[x]",
+      "text": "Recently quit tobacco products",
+      "type": "boolean"
+    },
+    {
+      "linkId": "30",
+      "definition": "http://smart.who.int/anc/StructureDefinition/anc-b6-de155#Observation.value[x]",
+      "text": "Exposure to second-hand smoke",
+      "type": "boolean"
+    },
+    {
+      "linkId": "31",
+      "definition": "http://smart.who.int/anc/StructureDefinition/anc-b6-de156#Observation.value[x]",
+      "text": "Partner HIV status (reported)",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "system": "http://smart.who.int/anc/CodeSystem/anc-custom-codes",
+            "code": "ANC.B6.DE157",
+            "display": "HIV positive"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://smart.who.int/anc/CodeSystem/anc-custom-codes",
+            "code": "ANC.B6.DE158",
+            "display": "HIV negative"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://smart.who.int/anc/CodeSystem/anc-custom-codes",
+            "code": "ANC.B6.DE159",
+            "display": "Inconclusive"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "32",
+      "definition": "http://smart.who.int/anc/StructureDefinition/anc-b6-de160#Observation.value[x]",
+      "text": "Contraceptive use of male condoms",
+      "type": "boolean"
+    },
+    {
+      "linkId": "33",
+      "definition": "http://smart.who.int/anc/StructureDefinition/anc-b6-de161#Observation.value[x]",
+      "text": "Contraceptive use of female condoms",
+      "type": "boolean"
+    }
+  ]
+}

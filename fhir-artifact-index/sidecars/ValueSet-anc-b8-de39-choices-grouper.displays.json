@@ -1,0 +1,69 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "http://smart.who.int/anc/ValueSet-anc-b8-de39-choices-grouper.displays.json",
+  "title": "Respiratory exam result Choices Grouper Display Values",
+  "description": "Display values for Respiratory exam result Choices Grouper ValueSet codes. Generated from FHIR expansions. Keys are code fragments (the part after '#' in the canonical IRI). The full IRI can be reconstructed as system + '#' + code.",
+  "type": "object",
+  "properties": {
+    "fhir:displays": {
+      "type": "object",
+      "description": "Multilingual display values for ValueSet codes keyed by code fragment",
+      "patternProperties": {
+        "^.+$": {
+          "type": "object",
+          "description": "Display values for a specific code fragment by language",
+          "properties": {
+            "en": {
+              "type": "string",
+              "description": "English display value"
+            }
+          },
+          "patternProperties": {
+            "^[a-z]{2}(-[A-Z]{2})?$": {
+              "type": "string",
+              "description": "Display value in the specified language (ISO 639-1 code)"
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "fhir:displays"
+  ],
+  "additionalProperties": true,
+  "fhir:displays": {
+    "ANC.B8.DE40": {
+      "en": "Respiratory exam not done"
+    },
+    "ANC.B8.DE41": {
+      "en": "Normal respiratory exam result"
+    },
+    "ANC.B8.DE42": {
+      "en": "Dyspnoea"
+    },
+    "ANC.B8.DE43": {
+      "en": "Cough"
+    },
+    "ANC.B8.DE44": {
+      "en": "Rapid breathing"
+    },
+    "ANC.B8.DE45": {
+      "en": "Slow breathing"
+    },
+    "ANC.B8.DE46": {
+      "en": "Wheezing"
+    },
+    "ANC.B8.DE47": {
+      "en": "Rales"
+    },
+    "ANC.B8.DE48": {
+      "en": "Other abnormal respiratory exam result (specify)"
+    }
+  },
+  "fhir:valueSet": "http://smart.who.int/anc/ValueSet/anc-b8-de39-choices-grouper",
+  "fhir:version": "0.3.0",
+  "fhir:expansionTimestamp": "2021-09-07T20:15:19-06:00"
+}

@@ -1,0 +1,84 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "http://smart.who.int/anc/ValueSet-anc-b6-de58.displays.json",
+  "title": "Allergies Choices Display Values",
+  "description": "Display values for Allergies Choices ValueSet codes. Generated from FHIR expansions. Keys are code fragments (the part after '#' in the canonical IRI). The full IRI can be reconstructed as system + '#' + code.",
+  "type": "object",
+  "properties": {
+    "fhir:displays": {
+      "type": "object",
+      "description": "Multilingual display values for ValueSet codes keyed by code fragment",
+      "patternProperties": {
+        "^.+$": {
+          "type": "object",
+          "description": "Display values for a specific code fragment by language",
+          "properties": {
+            "en": {
+              "type": "string",
+              "description": "English display value"
+            }
+          },
+          "patternProperties": {
+            "^[a-z]{2}(-[A-Z]{2})?$": {
+              "type": "string",
+              "description": "Display value in the specified language (ISO 639-1 code)"
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "fhir:displays"
+  ],
+  "additionalProperties": true,
+  "fhir:displays": {
+    "ANC.B6.DE58": {
+      "en": "No known allergies"
+    },
+    "ANC.B6.DE59": {
+      "en": "Albendazole"
+    },
+    "ANC.B6.DE60": {
+      "en": "Aluminium hydroxide"
+    },
+    "ANC.B6.DE61": {
+      "en": "Calcium"
+    },
+    "ANC.B6.DE62": {
+      "en": "Chamomile"
+    },
+    "ANC.B6.DE63": {
+      "en": "Folic acid"
+    },
+    "ANC.B6.DE64": {
+      "en": "Ginger"
+    },
+    "ANC.B6.DE65": {
+      "en": "Iron"
+    },
+    "ANC.B6.DE66": {
+      "en": "Magnesium carbonate"
+    },
+    "ANC.B6.DE67": {
+      "en": "Malaria medication (sulfadoxine-pyrimethamine)"
+    },
+    "ANC.B6.DE68": {
+      "en": "Mebendazole"
+    },
+    "ANC.B6.DE69": {
+      "en": "Penicillin"
+    },
+    "ANC.B6.DE70": {
+      "en": "PrEP tenofovir disoproxil fumarate (TDF)"
+    },
+    "ANC.B6.DE71": {
+      "en": "Other allergies (specify)"
+    }
+  },
+  "fhir:valueSet": "http://smart.who.int/anc/ValueSet/anc-b6-de58",
+  "fhir:version": "0.3.0",
+  "fhir:expansionTimestamp": "2021-11-30T07:11:23-07:00"
+}

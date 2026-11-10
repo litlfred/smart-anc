@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="en">
+<head>
+<script data-folio-saved-scheme>(function(){var d=document.documentElement,s=null,c="dark";try{s=localStorage.getItem("fa-color-scheme")}catch(e){}if(s!=="light"&&s!=="dark"){s="light";try{if(window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)s="dark"}catch(e){}}try{var n=document.getElementById("fa-site-scheme");if(n)c=JSON.parse(n.textContent).scheme==="light"?"light":"dark"}catch(e){}d.setAttribute("data-fa-scheme",s);var j=window.jtd;if(s!==c&&j&&typeof j.setTheme==="function"){try{j.setTheme(s)}catch(e){}}})();</script>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>sushi-conversion — WHO Antenatal Care Guideline Implementation Guide</title>
+<link rel="canonical" href="./sushi-conversion.html">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' rx='3' fill='%23276749'/%3E%3C/svg%3E">
+<meta name="folio-navbar" content="linked">
+<meta name="fa-visualiser-label" content="WHO Antenatal Care Guideline Implementation Guide">
+<link rel="stylesheet" href="./assets/page-layout.css" data-fa-page-layout>
+<script src="./assets/page-layout.js" defer data-fa-page-layout></script>
+<link rel="stylesheet" href="./assets/ig-artifact.css">
+<link rel="stylesheet" href="./assets/css/docs-ui.css" data-fa-folio-mount>
+<script src="./assets/navbar/row-2acuhncsmbg.js" defer></script><script src="./assets/js/docs-ui.js" defer data-fa-folio-mount></script>
+<script type="application/json" id="fa-translation-meta">{"lang":"en","translationStatus":"","translationSource":"","supportedLocales":["ar","zh","en","fr","ru","es"],"availableLocales":[]}</script><link rel="stylesheet" href="./assets/css/navbar.css"><script src="./assets/navbar/rail-2fsxdspe5sb.js" defer></script><script src="./assets/js/navbar.js" defer></script><link rel="stylesheet" href="./assets/css/navbar-row.css"><script src="./assets/js/navbar-row.js" defer></script><meta name="fa-pinned-data" content="."></head>
+<body><script type="application/json" id="fa-navbar-row" data-fa-root="." data-fa-row-src="row-2acuhncsmbg"></script><script type="application/json" id="fa-rail" data-fa-root="https://litlfred.github.io/folio-assistant" data-fa-to-root=".">{"data":"rail-2fsxdspe5sb","here":"/sushi-conversion.html"}</script><nav class="fa-nav" aria-label="folio-assistant" data-fa-rail="pending"><a href="./">WHO Antenatal Care Guideline Implementation Guide</a></nav>
+
+<div class="ig-topbar fa-page-bar" role="navigation" aria-label="WHO Antenatal Care Guideline Implementation Guide menu"><a class="ig-topbar-home" href="./index.html">WHO Antenatal Care Guideline Implementation Guide</a><a class="ig-topbar-group ig-topbar-link" href="./index.html">Home</a><a class="ig-topbar-group ig-topbar-link" href="./toc.html">Table of Contents</a><a class="ig-topbar-group ig-topbar-link" href="./documentation.html">Documentation</a><a class="ig-topbar-group ig-topbar-link" href="./guidance.html">Guidance</a><a class="ig-topbar-group ig-topbar-link" href="./artifacts.html">Artifact Index</a><a class="ig-topbar-group ig-topbar-link" href="./downloads.html">Downloads</a><details class="ig-topbar-group"><summary>Support</summary><ul><li><a href="./new-tab index.html">FHIR Spec</a></li><li><a href="./new-tab http://cql.hl7.org/index.html">CQL Spec</a></li><li><a href="./new-tab http://hl7.org/fhir/uv/cpg">FHIR Clinical Guidelines</a></li><li><a href="./downloads.html">Downloads</a></li><li><a href="./license.html">License</a></li></ul></details><form class="ig-search" role="search" data-ig-search-index="./assets/ig-search.json"><label class="ig-search-label" for="search-input">Search WHO Antenatal Care Guideline Implementation Guide</label><input type="search" id="search-input" class="ig-search-input" placeholder="Search pages and artefacts" autocomplete="off" aria-controls="ig-search-results" aria-expanded="false"><ul id="ig-search-results" class="ig-search-results" hidden></ul></form><span class="ig-locale-slot" data-fa-slot="locale"></span><script src="./assets/ig-search.js" defer></script></div>
+<main class="ig-main main-content fa-page-main" id="main-content">
+<p><span hidden="" data-fa-figure-images="ig"></span></p>
+
+<p>This page records every change made when this IG was converted from the XML ImplementationGuide (<code class="language-plaintext highlighter-rouge">input/anc-cds.xml</code>) to SUSHI (FHIR Shorthand). Changes that alter meaning come first. The <a href="sushi-conversion-diff.html">field-level diff</a> lists every changed field of every resource, with a link to each one.</p>
+
+<h3 id="at-a-glance">At a glance</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th>Count</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Resources the old IG loaded</td>
+      <td>1,433</td>
+    </tr>
+    <tr>
+      <td>Now written in FSH (<code class="language-plaintext highlighter-rouge">input/fsh/</code>)</td>
+      <td>1,412</td>
+    </tr>
+    <tr>
+      <td>Kept as their original JSON/XML, unchanged</td>
+      <td>21</td>
+    </tr>
+    <tr>
+      <td>FSH resources whose JSON is identical to the original</td>
+      <td>775</td>
+    </tr>
+    <tr>
+      <td>Profiles and extensions with changes that keep the same meaning only</td>
+      <td>336</td>
+    </tr>
+    <tr>
+      <td><strong>Profiles and extensions whose meaning changed</strong></td>
+      <td><strong>18</strong> (listed below)</td>
+    </tr>
+    <tr>
+      <td><strong>Examples with content added or corrected</strong></td>
+      <td><strong>283</strong> (listed below)</td>
+    </tr>
+    <tr>
+      <td>SUSHI 3 build</td>
+      <td>0 errors</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>“Before” is git commit <code class="language-plaintext highlighter-rouge">6f13549</code> (the fork’s <code class="language-plaintext highlighter-rouge">master</code> before the conversion).</p>
+
+<h3 id="semantic-changes-please-review">Semantic changes (please review)</h3>
+
+<h4 id="1-profiles-and-extensions-18">1. Profiles and extensions (18)</h4>
+
+<p>Each of these fixes a rule that FHIR or SUSHI rejects. Each was rejected by SUSHI as written in the original.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Resource</th>
+      <th>Element</th>
+      <th>Before</th>
+      <th>After</th>
+      <th>Why</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="artifact/StructureDefinition-contactnumber.html">contactnumber</a>, <a href="artifact/StructureDefinition-educationlevel.html">educationlevel</a>, <a href="artifact/StructureDefinition-occupation.html">occupation</a>, <a href="artifact/StructureDefinition-reminder.html">reminder</a>, <a href="artifact/StructureDefinition-who-reportedLocation.html">who-reportedLocation</a></td>
+      <td><code class="language-plaintext highlighter-rouge">Extension.extension</code></td>
+      <td><code class="language-plaintext highlighter-rouge">1..1</code> (occupation <code class="language-plaintext highlighter-rouge">1..*</code>)</td>
+      <td><code class="language-plaintext highlighter-rouge">0..0</code></td>
+      <td>Each extension also requires <code class="language-plaintext highlighter-rouge">value[x]</code>. FHIR (ext-1) does not allow both sub-extensions and a value, so <code class="language-plaintext highlighter-rouge">1..1</code> could never be met.</td>
+    </tr>
+    <tr>
+      <td><a href="artifact/StructureDefinition-who-notDone.html">who-notDone</a>, <a href="artifact/StructureDefinition-who-notDoneReason.html">who-notDoneReason</a>, <a href="artifact/StructureDefinition-who-doNotPerformReason.html">who-doNotPerformReason</a></td>
+      <td><code class="language-plaintext highlighter-rouge">Extension.url</code> fixed value</td>
+      <td><code class="language-plaintext highlighter-rouge">http://smart.who.int/anc/StructureDefinition/...</code></td>
+      <td><code class="language-plaintext highlighter-rouge">http://fhir.org/guides/who/core/StructureDefinition/...</code></td>
+      <td>The fixed <code class="language-plaintext highlighter-rouge">url</code> did not match each extension’s own canonical URL (which is unchanged and stays <code class="language-plaintext highlighter-rouge">fhir.org/guides/who/core</code>). SUSHI fixes <code class="language-plaintext highlighter-rouge">Extension.url</code> to the extension’s canonical URL.</td>
+    </tr>
+    <tr>
+      <td><a href="artifact/StructureDefinition-anc-b10-de95.html">anc-b10-de95</a>, <a href="artifact/StructureDefinition-anc-b10-de107.html">anc-b10-de107</a>, <a href="artifact/StructureDefinition-anc-b10-de115.html">anc-b10-de115</a>, <a href="artifact/StructureDefinition-anc-b10-de132.html">anc-b10-de132</a>, <a href="artifact/StructureDefinition-iron-supplement.html">iron-supplement</a>, <a href="artifact/StructureDefinition-vitamin-a-supplement.html">vitamin-a-supplement</a></td>
+      <td><code class="language-plaintext highlighter-rouge">dosageInstruction.doseAndRate.dose[x]</code></td>
+      <td>type <code class="language-plaintext highlighter-rouge">Quantity</code></td>
+      <td>type <code class="language-plaintext highlighter-rouge">Quantity</code> with profile <code class="language-plaintext highlighter-rouge">SimpleQuantity</code></td>
+      <td>FHIR R4 only allows <code class="language-plaintext highlighter-rouge">Range</code> or <code class="language-plaintext highlighter-rouge">SimpleQuantity</code> here.</td>
+    </tr>
+    <tr>
+      <td><a href="artifact/StructureDefinition-anc-b10-de237.html">anc-b10-de237</a>, <a href="artifact/StructureDefinition-anc-b10-de257.html">anc-b10-de257</a></td>
+      <td>reason-not-done extension</td>
+      <td>binding and <code class="language-plaintext highlighter-rouge">1..1 MS</code> on an undeclared slice <code class="language-plaintext highlighter-rouge">extension:who-doNotPerformReason</code></td>
+      <td>the same rules on the parent’s declared slice <code class="language-plaintext highlighter-rouge">extension:reasonRefused</code> (same extension), binding on its <code class="language-plaintext highlighter-rouge">value[x]</code></td>
+      <td>The original named a slice the parent profile does not declare, and bound a value set to an Extension, which FHIR does not allow. Same value sets, same strength.</td>
+    </tr>
+    <tr>
+      <td><a href="artifact/StructureDefinition-who-patient.html">who-patient</a></td>
+      <td><code class="language-plaintext highlighter-rouge">extension:religion</code></td>
+      <td>extensible binding to v3-ReligiousAffiliation on the extension</td>
+      <td>the same binding on <code class="language-plaintext highlighter-rouge">extension:religion.value[x]</code></td>
+      <td>A value set cannot be bound to an Extension. The <code class="language-plaintext highlighter-rouge">patient-religion</code> extension already binds this value set.</td>
+    </tr>
+    <tr>
+      <td><a href="artifact/StructureDefinition-anc-end-13.html">anc-end-13</a> (Place of delivery)</td>
+      <td><code class="language-plaintext highlighter-rouge">Encounter.location.location</code></td>
+      <td>extensible binding to <a href="artifact/ValueSet-anc-end-14.html">anc-end-14</a> “Place of delivery Choices”</td>
+      <td><strong>binding removed</strong></td>
+      <td>The element is a <code class="language-plaintext highlighter-rouge">Reference(Location)</code>, and R4 cannot bind a value set to a Reference. The value set is still in the IG. <strong>Open question:</strong> should place of delivery be carried somewhere coded, such as <code class="language-plaintext highlighter-rouge">Encounter.location.physicalType</code> or an extension?</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="2-examples-283-of-295">2. Examples (283 of 295)</h4>
+
+<p>The examples did not meet their own profiles. SUSHI rejects an instance that misses a required element or contradicts a fixed value. These values were added. They are example data only and are marked as such where it is free text. Each example and its exact changes are listed in the <a href="sushi-conversion-diff.html#examples-283">field-level diff</a>.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Change</th>
+      <th>Examples</th>
+      <th>Value used</th>
+      <th>Why this value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">Observation.category</code> added</td>
+      <td>155</td>
+      <td><code class="language-plaintext highlighter-rouge">observation-category</code>: B5/B8 → <code class="language-plaintext highlighter-rouge">exam</code> (45), B9 → <code class="language-plaintext highlighter-rouge">laboratory</code> (47), B4/B6 → <code class="language-plaintext highlighter-rouge">social-history</code> (51), B7 → <code class="language-plaintext highlighter-rouge">survey</code> (7), B10 → <code class="language-plaintext highlighter-rouge">therapy</code> (5)</td>
+      <td>Required (1..*) by WHOObservation. Chosen from the ANC section of the example’s data element code (<code class="language-plaintext highlighter-rouge">ANC.Bx.DEy</code>). <strong>Review:</strong> some data elements may fit a different category.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">Condition.category</code> added</td>
+      <td>6</td>
+      <td><code class="language-plaintext highlighter-rouge">condition-category#encounter-diagnosis</code></td>
+      <td>Required by WHOCondition. Recorded during an ANC contact.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">status</code> corrected</td>
+      <td>39</td>
+      <td>32 <code class="language-plaintext highlighter-rouge">completed</code> → <code class="language-plaintext highlighter-rouge">not-done</code>; 7 <code class="language-plaintext highlighter-rouge">active</code> → <code class="language-plaintext highlighter-rouge">completed</code></td>
+      <td>The “not done” / “not requested” profiles fix the status. The examples contradicted it.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">Procedure.performed[x]</code>, <code class="language-plaintext highlighter-rouge">Immunization.occurrence[x]</code>, <code class="language-plaintext highlighter-rouge">Immunization.recorded</code>, <code class="language-plaintext highlighter-rouge">authoredOn</code></td>
+      <td>45, 4, 16, 13</td>
+      <td>a date already in the example, otherwise the example encounter’s start <code class="language-plaintext highlighter-rouge">2020-12-07T06:24:03-07:00</code></td>
+      <td>Required by the profiles.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">code.extension:notDoneValueSet</code></td>
+      <td>28</td>
+      <td><code class="language-plaintext highlighter-rouge">valueUri</code> = the value set bound to <code class="language-plaintext highlighter-rouge">Procedure.code</code> in that example’s profile</td>
+      <td>Required by WHOProcedureNotDone.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">intent</code></td>
+      <td>29</td>
+      <td><code class="language-plaintext highlighter-rouge">#order</code></td>
+      <td>Required by FHIR R4 (ServiceRequest 18, MedicationRequest 11).</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">Immunization.primarySource</code></td>
+      <td>12</td>
+      <td><code class="language-plaintext highlighter-rouge">true</code></td>
+      <td>Required by WHOImmunization.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">doNotPerform</code></td>
+      <td>7</td>
+      <td><code class="language-plaintext highlighter-rouge">true</code></td>
+      <td>Fixed by the profile. SUSHI fills fixed values automatically.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">MedicationRequest.medication[x]</code></td>
+      <td>6</td>
+      <td>text only: “Calcium supplement”, “Aspirin”, “Folic acid”, “Oral PrEP”, “Iron supplement”, “Vitamin A supplement”</td>
+      <td>Required. The profile binds no value set, so no code was invented.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">MedicationRequest.reasonCode</code></td>
+      <td>5</td>
+      <td>the example’s own ANC data element code (for example <code class="language-plaintext highlighter-rouge">ANC.B10.DE108</code> “Reason calcium not prescribed”)</td>
+      <td>Required by WHOMedicationNotRequested. No value set is bound.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">Immunization.vaccineCode</code></td>
+      <td>2</td>
+      <td>text only: “Tetanus toxoid (TT) vaccine”, “Influenza vaccine”</td>
+      <td>Required. No value set is bound.</td>
+    </tr>
+    <tr>
+      <td>reason-refused extension value</td>
+      <td>2</td>
+      <td>first code of the bound value set: <code class="language-plaintext highlighter-rouge">ANC.B10.DE238</code> “Client was referred”, <code class="language-plaintext highlighter-rouge">ANC.B10.DE258</code> “Client refused”</td>
+      <td>SUSHI adds the required extension. It needs a value.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">Encounter.status</code>, <code class="language-plaintext highlighter-rouge">Encounter.class</code></td>
+      <td>2</td>
+      <td><code class="language-plaintext highlighter-rouge">#finished</code>, <code class="language-plaintext highlighter-rouge">v3-ActCode#AMB</code></td>
+      <td>Required by FHIR R4. ANC contacts are outpatient.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">Procedure.code</code> (blood-glucose-test-example)</td>
+      <td>1</td>
+      <td>SNOMED CT <code class="language-plaintext highlighter-rouge">33747003</code> “Glucose measurement, blood (procedure)”</td>
+      <td>Required. No value set is bound.</td>
+    </tr>
+    <tr>
+      <td>referral-example: <code class="language-plaintext highlighter-rouge">requester</code>, <code class="language-plaintext highlighter-rouge">note</code>, <code class="language-plaintext highlighter-rouge">relevantHistory</code></td>
+      <td>1</td>
+      <td>the example PractitionerRole, “Example referral note.”, display-only reference “Example referral history”</td>
+      <td>Required by the Referral profile.</td>
+    </tr>
+    <tr>
+      <td>referral-provider-example: 10 required elements</td>
+      <td>1</td>
+      <td>identifier (same pattern as other examples), active, period, practitioner/organization/location references, <code class="language-plaintext highlighter-rouge">ANCPersona#MW</code> “Midwife”, SNOMED CT <code class="language-plaintext highlighter-rouge">394585009</code> “Obstetrics and gynecology”, telecom <code class="language-plaintext highlighter-rouge">phone</code>/<code class="language-plaintext highlighter-rouge">work</code></td>
+      <td>Required by ReferralProvider.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="changes-that-keep-the-same-meaning">Changes that keep the same meaning</h3>
+
+<p>These change the JSON but not what the resource says. Each one is in the <a href="sushi-conversion-diff.html">field-level diff</a> marked “same”.</p>
+
+<ul>
+  <li><strong>Shorter differentials (all 354 profiles and extensions).</strong> SUSHI writes only what differs from the parent. 422 differential elements that only repeated the parent (for example <code class="language-plaintext highlighter-rouge">code 1..1 MS</code> already set by the parent, or an empty root element) are no longer in the differential. Every rule they held is still in the SUSHI snapshot, which was checked rule by rule.</li>
+  <li><strong>Mapping declarations.</strong> SUSHI copies the parent’s <code class="language-plaintext highlighter-rouge">mapping</code> declarations (rim, w5, v2, workflow) into each profile. Each profile’s own <code class="language-plaintext highlighter-rouge">ANC</code> mapping is unchanged.</li>
+  <li><strong>Slicing and minimums FHIR already implies.</strong> SUSHI writes the standard <code class="language-plaintext highlighter-rouge">extension</code> slicing (by <code class="language-plaintext highlighter-rouge">url</code>), the sum of slice minimums on <code class="language-plaintext highlighter-rouge">extension</code> (for example <code class="language-plaintext highlighter-rouge">min 1</code>), and <code class="language-plaintext highlighter-rouge">Extension.extension 0..0</code> when a value is used.</li>
+  <li><strong>Constraint source.</strong> SUSHI adds <code class="language-plaintext highlighter-rouge">constraint.source</code> (the profile’s own URL) to its constraints.</li>
+  <li><strong>Canonical URLs kept.</strong> The 23 WHO core profiles and extensions keep their <code class="language-plaintext highlighter-rouge">http://fhir.org/guides/who/core/...</code> URLs (<code class="language-plaintext highlighter-rouge">* ^url</code> in FSH), so all references to them are unchanged.</li>
+  <li><strong>20 value sets share a <code class="language-plaintext highlighter-rouge">name</code></strong> with another value set. FSH needs unique names, so the FSH entity is <code class="language-plaintext highlighter-rouge">&lt;name&gt;_&lt;id&gt;</code> and <code class="language-plaintext highlighter-rouge">* ^name</code> sets the original name back. Their JSON is identical.</li>
+  <li><strong>ImplementationGuide.</strong> <code class="language-plaintext highlighter-rouge">sushi-config.yaml</code> now holds what <code class="language-plaintext highlighter-rouge">anc-cds.xml</code> held. The generated IG differs only in this: <code class="language-plaintext highlighter-rouge">dependsOn</code> gains <code class="language-plaintext highlighter-rouge">packageId</code>, resources are listed explicitly, <code class="language-plaintext highlighter-rouge">path-resource</code> names only folders that still hold original files, and these two pages are added.</li>
+  <li><strong>Menu.</strong> Generated from <code class="language-plaintext highlighter-rouge">sushi-config.yaml</code>. Same items and links. Only whitespace differs from the old <code class="language-plaintext highlighter-rouge">input/includes/menu.xml</code>.</li>
+</ul>
+
+<h3 id="kept-as-the-original-json-or-xml-21">Kept as the original JSON or XML (21)</h3>
+
+<p>SUSHI would not reproduce these exactly or rejects them as written, so they stay unchanged in <code class="language-plaintext highlighter-rouge">input/</code>:</p>
+
+<ul>
+  <li>8 libraries: ANCContactDataElements, ANCDT06, ANCDT11, ANCDT12, ANCDT37, ANCDataElements, ANCIND08, FHIRCommon</li>
+  <li>3 measures: ANCIND01, ANCIND03, ANCIND07</li>
+  <li>3 plan definitions: ANCDT06, ANCDT11, ANCDT37</li>
+  <li>2 activity definitions (XML): anc-haemoglobin-test-full-blood-count, anc-iptp-sp</li>
+  <li>5 code systems: anc-custom-codes, and the 4 XML code systems in <code class="language-plaintext highlighter-rouge">input/vocabulary/codesystem/manual/</code></li>
+</ul>
+
+<h3 id="how-this-was-checked">How this was checked</h3>
+
+<ol>
+  <li>GoFSH 2.6.1 turned each resource into FSH. SUSHI 3 built the FSH with 0 errors.</li>
+  <li>Each generated resource was compared field by field with its original (key order ignored).</li>
+  <li>For each profile, every property of every original differential element was checked against SUSHI’s generated snapshot. Only the 18 profiles above differ.</li>
+  <li>Each example difference was matched to a logged fix. No example has an unlogged change.</li>
+</ol>
+
+<p class="ig-edit"><a data-fa-link="edit" data-src="input/pagecontent/sushi-conversion.md" data-repo="litlfred/smart-anc" href="https://github.com/litlfred/smart-anc/edit/master/input/pagecontent/sushi-conversion.md">Edit this page on GitHub</a></p>
+<script type="application/json" id="ig-source-lines">{"blob": "https://github.com/litlfred/smart-anc/blob/master/input/pagecontent/sushi-conversion.md", "repo": "litlfred/smart-anc", "branch": "master", "path": "input/pagecontent/sushi-conversion.md", "lines": [{"t":"At a glance","l":3},{"t":"Semantic changes (please review)","l":18},{"t":"1. Profiles and extensions (18)","l":20},{"t":"2. Examples (283 of 295)","l":33},{"t":"Changes that keep the same meaning","l":56},{"t":"Kept as the original JSON or XML (21)","l":69},{"t":"How this was checked","l":79}]}</script>
+
+<script src="./assets/ig-source-links.js"></script>
+
+
+</main>
+<link rel="stylesheet" href="assets/ig-pages.css">
+<footer id="ig-footer">
+<p class="ig-footer-nav"><a href="examples-first-contact.html">&lt;prev</a> | <a href="#">top</a> | <a href="sushi-conversion-diff.html">next&gt;</a></p>
+<p class="ig-footer-band">IG © 2019+ World Health Organization (WHO). Package <code>smart.who.int.anc#0.3.0</code> based on <a href="http://hl7.org/fhir/R4/" rel="external">FHIR 4.0.1</a>. Generated 2026-11-10</p>
+<p class="ig-footer-links">Links: <a href="toc.html">Table of Contents</a> | <a href="qa.html">QA Report</a> | <a href="https://spdx.org/licenses/CC0-1.0.html" rel="external">License</a></p>
+</footer>
+
+</body>
+</html>

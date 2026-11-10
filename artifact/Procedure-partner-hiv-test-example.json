@@ -1,0 +1,93 @@
+{
+  "@context": {
+    "fhir": "http://hl7.org/fhir/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "schema": "https://schema.org/",
+    "prov": "http://www.w3.org/ns/prov#"
+  },
+  "$schema": "folio-ig-artifact-jsonld/v1",
+  "@id": "Procedure-partner-hiv-test-example.jsonld",
+  "@type": "fhir:Procedure",
+  "dcterms:identifier": "Procedure/partner-hiv-test-example",
+  "dcterms:title": "partner-hiv-test-example",
+  "dcterms:type": "Other",
+  "schema:creativeWorkStatus": "materialized",
+  "schema:encoding": [
+    {
+      "@type": "schema:MediaObject",
+      "schema:contentUrl": {
+        "@id": "https://raw.githubusercontent.com/litlfred/smart-anc/96953b8648f91c5d650e135f4d4018166e976c42/resources/Procedure/partner-hiv-test-example--c6782c34.json"
+      },
+      "schema:encodingFormat": "application/fhir+json",
+      "dcterms:source": "local"
+    }
+  ],
+  "prov:wasGeneratedBy": {
+    "@type": "prov:Activity",
+    "schema:instrument": "ig-publisher 3.0.0 / core 7.0.1",
+    "prov:used": "4f3bea121a24999b236c7b9c5687f7626f85b077"
+  },
+  "dcterms:isPartOf": {
+    "@type": "fhir:ImplementationGuide",
+    "dcterms:identifier": "smart.who.int.anc",
+    "schema:version": "0.3.0",
+    "schema:sameAs": {
+      "@id": "http://smart.who.int/anc"
+    }
+  },
+  "dcterms:conformsTo": [
+    {
+      "@id": "http://smart.who.int/anc/StructureDefinition/partner-hiv-test"
+    }
+  ],
+  "dcterms:subject": [
+    {
+      "@type": "schema:DefinedTerm",
+      "schema:termCode": "ANC.B9.DE50",
+      "schema:name": "Partner HIV test conducted",
+      "schema:inDefinedTermSet": {
+        "@id": "http://smart.who.int/anc/CodeSystem/anc-custom-codes"
+      }
+    },
+    {
+      "@type": "schema:DefinedTerm",
+      "schema:termCode": "Z11.4",
+      "schema:name": "Special screening examination for human immunodeficiency virus [HIV]",
+      "schema:inDefinedTermSet": {
+        "@id": "http://hl7.org/fhir/sid/icd-10"
+      }
+    },
+    {
+      "@type": "schema:DefinedTerm",
+      "schema:termCode": "QA08.4",
+      "schema:name": "Special screening examination for human immunodeficiency virus",
+      "schema:inDefinedTermSet": {
+        "@id": "http://id.who.int/icd11/mms"
+      }
+    },
+    {
+      "@type": "schema:DefinedTerm",
+      "schema:termCode": "31676001",
+      "schema:name": "Human immunodeficiency virus antigen test (procedure)",
+      "schema:inDefinedTermSet": {
+        "@id": "http://snomed.info/sct"
+      }
+    },
+    {
+      "@type": "schema:DefinedTerm",
+      "schema:termCode": "72182-9",
+      "schema:name": "Tested for HIV Significant other [RHEA]",
+      "schema:inDefinedTermSet": {
+        "@id": "http://loinc.org"
+      }
+    },
+    {
+      "@type": "schema:DefinedTerm",
+      "schema:termCode": "PZX.AH.XA",
+      "schema:name": "Specimen collection, blood",
+      "schema:inDefinedTermSet": {
+        "@id": "https://mitel.dimi.uniud.it/ichi/#http://id.who.int/ichi"
+      }
+    }
+  ]
+}

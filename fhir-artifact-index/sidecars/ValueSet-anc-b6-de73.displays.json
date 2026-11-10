@@ -1,0 +1,72 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "http://smart.who.int/anc/ValueSet-anc-b6-de73.displays.json",
+  "title": "Past surgeries Choices Display Values",
+  "description": "Display values for Past surgeries Choices ValueSet codes. Generated from FHIR expansions. Keys are code fragments (the part after '#' in the canonical IRI). The full IRI can be reconstructed as system + '#' + code.",
+  "type": "object",
+  "properties": {
+    "fhir:displays": {
+      "type": "object",
+      "description": "Multilingual display values for ValueSet codes keyed by code fragment",
+      "patternProperties": {
+        "^.+$": {
+          "type": "object",
+          "description": "Display values for a specific code fragment by language",
+          "properties": {
+            "en": {
+              "type": "string",
+              "description": "English display value"
+            }
+          },
+          "patternProperties": {
+            "^[a-z]{2}(-[A-Z]{2})?$": {
+              "type": "string",
+              "description": "Display value in the specified language (ISO 639-1 code)"
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "fhir:displays"
+  ],
+  "additionalProperties": true,
+  "fhir:displays": {
+    "ANC.B6.DE73": {
+      "en": "No known past surgeries"
+    },
+    "ANC.B6.DE74": {
+      "en": "Does not know of any past surgeries"
+    },
+    "ANC.B6.DE75": {
+      "en": "Dilation and curettage"
+    },
+    "ANC.B6.DE76": {
+      "en": "Myomectomy"
+    },
+    "ANC.B6.DE77": {
+      "en": "Removal of ovarian cysts"
+    },
+    "ANC.B6.DE78": {
+      "en": "Oophorectomy"
+    },
+    "ANC.B6.DE79": {
+      "en": "Salpingectomy"
+    },
+    "ANC.B6.DE80": {
+      "en": "Cervical cone"
+    },
+    "ANC.B6.DE81": {
+      "en": "Other gynecological procedures (specify)"
+    },
+    "ANC.B6.DE82": {
+      "en": "Other surgeries (specify)"
+    }
+  },
+  "fhir:valueSet": "http://smart.who.int/anc/ValueSet/anc-b6-de73",
+  "fhir:version": "0.3.0",
+  "fhir:expansionTimestamp": "2021-11-30T07:11:23-07:00"
+}

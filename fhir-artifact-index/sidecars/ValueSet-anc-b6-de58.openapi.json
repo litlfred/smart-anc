@@ -1,0 +1,74 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Allergies Choices Schema API",
+    "description": "JSON Schema for Allergies Choices ValueSet codes. Values are represented as Coding objects with 'system' and 'code' properties.",
+    "version": "1.0.0"
+  },
+  "paths": {
+    "/ValueSet-anc-b6-de58.schema.json": {
+      "get": {
+        "summary": "JSON Schema definition for the enumeration ValueSet-anc-b6-de58",
+        "description": "This endpoint serves the JSON Schema definition for the enumeration ValueSet-anc-b6-de58.",
+        "responses": {
+          "200": {
+            "description": "The JSON Schema for ValueSet-anc-b6-de58",
+            "content": {
+              "application/schema+json": {
+                "schema": {
+                  "$ref": "./ValueSet-anc-b6-de58.schema.json"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "ValueSet-anc-b6-de58": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "$id": "http://smart.who.int/anc/ValueSet-anc-b6-de58.schema.json",
+        "title": "Allergies Choices Schema",
+        "description": "JSON Schema for Allergies Choices ValueSet codes. Values are represented as Coding objects with 'system' and 'code' properties.",
+        "type": "object",
+        "required": [
+          "system",
+          "code"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "system": {
+            "type": "string",
+            "const": "http://smart.who.int/anc/CodeSystem/anc-custom-codes"
+          },
+          "code": {
+            "type": "string",
+            "enum": [
+              "ANC.B6.DE58",
+              "ANC.B6.DE59",
+              "ANC.B6.DE60",
+              "ANC.B6.DE61",
+              "ANC.B6.DE62",
+              "ANC.B6.DE63",
+              "ANC.B6.DE64",
+              "ANC.B6.DE65",
+              "ANC.B6.DE66",
+              "ANC.B6.DE67",
+              "ANC.B6.DE68",
+              "ANC.B6.DE69",
+              "ANC.B6.DE70",
+              "ANC.B6.DE71"
+            ]
+          }
+        },
+        "narrative": "This schema validates Coding-shaped objects for the Allergies Choices ValueSet. Each value must be an object with 'system' (CodeSystem URI) and 'code' (fragment after '#') properties. Display values are available at http://smart.who.int/anc/ValueSet-anc-b6-de58.displays.json. The canonical IRI for a code can be reconstructed as system + '#' + code. For a complete listing of all ValueSets, see artifacts.html#terminology-value-sets.",
+        "fhir:displays": "http://smart.who.int/anc/ValueSet-anc-b6-de58.displays.json",
+        "fhir:valueSet": "http://smart.who.int/anc/ValueSet/anc-b6-de58",
+        "fhir:version": "0.3.0",
+        "fhir:expansionTimestamp": "2021-11-30T07:11:23-07:00"
+      }
+    }
+  }
+}
