@@ -1,0 +1,47 @@
+-------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "inactive" : true,
+    "include" : [{
+      "system" : "http://unitsofmeasure.org/",
+      "concept" : [{
+        "code" : "ANC.B10.DE102",
+        "display" : "Daily"
+      },
+      {
+        "code" : "ANC.B10.DE103",
+        "display" : "Weekly"
+      }]
+    }]
+  }
+}}####
+e: {
+  "from-server" : true,
+  "class" : "UNKNOWN",
+  "error" : "Error from https://tx.fhir.org/r4: Error: A definition for CodeSystem 'http://unitsofmeasure.org/' could not be found, so the value set cannot be expanded"
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "inactive" : false,
+    "include" : [{
+      "system" : "http://unitsofmeasure.org/",
+      "concept" : [{
+        "code" : "ANC.B10.DE102",
+        "display" : "Daily"
+      },
+      {
+        "code" : "ANC.B10.DE103",
+        "display" : "Weekly"
+      }]
+    }]
+  }
+}}####
+e: {
+  "from-server" : true,
+  "class" : "UNKNOWN",
+  "error" : "Error from https://tx.fhir.org/r4: Error: A definition for CodeSystem 'http://unitsofmeasure.org/' could not be found, so the value set cannot be expanded"
+}
+-------------------------------------------------------------------------------------

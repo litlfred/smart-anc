@@ -1,0 +1,109 @@
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://hl7.org/fhir/sid/icd-10",
+  "code" : "Z72.1"
+}, "valueSet" :null, "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "noAbstract":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "isDefaultLang":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  },
+  {
+    "name" : "defaultDisplayLanguage",
+    "valueCode" : "en-US"
+  }]
+}}####
+v: {
+  "display" : "Alcohol use",
+  "code" : "Z72.1",
+  "system" : "http://hl7.org/fhir/sid/icd-10",
+  "version" : "2019-covid-expanded",
+  "server" : "https://tx.fhir.org/r4",
+  "diagnostics" : "0ms tx-op\n1ms http://hl7.org/fhir/sid/icd-10/vs|2019-covid-expanded: Validate \"[http://hl7.org/fhir/sid/icd-10#Z72.1 (\"undefined\")]\"\n1ms http://hl7.org/fhir/sid/icd-10/vs|2019-covid-expanded: Check \"http://hl7.org/fhir/sid/icd-10#Z72.1\"\n1ms http://hl7.org/fhir/sid/icd-10/vs|2019-covid-expanded: CodeSystem found: http://hl7.org/fhir/sid/icd-10|2019-covid-expanded for http://hl7.org/fhir/sid/icd-10|2019-covid-expanded\n1ms http://hl7.org/fhir/sid/icd-10/vs|2019-covid-expanded: check code in (http://hl7.org/fhir/sid/icd-10) at Coding\n1ms http://hl7.org/fhir/sid/icd-10/vs|2019-covid-expanded: Code \"Z72.1\" found in http://hl7.org/fhir/sid/icd-10|2019-covid-expanded",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://hl7.org/fhir/sid/icd-10",
+  "code" : "Z72.2"
+}, "valueSet" :null, "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "noAbstract":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "isDefaultLang":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  },
+  {
+    "name" : "defaultDisplayLanguage",
+    "valueCode" : "en-US"
+  }]
+}}####
+v: {
+  "display" : "Drug use",
+  "code" : "Z72.2",
+  "system" : "http://hl7.org/fhir/sid/icd-10",
+  "version" : "2019-covid-expanded",
+  "server" : "https://tx.fhir.org/r4",
+  "diagnostics" : "0ms tx-op\n1ms http://hl7.org/fhir/sid/icd-10/vs|2019-covid-expanded: Validate \"[http://hl7.org/fhir/sid/icd-10#Z72.2 (\"undefined\")]\"\n1ms http://hl7.org/fhir/sid/icd-10/vs|2019-covid-expanded: Check \"http://hl7.org/fhir/sid/icd-10#Z72.2\"\n1ms http://hl7.org/fhir/sid/icd-10/vs|2019-covid-expanded: CodeSystem found: http://hl7.org/fhir/sid/icd-10|2019-covid-expanded for http://hl7.org/fhir/sid/icd-10|2019-covid-expanded\n1ms http://hl7.org/fhir/sid/icd-10/vs|2019-covid-expanded: check code in (http://hl7.org/fhir/sid/icd-10) at Coding\n1ms http://hl7.org/fhir/sid/icd-10/vs|2019-covid-expanded: Code \"Z72.2\" found in http://hl7.org/fhir/sid/icd-10|2019-covid-expanded",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://hl7.org/fhir/sid/icd-10",
+  "code" : "Z20.6"
+}, "valueSet" :null, "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "noAbstract":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "isDefaultLang":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  },
+  {
+    "name" : "defaultDisplayLanguage",
+    "valueCode" : "en-US"
+  }]
+}}####
+v: {
+  "display" : "Contact with and exposure to human immunodeficiency virus [HIV]",
+  "code" : "Z20.6",
+  "system" : "http://hl7.org/fhir/sid/icd-10",
+  "version" : "2019-covid-expanded",
+  "server" : "https://tx.fhir.org/r4",
+  "diagnostics" : "0ms tx-op\n1ms http://hl7.org/fhir/sid/icd-10/vs|2019-covid-expanded: Validate \"[http://hl7.org/fhir/sid/icd-10#Z20.6 (\"undefined\")]\"\n1ms http://hl7.org/fhir/sid/icd-10/vs|2019-covid-expanded: Check \"http://hl7.org/fhir/sid/icd-10#Z20.6\"\n1ms http://hl7.org/fhir/sid/icd-10/vs|2019-covid-expanded: CodeSystem found: http://hl7.org/fhir/sid/icd-10|2019-covid-expanded for http://hl7.org/fhir/sid/icd-10|2019-covid-expanded\n1ms http://hl7.org/fhir/sid/icd-10/vs|2019-covid-expanded: check code in (http://hl7.org/fhir/sid/icd-10) at Coding\n1ms http://hl7.org/fhir/sid/icd-10/vs|2019-covid-expanded: Code \"Z20.6\" found in http://hl7.org/fhir/sid/icd-10|2019-covid-expanded",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://hl7.org/fhir/sid/icd-10",
+  "code" : "A15.9"
+}, "valueSet" :null, "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "noAbstract":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "isDefaultLang":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  },
+  {
+    "name" : "defaultDisplayLanguage",
+    "valueCode" : "en-US"
+  }]
+}}####
+v: {
+  "display" : "Respiratory tuberculosis unspecified, confirmed bacteriologically and histologically",
+  "code" : "A15.9",
+  "system" : "http://hl7.org/fhir/sid/icd-10",
+  "version" : "2019-covid-expanded",
+  "server" : "https://tx.fhir.org/r4",
+  "diagnostics" : "0ms tx-op\n1ms http://hl7.org/fhir/sid/icd-10/vs|2019-covid-expanded: Validate \"[http://hl7.org/fhir/sid/icd-10#A15.9 (\"undefined\")]\"\n1ms http://hl7.org/fhir/sid/icd-10/vs|2019-covid-expanded: Check \"http://hl7.org/fhir/sid/icd-10#A15.9\"\n1ms http://hl7.org/fhir/sid/icd-10/vs|2019-covid-expanded: CodeSystem found: http://hl7.org/fhir/sid/icd-10|2019-covid-expanded for http://hl7.org/fhir/sid/icd-10|2019-covid-expanded\n1ms http://hl7.org/fhir/sid/icd-10/vs|2019-covid-expanded: check code in (http://hl7.org/fhir/sid/icd-10) at Coding\n1ms http://hl7.org/fhir/sid/icd-10/vs|2019-covid-expanded: Code \"A15.9\" found in http://hl7.org/fhir/sid/icd-10|2019-covid-expanded",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------

@@ -1,0 +1,168 @@
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "410290005 | Family planning education, guidance, and counseling (procedure) |"
+}, "valueSet" :null, "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "noAbstract":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "isDefaultLang":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  },
+  {
+    "name" : "defaultDisplayLanguage",
+    "valueCode" : "en-US"
+  }]
+}}####
+v: {
+  "display" : "Family planning education, guidance, and counseling",
+  "code" : "410290005 | Family planning education, guidance, and counseling (procedure) |",
+  "system" : "http://snomed.info/sct",
+  "version" : "http://snomed.info/sct/900000000000207008/version/20250201",
+  "server" : "https://tx.fhir.org/r4",
+  "diagnostics" : "0ms tx-op\n1ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: Validate \"[http://snomed.info/sct#410290005 | Family planning education, guidance, and counseling (procedure) | (\"undefined\")]\"\n1ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: Check \"http://snomed.info/sct#410290005 | Family planning education, guidance, and counseling (procedure) |\"\n1ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: CodeSystem found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201 for http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201\n1ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: check code in (http://snomed.info/sct) at Coding\n2ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: Code \"410290005 | Family planning education, guidance, and counseling (procedure) |\" found in http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "723510000"
+}, "valueSet" :null, "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "noAbstract":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "isDefaultLang":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  },
+  {
+    "name" : "defaultDisplayLanguage",
+    "valueCode" : "en-US"
+  }]
+}}####
+v: {
+  "display" : "Entered in error",
+  "code" : "723510000",
+  "system" : "http://snomed.info/sct",
+  "version" : "http://snomed.info/sct/900000000000207008/version/20250201",
+  "server" : "https://tx.fhir.org/r4",
+  "diagnostics" : "0ms tx-op\n1ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: Validate \"[http://snomed.info/sct#723510000 (\"undefined\")]\"\n1ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: Check \"http://snomed.info/sct#723510000\"\n1ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: CodeSystem found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201 for http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201\n1ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: check code in (http://snomed.info/sct) at Coding\n1ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: Code \"723510000\" found in http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://snomed.info/sct",
+    "code" : "77386006",
+    "display" : "Pregnant (finding)"
+  }]
+}, "langs":"en-US", "useServer":"true", "useClient":"false", "guessSystem":"false", "noAbstract":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  },
+  {
+    "name" : "defaultDisplayLanguage",
+    "valueCode" : "en-US"
+  }]
+}}####
+v: {
+  "display" : "Pregnancy",
+  "code" : "77386006",
+  "system" : "http://snomed.info/sct",
+  "version" : "http://snomed.info/sct/900000000000207008/version/20250201",
+  "severity" : "error",
+  "error" : "'Pregnant (finding)' is no longer considered a correct display for code '77386006' (status = inactive). The correct display is one of Pregnancy,Pregnancy not delivered,Gestation,Pregnant,Pregnancy confirmed,Pregnancy (finding)",
+  "class" : "UNKNOWN",
+  "server" : "https://tx.fhir.org/r4",
+  "diagnostics" : "0ms tx-op\n1ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: Validate \"[http://snomed.info/sct#77386006 (\"Pregnant (finding)\")]\"\n1ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: Check \"http://snomed.info/sct#77386006\"\n1ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: CodeSystem found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201 for http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201\n1ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: check code in (http://snomed.info/sct) at CodeableConcept.coding[0]\n1ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: Code \"77386006\" found in http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201",
+  "issues" : {
+  "resourceType" : "OperationOutcome",
+  "issue" : [{
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+      "valueString" : "INACTIVE_DISPLAY_FOUND"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-server",
+      "valueUrl" : "https://tx.fhir.org/r4"
+    }],
+    "severity" : "error",
+    "code" : "invalid",
+    "details" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
+        "code" : "display-comment"
+      }],
+      "text" : "'Pregnant (finding)' is no longer considered a correct display for code '77386006' (status = inactive). The correct display is one of Pregnancy,Pregnancy not delivered,Gestation,Pregnant,Pregnancy confirmed,Pregnancy (finding)"
+    },
+    "expression" : ["CodeableConcept.coding[0].display"]
+  }]
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://snomed.info/sct",
+    "code" : "394585009",
+    "display" : "Obstetrics and gynecology"
+  }]
+}, "url": "http://hl7.org/fhir/ValueSet/c80-practice-codes", "version": "4.0.1", "langs":"en-US", "useServer":"true", "useClient":"false", "guessSystem":"false", "noAbstract":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "externalSource":"StructureDefinition[http://smart.who.int/anc/StructureDefinition/referral-provider|0.3.0]", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  },
+  {
+    "name" : "defaultDisplayLanguage",
+    "valueCode" : "en-US"
+  }]
+}}####
+v: {
+  "display" : "Obstetrics and gynecology",
+  "code" : "394585009",
+  "system" : "http://snomed.info/sct",
+  "version" : "http://snomed.info/sct/900000000000207008/version/20250201",
+  "server" : "https://tx.fhir.org/r4",
+  "diagnostics" : "0ms tx-op\n1ms http://hl7.org/fhir/ValueSet/c80-practice-codes|4.0.1: Analysing http://hl7.org/fhir/ValueSet/c80-practice-codes|4.0.1 for validation purposes\n1ms http://hl7.org/fhir/ValueSet/c80-practice-codes|4.0.1: Parameters: disp-lang=en-US, generate-narrative, default-to-latest\n1ms http://hl7.org/fhir/ValueSet/c80-practice-codes|4.0.1: Prepare include[0]: \"(http://snomed.info/sct)(408467006,394577000,394578005,421661004,408462000,394579002,394804000,394580004,394803006,408480009,408454008,394809005,394592004,394600006,394601005,394581000,408478003,394812008,408444009,394582007,408475000,410005002,394583002,419772000,394584008,408443003,394802001,394915009,394814009,394808002,394811001,408446006,394586005,394916005,408472002,394597005,394598000,394807007,419192003,408468001,394593009,394813003,410001006,394589003,394591006,394599008,394649004,408470005,394585009,394821009,422191005,394594003,416304004,418960008,394882004,394806003,394588006,408459003,394607009,419610006,418058008,420208008,418652005,418535003,418862001,419365004,418002000,419983000,419170002,419472004,394539006,420112009,409968004,394587001,394913002,408440000,418112009,419815003,394914008,408455009,394602003,408447002,394810000,408450004,408476004,408469009,408466002,408471009,408464004,408441001,408465003,394605001,394608004,408461007,408460008,408460008,394606000,408449004,394608004,418018006,394604002,394609007,408474001,394610002,394611003,408477008,394801008,408463005,419321007,394576009,394590007,409967009,408448007,419043006,394612005,394733009,394732004)\"\n1ms http://hl7.org/fhir/ValueSet/c80-practice-codes|4.0.1: CodeSystem found: \"http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201\"\n1ms http://hl7.org/fhir/ValueSet/c80-practice-codes|4.0.1: Validate \"[http://snomed.info/sct#394585009 (\"Obstetrics and gynecology\")]\"\n1ms http://hl7.org/fhir/ValueSet/c80-practice-codes|4.0.1: Check \"http://snomed.info/sct#394585009\"\n1ms http://hl7.org/fhir/ValueSet/c80-practice-codes|4.0.1: CodeSystem found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201 for http://snomed.info/sct\n1ms http://hl7.org/fhir/ValueSet/c80-practice-codes|4.0.1: check code in (http://snomed.info/sct)(408467006,394577000,394578005,421661004,408462000,394579002,394804000,394580004,394803006,408480009,408454008,394809005,394592004,394600006,394601005,394581000,408478003,394812008,408444009,394582007,408475000,410005002,394583002,419772000,394584008,408443003,394802001,394915009,394814009,394808002,394811001,408446006,394586005,394916005,408472002,394597005,394598000,394807007,419192003,408468001,394593009,394813003,410001006,394589003,394591006,394599008,394649004,408470005,394585009,394821009,422191005,394594003,416304004,418960008,394882004,394806003,394588006,408459003,394607009,419610006,418058008,420208008,418652005,418535003,418862001,419365004,418002000,419983000,419170002,419472004,394539006,420112009,409968004,394587001,394913002,408440000,418112009,419815003,394914008,408455009,394602003,408447002,394810000,408450004,408476004,408469009,408466002,408471009,408464004,408441001,408465003,394605001,394608004,408461007,408460008,408460008,394606000,408449004,394608004,418018006,394604002,394609007,408474001,394610002,394611003,408477008,394801008,408463005,419321007,394576009,394590007,409967009,408448007,419043006,394612005,394733009,394732004) at CodeableConcept.coding[0]\n2ms http://hl7.org/fhir/ValueSet/c80-practice-codes|4.0.1: Code \"394585009\" found in http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://snomed.info/sct",
+    "code" : "33747003",
+    "display" : "Glucose measurement, blood (procedure)"
+  }]
+}, "langs":"en-US", "useServer":"true", "useClient":"false", "guessSystem":"false", "noAbstract":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  },
+  {
+    "name" : "defaultDisplayLanguage",
+    "valueCode" : "en-US"
+  }]
+}}####
+v: {
+  "display" : "Glucose measurement, blood",
+  "code" : "33747003",
+  "system" : "http://snomed.info/sct",
+  "version" : "http://snomed.info/sct/900000000000207008/version/20250201",
+  "server" : "https://tx.fhir.org/r4",
+  "diagnostics" : "0ms tx-op\n1ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: Validate \"[http://snomed.info/sct#33747003 (\"Glucose measurement, blood (procedure)\")]\"\n1ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: Check \"http://snomed.info/sct#33747003\"\n1ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: CodeSystem found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201 for http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201\n1ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: check code in (http://snomed.info/sct) at CodeableConcept.coding[0]\n1ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: Code \"33747003\" found in http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------

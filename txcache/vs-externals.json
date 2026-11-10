@@ -1,0 +1,15 @@
+{
+  "http://mitel.dimi.uniud.it/ichi/#http://id.who.int/ichi" : null,
+  "http://terminology.hl7.org/CodeSystem/request-intent" : null,
+  "http://smart.who.int/anc/CodeSystem/anc-custom" : null,
+  "http://ohie.org/CodeSystem/iso-8601-derived-periods" : null,
+  "https://mitel.dimi.uniud.it/ichi/#http://id.who.int/ichi" : null,
+  "http://hl7.org/fhir/sid/icd-11" : null,
+  "http://unitsofmeasure.org/" : null,
+  "http://fhir.org/guides/cqf/common/Library/FHIR-ModelInfo|4.0.1" : null,
+  "http://smart.who.int/anc/Library/FHIRHelpers|4.0.1" : null,
+  "http://fhir.org/guides/cqf/common/ValueSet/active-condition" : null,
+  "http://fhir.org/guides/cqf/common/ValueSet/inactive-condition" : null,
+  "http://hl7.org/fhir/sid/ciel" : null,
+  "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-activitydefinition" : null
+}
