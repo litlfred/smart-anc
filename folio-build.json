@@ -2,14 +2,14 @@
   "$schema": "folio-site-build/v1",
   "instance": "smart-anc",
   "platform": {
-    "commit": "a6753f2fda6b5b67e00bec86a7e09506f86af327"
+    "commit": "3ef7ce3db54f709bc559fb458fa5b6e4fb6baa78"
   },
   "source": {
     "repo": "litlfred/smart-anc",
     "ref": "master",
-    "commit": "4f3bea121a24999b236c7b9c5687f7626f85b077"
+    "commit": "ea74c404ee483dda995c08da918e7e703cca2f15"
   },
-  "builtAt": "2026-11-10T21:08:30.784Z",
+  "builtAt": "2026-11-10T22:58:04.863Z",
   "ast": {
     "commit": "4f3bea121a24999b236c7b9c5687f7626f85b077",
     "verdict": "valid",
