@@ -22,10 +22,18 @@
     {
       "@type": "schema:MediaObject",
       "schema:contentUrl": {
-        "@id": "https://raw.githubusercontent.com/litlfred/smart-anc/96953b8648f91c5d650e135f4d4018166e976c42/resources/OperationDefinition/Measure-evaluate-measure--9c76ae7c.json"
+        "@id": "../OperationDefinition-Measure-evaluate-measure.json"
       },
       "schema:encodingFormat": "application/fhir+json",
       "dcterms:source": "local"
+    },
+    {
+      "@type": "schema:MediaObject",
+      "schema:contentUrl": {
+        "@id": "https://raw.githubusercontent.com/litlfred/smart-anc/96953b8648f91c5d650e135f4d4018166e976c42/resources/OperationDefinition/Measure-evaluate-measure--9c76ae7c.json"
+      },
+      "schema:encodingFormat": "application/fhir+json",
+      "dcterms:source": "mirror"
     }
   ],
   "prov:wasGeneratedBy": {

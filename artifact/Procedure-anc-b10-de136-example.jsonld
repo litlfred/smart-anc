@@ -16,10 +16,18 @@
     {
       "@type": "schema:MediaObject",
       "schema:contentUrl": {
-        "@id": "https://raw.githubusercontent.com/litlfred/smart-anc/96953b8648f91c5d650e135f4d4018166e976c42/resources/Procedure/anc-b10-de136-example--2ffac338.json"
+        "@id": "../Procedure-anc-b10-de136-example.json"
       },
       "schema:encodingFormat": "application/fhir+json",
       "dcterms:source": "local"
+    },
+    {
+      "@type": "schema:MediaObject",
+      "schema:contentUrl": {
+        "@id": "https://raw.githubusercontent.com/litlfred/smart-anc/96953b8648f91c5d650e135f4d4018166e976c42/resources/Procedure/anc-b10-de136-example--2ffac338.json"
+      },
+      "schema:encodingFormat": "application/fhir+json",
+      "dcterms:source": "mirror"
     }
   ],
   "prov:wasGeneratedBy": {

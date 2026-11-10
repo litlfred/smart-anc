@@ -16,10 +16,18 @@
     {
       "@type": "schema:MediaObject",
       "schema:contentUrl": {
-        "@id": "https://raw.githubusercontent.com/litlfred/smart-anc/96953b8648f91c5d650e135f4d4018166e976c42/resources/Observation/anc-b6-de33-example--a4b1ab31.json"
+        "@id": "../Observation-anc-b6-de33-example.json"
       },
       "schema:encodingFormat": "application/fhir+json",
       "dcterms:source": "local"
+    },
+    {
+      "@type": "schema:MediaObject",
+      "schema:contentUrl": {
+        "@id": "https://raw.githubusercontent.com/litlfred/smart-anc/96953b8648f91c5d650e135f4d4018166e976c42/resources/Observation/anc-b6-de33-example--a4b1ab31.json"
+      },
+      "schema:encodingFormat": "application/fhir+json",
+      "dcterms:source": "mirror"
     }
   ],
   "prov:wasGeneratedBy": {

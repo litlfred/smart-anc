@@ -22,10 +22,18 @@
     {
       "@type": "schema:MediaObject",
       "schema:contentUrl": {
-        "@id": "https://raw.githubusercontent.com/litlfred/smart-anc/96953b8648f91c5d650e135f4d4018166e976c42/resources/ValueSet/anc-b7-de37--d8799499.json"
+        "@id": "../ValueSet-anc-b7-de37.json"
       },
       "schema:encodingFormat": "application/fhir+json",
       "dcterms:source": "local"
+    },
+    {
+      "@type": "schema:MediaObject",
+      "schema:contentUrl": {
+        "@id": "https://raw.githubusercontent.com/litlfred/smart-anc/96953b8648f91c5d650e135f4d4018166e976c42/resources/ValueSet/anc-b7-de37--d8799499.json"
+      },
+      "schema:encodingFormat": "application/fhir+json",
+      "dcterms:source": "mirror"
     }
   ],
   "prov:wasGeneratedBy": {

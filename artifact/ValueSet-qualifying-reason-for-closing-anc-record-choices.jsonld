@@ -22,10 +22,18 @@
     {
       "@type": "schema:MediaObject",
       "schema:contentUrl": {
-        "@id": "https://raw.githubusercontent.com/litlfred/smart-anc/96953b8648f91c5d650e135f4d4018166e976c42/resources/ValueSet/qualifying-reason-for-closing-anc-record-choices--8b2c7685.json"
+        "@id": "../ValueSet-qualifying-reason-for-closing-anc-record-choices.json"
       },
       "schema:encodingFormat": "application/fhir+json",
       "dcterms:source": "local"
+    },
+    {
+      "@type": "schema:MediaObject",
+      "schema:contentUrl": {
+        "@id": "https://raw.githubusercontent.com/litlfred/smart-anc/96953b8648f91c5d650e135f4d4018166e976c42/resources/ValueSet/qualifying-reason-for-closing-anc-record-choices--8b2c7685.json"
+      },
+      "schema:encodingFormat": "application/fhir+json",
+      "dcterms:source": "mirror"
     }
   ],
   "prov:wasGeneratedBy": {
