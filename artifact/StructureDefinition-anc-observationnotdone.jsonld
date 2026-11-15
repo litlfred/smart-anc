@@ -6,7 +6,7 @@
     "prov": "http://www.w3.org/ns/prov#"
   },
   "$schema": "folio-ig-artifact-jsonld/v1",
-  "@id": "StructureDefinition-anc-observationnotdone.jsonld",
+  "@id": "StructureDefinition-anc-observationnotdone",
   "@type": "fhir:StructureDefinition",
   "dcterms:identifier": "StructureDefinition/anc-observationnotdone",
   "schema:name": "ANCObservationNotDone",

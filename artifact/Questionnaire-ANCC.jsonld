@@ -6,7 +6,7 @@
     "prov": "http://www.w3.org/ns/prov#"
   },
   "$schema": "folio-ig-artifact-jsonld/v1",
-  "@id": "Questionnaire-ANCC.jsonld",
+  "@id": "Questionnaire-ANCC",
   "@type": "fhir:Questionnaire",
   "dcterms:identifier": "Questionnaire/ANCC",
   "schema:name": "ANCC",

@@ -6,7 +6,7 @@
     "prov": "http://www.w3.org/ns/prov#"
   },
   "$schema": "folio-ig-artifact-jsonld/v1",
-  "@id": "ValueSet-antenatal-care-contact.jsonld",
+  "@id": "ValueSet-antenatal-care-contact",
   "@type": "fhir:ValueSet",
   "dcterms:identifier": "ValueSet/antenatal-care-contact",
   "schema:name": "AntenatalCareContact",

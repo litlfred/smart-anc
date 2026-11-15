@@ -6,7 +6,7 @@
     "prov": "http://www.w3.org/ns/prov#"
   },
   "$schema": "folio-ig-artifact-jsonld/v1",
-  "@id": "StructureDefinition-who-careteam.jsonld",
+  "@id": "StructureDefinition-who-careteam",
   "@type": "fhir:StructureDefinition",
   "dcterms:identifier": "StructureDefinition/who-careteam",
   "schema:name": "WHOCareTeam",

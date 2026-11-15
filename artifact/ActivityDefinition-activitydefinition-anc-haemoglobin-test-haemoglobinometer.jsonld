@@ -6,7 +6,7 @@
     "prov": "http://www.w3.org/ns/prov#"
   },
   "$schema": "folio-ig-artifact-jsonld/v1",
-  "@id": "ActivityDefinition-activitydefinition-anc-haemoglobin-test-haemoglobinometer.jsonld",
+  "@id": "ActivityDefinition-activitydefinition-anc-haemoglobin-test-haemoglobinometer",
   "@type": "fhir:ActivityDefinition",
   "dcterms:identifier": "ActivityDefinition/activitydefinition-anc-haemoglobin-test-haemoglobinometer",
   "schema:name": "ANCHaemoglobinTestHaemoglobinometer",

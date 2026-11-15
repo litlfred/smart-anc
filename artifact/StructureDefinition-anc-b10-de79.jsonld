@@ -6,7 +6,7 @@
     "prov": "http://www.w3.org/ns/prov#"
   },
   "$schema": "folio-ig-artifact-jsonld/v1",
-  "@id": "StructureDefinition-anc-b10-de79.jsonld",
+  "@id": "StructureDefinition-anc-b10-de79",
   "@type": "fhir:StructureDefinition",
   "dcterms:identifier": "StructureDefinition/anc-b10-de79",
   "schema:name": "CounsellingconductedonhepatitisBpositive",

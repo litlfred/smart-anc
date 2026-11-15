@@ -6,7 +6,7 @@
     "prov": "http://www.w3.org/ns/prov#"
   },
   "$schema": "folio-ig-artifact-jsonld/v1",
-  "@id": "ActivityDefinition-activitydefinition-anc-120mg-weekly-elemental-iron.jsonld",
+  "@id": "ActivityDefinition-activitydefinition-anc-120mg-weekly-elemental-iron",
   "@type": "fhir:ActivityDefinition",
   "dcterms:identifier": "ActivityDefinition/activitydefinition-anc-120mg-weekly-elemental-iron",
   "schema:name": "ANC120mgWeeklyElementalIron",

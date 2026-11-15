@@ -6,7 +6,7 @@
     "prov": "http://www.w3.org/ns/prov#"
   },
   "$schema": "folio-ig-artifact-jsonld/v1",
-  "@id": "CodeSystem-who-identifier-types.jsonld",
+  "@id": "CodeSystem-who-identifier-types",
   "@type": "fhir:CodeSystem",
   "dcterms:identifier": "CodeSystem/who-identifier-types",
   "schema:name": "WHOIdentifierTypes",

@@ -6,7 +6,7 @@
     "prov": "http://www.w3.org/ns/prov#"
   },
   "$schema": "folio-ig-artifact-jsonld/v1",
-  "@id": "StructureDefinition-who-allergyintolerance.jsonld",
+  "@id": "StructureDefinition-who-allergyintolerance",
   "@type": "fhir:StructureDefinition",
   "dcterms:identifier": "StructureDefinition/who-allergyintolerance",
   "schema:name": "WHOAllergyIntolerance",

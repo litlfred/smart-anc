@@ -6,7 +6,7 @@
     "prov": "http://www.w3.org/ns/prov#"
   },
   "$schema": "folio-ig-artifact-jsonld/v1",
-  "@id": "StructureDefinition-tetanus-toxoid-tt-3-immunization.jsonld",
+  "@id": "StructureDefinition-tetanus-toxoid-tt-3-immunization",
   "@type": "fhir:StructureDefinition",
   "dcterms:identifier": "StructureDefinition/tetanus-toxoid-tt-3-immunization",
   "schema:name": "TetanustoxoidTT3Immunization",

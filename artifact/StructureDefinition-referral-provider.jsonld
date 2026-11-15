@@ -6,7 +6,7 @@
     "prov": "http://www.w3.org/ns/prov#"
   },
   "$schema": "folio-ig-artifact-jsonld/v1",
-  "@id": "StructureDefinition-referral-provider.jsonld",
+  "@id": "StructureDefinition-referral-provider",
   "@type": "fhir:StructureDefinition",
   "dcterms:identifier": "StructureDefinition/referral-provider",
   "schema:name": "ReferralProvider",

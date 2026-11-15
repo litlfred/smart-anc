@@ -6,7 +6,7 @@
     "prov": "http://www.w3.org/ns/prov#"
   },
   "$schema": "folio-ig-artifact-jsonld/v1",
-  "@id": "PractitionerRole-referral-provider-example.jsonld",
+  "@id": "PractitionerRole-referral-provider-example",
   "@type": "fhir:PractitionerRole",
   "dcterms:identifier": "PractitionerRole/referral-provider-example",
   "dcterms:title": "referral-provider-example",

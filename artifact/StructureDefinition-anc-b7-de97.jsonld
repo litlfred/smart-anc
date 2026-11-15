@@ -6,7 +6,7 @@
     "prov": "http://www.w3.org/ns/prov#"
   },
   "$schema": "folio-ig-artifact-jsonld/v1",
-  "@id": "StructureDefinition-anc-b7-de97.jsonld",
+  "@id": "StructureDefinition-anc-b7-de97",
   "@type": "fhir:StructureDefinition",
   "dcterms:identifier": "StructureDefinition/anc-b7-de97",
   "schema:name": "Womandisclosesorissuspectedtobesubjectedtointimatepartnerviolence",

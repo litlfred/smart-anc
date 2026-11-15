@@ -6,7 +6,7 @@
     "prov": "http://www.w3.org/ns/prov#"
   },
   "$schema": "folio-ig-artifact-jsonld/v1",
-  "@id": "Condition-anc-b10-de76-example.jsonld",
+  "@id": "Condition-anc-b10-de76-example",
   "@type": "fhir:Condition",
   "dcterms:identifier": "Condition/anc-b10-de76-example",
   "dcterms:title": "anc-b10-de76-example",

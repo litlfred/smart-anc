@@ -6,7 +6,7 @@
     "prov": "http://www.w3.org/ns/prov#"
   },
   "$schema": "folio-ig-artifact-jsonld/v1",
-  "@id": "Procedure-blood-haemoglobin-test-example.jsonld",
+  "@id": "Procedure-blood-haemoglobin-test-example",
   "@type": "fhir:Procedure",
   "dcterms:identifier": "Procedure/blood-haemoglobin-test-example",
   "dcterms:title": "blood-haemoglobin-test-example",

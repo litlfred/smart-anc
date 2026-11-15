@@ -6,7 +6,7 @@
     "prov": "http://www.w3.org/ns/prov#"
   },
   "$schema": "folio-ig-artifact-jsonld/v1",
-  "@id": "PlanDefinition-ANCDT19.jsonld",
+  "@id": "PlanDefinition-ANCDT19",
   "@type": "fhir:PlanDefinition",
   "dcterms:identifier": "PlanDefinition/ANCDT19",
   "schema:name": "ANCDT19",

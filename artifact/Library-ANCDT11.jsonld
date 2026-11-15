@@ -6,7 +6,7 @@
     "prov": "http://www.w3.org/ns/prov#"
   },
   "$schema": "folio-ig-artifact-jsonld/v1",
-  "@id": "Library-ANCDT11.jsonld",
+  "@id": "Library-ANCDT11",
   "@type": "fhir:Library",
   "dcterms:identifier": "Library/ANCDT11",
   "schema:name": "ANCDT11",

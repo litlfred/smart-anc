@@ -6,7 +6,7 @@
     "prov": "http://www.w3.org/ns/prov#"
   },
   "$schema": "folio-ig-artifact-jsonld/v1",
-  "@id": "ValueSet-anc-b6-de51.jsonld",
+  "@id": "ValueSet-anc-b6-de51",
   "@type": "fhir:ValueSet",
   "dcterms:identifier": "ValueSet/anc-b6-de51",
   "schema:name": "Substanceuseduringpastpregnancyspecification",

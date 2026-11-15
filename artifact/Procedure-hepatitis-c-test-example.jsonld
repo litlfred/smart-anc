@@ -6,7 +6,7 @@
     "prov": "http://www.w3.org/ns/prov#"
   },
   "$schema": "folio-ig-artifact-jsonld/v1",
-  "@id": "Procedure-hepatitis-c-test-example.jsonld",
+  "@id": "Procedure-hepatitis-c-test-example",
   "@type": "fhir:Procedure",
   "dcterms:identifier": "Procedure/hepatitis-c-test-example",
   "dcterms:title": "hepatitis-c-test-example",

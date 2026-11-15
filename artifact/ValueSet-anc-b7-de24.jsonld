@@ -6,7 +6,7 @@
     "prov": "http://www.w3.org/ns/prov#"
   },
   "$schema": "folio-ig-artifact-jsonld/v1",
-  "@id": "ValueSet-anc-b7-de24.jsonld",
+  "@id": "ValueSet-anc-b7-de24",
   "@type": "fhir:ValueSet",
   "dcterms:identifier": "ValueSet/anc-b7-de24",
   "schema:name": "PersistentphysiologicalsymptomsContractionsChoices",

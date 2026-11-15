@@ -6,7 +6,7 @@
     "prov": "http://www.w3.org/ns/prov#"
   },
   "$schema": "folio-ig-artifact-jsonld/v1",
-  "@id": "StructureDefinition-anc-base-patient.jsonld",
+  "@id": "StructureDefinition-anc-base-patient",
   "@type": "fhir:StructureDefinition",
   "dcterms:identifier": "StructureDefinition/anc-base-patient",
   "schema:name": "ANCBasePatient",

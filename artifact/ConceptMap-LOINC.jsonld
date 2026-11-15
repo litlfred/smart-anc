@@ -6,7 +6,7 @@
     "prov": "http://www.w3.org/ns/prov#"
   },
   "$schema": "folio-ig-artifact-jsonld/v1",
-  "@id": "ConceptMap-LOINC.jsonld",
+  "@id": "ConceptMap-LOINC",
   "@type": "fhir:ConceptMap",
   "dcterms:identifier": "ConceptMap/LOINC",
   "schema:name": "LOINC",

@@ -6,7 +6,7 @@
     "prov": "http://www.w3.org/ns/prov#"
   },
   "$schema": "folio-ig-artifact-jsonld/v1",
-  "@id": "ValueSet-anc-b9-de164.jsonld",
+  "@id": "ValueSet-anc-b9-de164",
   "@type": "fhir:ValueSet",
   "dcterms:identifier": "ValueSet/anc-b9-de164",
   "schema:name": "_75goralglucosetolerancetestOGTTfastingglucose",

@@ -6,7 +6,7 @@
     "prov": "http://www.w3.org/ns/prov#"
   },
   "$schema": "folio-ig-artifact-jsonld/v1",
-  "@id": "Procedure-tb-screening-example.jsonld",
+  "@id": "Procedure-tb-screening-example",
   "@type": "fhir:Procedure",
   "dcterms:identifier": "Procedure/tb-screening-example",
   "dcterms:title": "tb-screening-example",

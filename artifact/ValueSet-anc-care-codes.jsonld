@@ -6,7 +6,7 @@
     "prov": "http://www.w3.org/ns/prov#"
   },
   "$schema": "folio-ig-artifact-jsonld/v1",
-  "@id": "ValueSet-anc-care-codes.jsonld",
+  "@id": "ValueSet-anc-care-codes",
   "@type": "fhir:ValueSet",
   "dcterms:identifier": "ValueSet/anc-care-codes",
   "schema:name": "ANCCareCodes",

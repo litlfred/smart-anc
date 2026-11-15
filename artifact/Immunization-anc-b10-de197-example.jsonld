@@ -6,7 +6,7 @@
     "prov": "http://www.w3.org/ns/prov#"
   },
   "$schema": "folio-ig-artifact-jsonld/v1",
-  "@id": "Immunization-anc-b10-de197-example.jsonld",
+  "@id": "Immunization-anc-b10-de197-example",
   "@type": "fhir:Immunization",
   "dcterms:identifier": "Immunization/anc-b10-de197-example",
   "dcterms:title": "anc-b10-de197-example",

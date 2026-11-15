@@ -6,7 +6,7 @@
     "prov": "http://www.w3.org/ns/prov#"
   },
   "$schema": "folio-ig-artifact-jsonld/v1",
-  "@id": "ServiceRequest-anc-c-de2-example.jsonld",
+  "@id": "ServiceRequest-anc-c-de2-example",
   "@type": "fhir:ServiceRequest",
   "dcterms:identifier": "ServiceRequest/anc-c-de2-example",
   "dcterms:title": "anc-c-de2-example",

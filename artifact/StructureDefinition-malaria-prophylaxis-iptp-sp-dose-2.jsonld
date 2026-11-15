@@ -6,7 +6,7 @@
     "prov": "http://www.w3.org/ns/prov#"
   },
   "$schema": "folio-ig-artifact-jsonld/v1",
-  "@id": "StructureDefinition-malaria-prophylaxis-iptp-sp-dose-2.jsonld",
+  "@id": "StructureDefinition-malaria-prophylaxis-iptp-sp-dose-2",
   "@type": "fhir:StructureDefinition",
   "dcterms:identifier": "StructureDefinition/malaria-prophylaxis-iptp-sp-dose-2",
   "schema:name": "MalariaProphylaxisIPTpSPDose2",

@@ -6,7 +6,7 @@
     "prov": "http://www.w3.org/ns/prov#"
   },
   "$schema": "folio-ig-artifact-jsonld/v1",
-  "@id": "Immunization-malaria-prophylaxis-iptp-sp-dose-1-example.jsonld",
+  "@id": "Immunization-malaria-prophylaxis-iptp-sp-dose-1-example",
   "@type": "fhir:Immunization",
   "dcterms:identifier": "Immunization/malaria-prophylaxis-iptp-sp-dose-1-example",
   "dcterms:title": "malaria-prophylaxis-iptp-sp-dose-1-example",

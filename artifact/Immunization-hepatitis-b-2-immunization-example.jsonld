@@ -6,7 +6,7 @@
     "prov": "http://www.w3.org/ns/prov#"
   },
   "$schema": "folio-ig-artifact-jsonld/v1",
-  "@id": "Immunization-hepatitis-b-2-immunization-example.jsonld",
+  "@id": "Immunization-hepatitis-b-2-immunization-example",
   "@type": "fhir:Immunization",
   "dcterms:identifier": "Immunization/hepatitis-b-2-immunization-example",
   "dcterms:title": "hepatitis-b-2-immunization-example",

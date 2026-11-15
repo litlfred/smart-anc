@@ -6,7 +6,7 @@
     "prov": "http://www.w3.org/ns/prov#"
   },
   "$schema": "folio-ig-artifact-jsonld/v1",
-  "@id": "Procedure-ultrasound-example.jsonld",
+  "@id": "Procedure-ultrasound-example",
   "@type": "fhir:Procedure",
   "dcterms:identifier": "Procedure/ultrasound-example",
   "dcterms:title": "ultrasound-example",

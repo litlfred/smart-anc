@@ -6,7 +6,7 @@
     "prov": "http://www.w3.org/ns/prov#"
   },
   "$schema": "folio-ig-artifact-jsonld/v1",
-  "@id": "ActivityDefinition-ANCB5.jsonld",
+  "@id": "ActivityDefinition-ANCB5",
   "@type": "fhir:ActivityDefinition",
   "dcterms:identifier": "ActivityDefinition/ANCB5",
   "schema:name": "ANCB5",

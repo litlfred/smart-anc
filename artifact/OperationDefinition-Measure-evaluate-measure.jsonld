@@ -6,7 +6,7 @@
     "prov": "http://www.w3.org/ns/prov#"
   },
   "$schema": "folio-ig-artifact-jsonld/v1",
-  "@id": "OperationDefinition-Measure-evaluate-measure.jsonld",
+  "@id": "OperationDefinition-Measure-evaluate-measure",
   "@type": "fhir:OperationDefinition",
   "dcterms:identifier": "OperationDefinition/Measure-evaluate-measure",
   "schema:name": "Evaluate Measure",

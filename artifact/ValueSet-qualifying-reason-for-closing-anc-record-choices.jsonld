@@ -6,7 +6,7 @@
     "prov": "http://www.w3.org/ns/prov#"
   },
   "$schema": "folio-ig-artifact-jsonld/v1",
-  "@id": "ValueSet-qualifying-reason-for-closing-anc-record-choices.jsonld",
+  "@id": "ValueSet-qualifying-reason-for-closing-anc-record-choices",
   "@type": "fhir:ValueSet",
   "dcterms:identifier": "ValueSet/qualifying-reason-for-closing-anc-record-choices",
   "schema:name": "QualifyingReasonForClosingANCRecordChoices",

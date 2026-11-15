@@ -6,7 +6,7 @@
     "prov": "http://www.w3.org/ns/prov#"
   },
   "$schema": "folio-ig-artifact-jsonld/v1",
-  "@id": "Procedure-anc-b10-de58-example.jsonld",
+  "@id": "Procedure-anc-b10-de58-example",
   "@type": "fhir:Procedure",
   "dcterms:identifier": "Procedure/anc-b10-de58-example",
   "dcterms:title": "anc-b10-de58-example",

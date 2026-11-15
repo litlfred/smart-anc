@@ -6,7 +6,7 @@
     "prov": "http://www.w3.org/ns/prov#"
   },
   "$schema": "folio-ig-artifact-jsonld/v1",
-  "@id": "StructureDefinition-anc-location.jsonld",
+  "@id": "StructureDefinition-anc-location",
   "@type": "fhir:StructureDefinition",
   "dcterms:identifier": "StructureDefinition/anc-location",
   "schema:name": "ANCLocation",

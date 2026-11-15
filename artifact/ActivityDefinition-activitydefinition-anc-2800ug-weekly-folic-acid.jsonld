@@ -6,7 +6,7 @@
     "prov": "http://www.w3.org/ns/prov#"
   },
   "$schema": "folio-ig-artifact-jsonld/v1",
-  "@id": "ActivityDefinition-activitydefinition-anc-2800ug-weekly-folic-acid.jsonld",
+  "@id": "ActivityDefinition-activitydefinition-anc-2800ug-weekly-folic-acid",
   "@type": "fhir:ActivityDefinition",
   "dcterms:identifier": "ActivityDefinition/activitydefinition-anc-2800ug-weekly-folic-acid",
   "schema:name": "ANC2800ugWeeklyFolicAcid",

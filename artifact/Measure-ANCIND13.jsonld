@@ -6,7 +6,7 @@
     "prov": "http://www.w3.org/ns/prov#"
   },
   "$schema": "folio-ig-artifact-jsonld/v1",
-  "@id": "Measure-ANCIND13.jsonld",
+  "@id": "Measure-ANCIND13",
   "@type": "fhir:Measure",
   "dcterms:identifier": "Measure/ANCIND13",
   "schema:name": "ANCIND13",

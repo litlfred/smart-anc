@@ -6,7 +6,7 @@
     "prov": "http://www.w3.org/ns/prov#"
   },
   "$schema": "folio-ig-artifact-jsonld/v1",
-  "@id": "StructureDefinition-anc-b6-de139.jsonld",
+  "@id": "StructureDefinition-anc-b6-de139",
   "@type": "fhir:StructureDefinition",
   "dcterms:identifier": "StructureDefinition/anc-b6-de139",
   "schema:name": "Dailycaffeineintake",

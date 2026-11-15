@@ -6,7 +6,7 @@
     "prov": "http://www.w3.org/ns/prov#"
   },
   "$schema": "folio-ig-artifact-jsonld/v1",
-  "@id": "Procedure-syphilis-test-example.jsonld",
+  "@id": "Procedure-syphilis-test-example",
   "@type": "fhir:Procedure",
   "dcterms:identifier": "Procedure/syphilis-test-example",
   "dcterms:title": "syphilis-test-example",

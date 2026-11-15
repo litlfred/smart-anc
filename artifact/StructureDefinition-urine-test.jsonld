@@ -6,7 +6,7 @@
     "prov": "http://www.w3.org/ns/prov#"
   },
   "$schema": "folio-ig-artifact-jsonld/v1",
-  "@id": "StructureDefinition-urine-test.jsonld",
+  "@id": "StructureDefinition-urine-test",
   "@type": "fhir:StructureDefinition",
   "dcterms:identifier": "StructureDefinition/urine-test",
   "schema:name": "UrineTest",

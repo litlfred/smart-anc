@@ -6,7 +6,7 @@
     "prov": "http://www.w3.org/ns/prov#"
   },
   "$schema": "folio-ig-artifact-jsonld/v1",
-  "@id": "Encounter-anc-end-13-example.jsonld",
+  "@id": "Encounter-anc-end-13-example",
   "@type": "fhir:Encounter",
   "dcterms:identifier": "Encounter/anc-end-13-example",
   "dcterms:title": "anc-end-13-example",

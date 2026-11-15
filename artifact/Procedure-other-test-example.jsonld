@@ -6,7 +6,7 @@
     "prov": "http://www.w3.org/ns/prov#"
   },
   "$schema": "folio-ig-artifact-jsonld/v1",
-  "@id": "Procedure-other-test-example.jsonld",
+  "@id": "Procedure-other-test-example",
   "@type": "fhir:Procedure",
   "dcterms:identifier": "Procedure/other-test-example",
   "dcterms:title": "other-test-example",

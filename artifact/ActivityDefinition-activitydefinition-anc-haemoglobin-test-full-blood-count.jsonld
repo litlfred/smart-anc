@@ -6,7 +6,7 @@
     "prov": "http://www.w3.org/ns/prov#"
   },
   "$schema": "folio-ig-artifact-jsonld/v1",
-  "@id": "ActivityDefinition-activitydefinition-anc-haemoglobin-test-full-blood-count.jsonld",
+  "@id": "ActivityDefinition-activitydefinition-anc-haemoglobin-test-full-blood-count",
   "@type": "fhir:ActivityDefinition",
   "dcterms:identifier": "ActivityDefinition/activitydefinition-anc-haemoglobin-test-full-blood-count",
   "schema:name": "ANCHaemoglobinTestCompleteBloodCount",

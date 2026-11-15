@@ -6,7 +6,7 @@
     "prov": "http://www.w3.org/ns/prov#"
   },
   "$schema": "folio-ig-artifact-jsonld/v1",
-  "@id": "StructureDefinition-who-condition.jsonld",
+  "@id": "StructureDefinition-who-condition",
   "@type": "fhir:StructureDefinition",
   "dcterms:identifier": "StructureDefinition/who-condition",
   "schema:name": "WHOCondition",

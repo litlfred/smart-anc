@@ -6,7 +6,7 @@
     "prov": "http://www.w3.org/ns/prov#"
   },
   "$schema": "folio-ig-artifact-jsonld/v1",
-  "@id": "ValueSet-pregnancy-condition.jsonld",
+  "@id": "ValueSet-pregnancy-condition",
   "@type": "fhir:ValueSet",
   "dcterms:identifier": "ValueSet/pregnancy-condition",
   "schema:name": "PregnancyCondition",

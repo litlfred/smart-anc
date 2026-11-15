@@ -6,7 +6,7 @@
     "prov": "http://www.w3.org/ns/prov#"
   },
   "$schema": "folio-ig-artifact-jsonld/v1",
-  "@id": "Observation-anc-b10-de216-example.jsonld",
+  "@id": "Observation-anc-b10-de216-example",
   "@type": "fhir:Observation",
   "dcterms:identifier": "Observation/anc-b10-de216-example",
   "dcterms:title": "anc-b10-de216-example",

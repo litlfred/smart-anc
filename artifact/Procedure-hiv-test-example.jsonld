@@ -6,7 +6,7 @@
     "prov": "http://www.w3.org/ns/prov#"
   },
   "$schema": "folio-ig-artifact-jsonld/v1",
-  "@id": "Procedure-hiv-test-example.jsonld",
+  "@id": "Procedure-hiv-test-example",
   "@type": "fhir:Procedure",
   "dcterms:identifier": "Procedure/hiv-test-example",
   "dcterms:title": "hiv-test-example",

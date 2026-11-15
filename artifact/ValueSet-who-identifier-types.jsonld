@@ -6,7 +6,7 @@
     "prov": "http://www.w3.org/ns/prov#"
   },
   "$schema": "folio-ig-artifact-jsonld/v1",
-  "@id": "ValueSet-who-identifier-types.jsonld",
+  "@id": "ValueSet-who-identifier-types",
   "@type": "fhir:ValueSet",
   "dcterms:identifier": "ValueSet/who-identifier-types",
   "schema:name": "WHOIdentifierTypes",

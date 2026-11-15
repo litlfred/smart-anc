@@ -6,7 +6,7 @@
     "prov": "http://www.w3.org/ns/prov#"
   },
   "$schema": "folio-ig-artifact-jsonld/v1",
-  "@id": "StructureDefinition-blood-type-test.jsonld",
+  "@id": "StructureDefinition-blood-type-test",
   "@type": "fhir:StructureDefinition",
   "dcterms:identifier": "StructureDefinition/blood-type-test",
   "schema:name": "BloodTypeTest",

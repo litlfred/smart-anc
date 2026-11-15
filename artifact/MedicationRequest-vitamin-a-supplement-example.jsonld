@@ -6,7 +6,7 @@
     "prov": "http://www.w3.org/ns/prov#"
   },
   "$schema": "folio-ig-artifact-jsonld/v1",
-  "@id": "MedicationRequest-vitamin-a-supplement-example.jsonld",
+  "@id": "MedicationRequest-vitamin-a-supplement-example",
   "@type": "fhir:MedicationRequest",
   "dcterms:identifier": "MedicationRequest/vitamin-a-supplement-example",
   "dcterms:title": "vitamin-a-supplement-example",
