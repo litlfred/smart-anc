@@ -1,0 +1,40 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@id": "https://litlfred.github.io/smart-anc/en/cat-harness/harness/cat-harness-tools/",
+  "url": "https://litlfred.github.io/smart-anc/en/cat-harness/harness/cat-harness-tools/",
+  "@type": "WebPage",
+  "name": "C@T Harness Tools on WHO Antenatal Care Guideline Implementation Guide",
+  "about": {
+    "@type": "SoftwareSourceCode",
+    "identifier": "cat-harness-tools",
+    "name": "C@T Harness Tools",
+    "description": "What implements the harness's Tool definitions: the MCP servers, their tool registrars and routes. Definitions stay in cat-harness; this layer runs them.",
+    "version": "0.1.0",
+    "codeRepository": "https://github.com/litlfred/cat-harness-tools",
+    "isBasedOn": [
+      {
+        "@id": "https://litlfred.github.io/cat-harness/"
+      },
+      {
+        "identifier": "bootstrap-tools"
+      }
+    ],
+    "additionalProperty": {
+      "@type": "PropertyValue",
+      "name": "pinnedCommit",
+      "value": "14c90e1fe3a73b423ac57e16a91e349473f41beb"
+    }
+  },
+  "isPartOf": {
+    "@id": "https://litlfred.github.io/smart-anc/",
+    "name": "WHO Antenatal Care Guideline Implementation Guide"
+  },
+  "significantLink": [
+    "https://litlfred.github.io/folio-assistant/#harness-cat-harness-tools",
+    "https://github.com/litlfred/cat-harness-tools/tree/14c90e1fe3a73b423ac57e16a91e349473f41beb",
+    "https://github.com/litlfred/cat-harness-tools/blob/14c90e1fe3a73b423ac57e16a91e349473f41beb/README.md",
+    "https://github.com/litlfred/cat-harness-tools/blob/14c90e1fe3a73b423ac57e16a91e349473f41beb/AGENTS.md"
+  ]
+}
