@@ -6,10 +6,10 @@
   },
   "source": {
     "repo": "litlfred/smart-anc",
-    "ref": "master",
+    "ref": "main",
     "commit": "fc45115217b76688bfb05807bd1c3cc31f61c5be"
   },
-  "builtAt": "2026-11-16T22:47:19.575Z",
+  "builtAt": "2026-11-17T23:54:48.528Z",
   "ast": {
     "commit": "4f3bea121a24999b236c7b9c5687f7626f85b077",
     "verdict": "valid",
