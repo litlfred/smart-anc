@@ -24,7 +24,7 @@
     "additionalProperty": {
       "@type": "PropertyValue",
       "name": "pinnedCommit",
-      "value": "14c90e1fe3a73b423ac57e16a91e349473f41beb"
+      "value": "7be5df64a0e442c79773b9544cb09dd98e49ec00"
     }
   },
   "isPartOf": {
@@ -32,9 +32,9 @@
     "name": "WHO Antenatal Care Guideline Implementation Guide"
   },
   "significantLink": [
-    "https://litlfred.github.io/folio-assistant/#harness-cat-harness-tools",
-    "https://github.com/litlfred/cat-harness-tools/tree/14c90e1fe3a73b423ac57e16a91e349473f41beb",
-    "https://github.com/litlfred/cat-harness-tools/blob/14c90e1fe3a73b423ac57e16a91e349473f41beb/README.md",
-    "https://github.com/litlfred/cat-harness-tools/blob/14c90e1fe3a73b423ac57e16a91e349473f41beb/AGENTS.md"
+    "https://litlfred.github.io/folio-assistant/cat-harness-tools/",
+    "https://github.com/litlfred/cat-harness-tools/tree/7be5df64a0e442c79773b9544cb09dd98e49ec00",
+    "https://github.com/litlfred/cat-harness-tools/blob/7be5df64a0e442c79773b9544cb09dd98e49ec00/README.md",
+    "https://github.com/litlfred/cat-harness-tools/blob/7be5df64a0e442c79773b9544cb09dd98e49ec00/AGENTS.md"
   ]
 }

@@ -15767,6 +15767,14 @@
             "string": "https://zod.dev/api#strings"
           },
           "doc": "Markdown content of the companion .md file (for cross-ref scanning)."
+        },
+        {
+          "name": "folioLabels",
+          "type": "ReadonlyMap<string, ReadonlySet<string>>",
+          "optional": true,
+          "array": false,
+          "card": "0..1",
+          "doc": "The labels of every document in the same folio, keyed by document slug —"
         }
       ],
       "extendsNames": [],
@@ -48924,6 +48932,18 @@
           "utype": "MOUNT_LOCK_SCHEMA"
         },
         {
+          "name": "pinnedAt",
+          "type": "z.string().datetime().optional()",
+          "optional": true,
+          "array": false,
+          "card": "0..1",
+          "utype": "string",
+          "links": {
+            "string": "https://zod.dev/api#strings"
+          },
+          "doc": "When `mount:remote` wrote this content, pins included (UTC, ISO 8601,"
+        },
+        {
           "name": "mounts",
           "type": "z.array(z.object({ harness: InstanceNameSchema, repository: z.string().min(1), ref: CommitShaSchema }).strict())",
           "optional": false,
@@ -68148,6 +68168,79 @@
       "exported": true
     },
     {
+      "id": "cat-harness-tools/schemas/process/workshop.ts#CanvasOptionSchema",
+      "name": "CanvasOptionSchema",
+      "module": "cat-harness-tools/schemas/process/workshop.ts",
+      "kind": "zod-object",
+      "doc": "The workshop's canvas as data (owner, 2026-11-17): the Country Canvas (a",
+      "fields": [
+        {
+          "name": "id",
+          "type": "Id",
+          "optional": false,
+          "array": false,
+          "card": "1..1"
+        },
+        {
+          "name": "label",
+          "type": "Text",
+          "optional": false,
+          "array": false,
+          "card": "1..1"
+        }
+      ],
+      "extendsNames": [],
+      "values": [],
+      "refs": [
+        "cat-harness-tools/schemas/process/workshop.ts#Id",
+        "cat-harness-tools/schemas/process/workshop.ts#Text"
+      ],
+      "unresolved": [],
+      "external": [],
+      "source": "zod",
+      "exported": false
+    },
+    {
+      "id": "cat-harness-tools/schemas/process/workshop.ts#CanvasRowSchema",
+      "name": "CanvasRowSchema",
+      "module": "cat-harness-tools/schemas/process/workshop.ts",
+      "kind": "zod-object",
+      "fields": [
+        {
+          "name": "id",
+          "type": "Id",
+          "optional": false,
+          "array": false,
+          "card": "1..1"
+        },
+        {
+          "name": "label",
+          "type": "Text",
+          "optional": false,
+          "array": false,
+          "card": "1..1"
+        },
+        {
+          "name": "hint",
+          "type": "Text.optional()",
+          "optional": true,
+          "array": false,
+          "card": "0..1",
+          "utype": "Text"
+        }
+      ],
+      "extendsNames": [],
+      "values": [],
+      "refs": [
+        "cat-harness-tools/schemas/process/workshop.ts#Id",
+        "cat-harness-tools/schemas/process/workshop.ts#Text"
+      ],
+      "unresolved": [],
+      "external": [],
+      "source": "zod",
+      "exported": false
+    },
+    {
       "id": "cat-harness-tools/schemas/process/workshop.ts#Id",
       "name": "Id",
       "module": "cat-harness-tools/schemas/process/workshop.ts",
@@ -68286,7 +68379,16 @@
       "name": "QuestionSchema",
       "module": "cat-harness-tools/schemas/process/workshop.ts",
       "kind": "zod-object",
+      "doc": "A question for the room. Its answer is kept in the participant's browser",
       "fields": [
+        {
+          "name": "id",
+          "type": "Id.optional()",
+          "optional": true,
+          "array": false,
+          "card": "0..1",
+          "utype": "Id"
+        },
         {
           "name": "module",
           "type": "ModuleId",
@@ -68300,16 +68402,31 @@
           "optional": false,
           "array": false,
           "card": "1..1"
+        },
+        {
+          "name": "canvas",
+          "type": "z.string().regex(/^[a-z0-9][a-z0-9-]*(:[a-z0-9][a-z0-9-]*){1,3}$/).optional()",
+          "optional": true,
+          "array": false,
+          "card": "0..1",
+          "utype": "string",
+          "links": {
+            "string": "https://zod.dev/api#strings"
+          },
+          "doc": "The canvas field that asks the same thing, `<sheet>:<field>[:<row>[:<col>]]`"
         }
       ],
       "extendsNames": [],
       "values": [],
       "refs": [
+        "cat-harness-tools/schemas/process/workshop.ts#Id",
         "cat-harness-tools/schemas/process/workshop.ts#ModuleId",
         "cat-harness-tools/schemas/process/workshop.ts#Text"
       ],
       "unresolved": [],
-      "external": [],
+      "external": [
+        "z"
+      ],
       "source": "zod",
       "exported": false
     },
@@ -68471,6 +68588,201 @@
       "unresolved": [],
       "external": [],
       "source": "typescript",
+      "exported": true
+    },
+    {
+      "id": "cat-harness-tools/schemas/process/workshop.ts#WorkshopCanvas",
+      "name": "WorkshopCanvas",
+      "module": "cat-harness-tools/schemas/process/workshop.ts",
+      "kind": "type-alias",
+      "fields": [],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [],
+      "source": "typescript",
+      "exported": true
+    },
+    {
+      "id": "cat-harness-tools/schemas/process/workshop.ts#WorkshopCanvasField",
+      "name": "WorkshopCanvasField",
+      "module": "cat-harness-tools/schemas/process/workshop.ts",
+      "kind": "type-alias",
+      "fields": [],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [],
+      "source": "typescript",
+      "exported": true
+    },
+    {
+      "id": "cat-harness-tools/schemas/process/workshop.ts#WorkshopCanvasFieldSchema",
+      "name": "WorkshopCanvasFieldSchema",
+      "module": "cat-harness-tools/schemas/process/workshop.ts",
+      "kind": "zod-union",
+      "fields": [],
+      "extendsNames": [],
+      "values": [
+        "type",
+        "text",
+        "choice",
+        "ticks",
+        "grid",
+        "tick",
+        "gap"
+      ],
+      "refs": [],
+      "unresolved": [],
+      "external": [],
+      "source": "zod",
+      "exported": true
+    },
+    {
+      "id": "cat-harness-tools/schemas/process/workshop.ts#WorkshopCanvasSchema",
+      "name": "WorkshopCanvasSchema",
+      "module": "cat-harness-tools/schemas/process/workshop.ts",
+      "kind": "zod-object",
+      "fields": [
+        {
+          "name": "title",
+          "type": "Text",
+          "optional": false,
+          "array": false,
+          "card": "1..1",
+          "doc": "What the canvas is called (\"Country Canvas\")."
+        },
+        {
+          "name": "description",
+          "type": "Text.optional()",
+          "optional": true,
+          "array": false,
+          "card": "0..1",
+          "utype": "Text"
+        },
+        {
+          "name": "size",
+          "type": "z.enum([\"A3\", \"A4\"]).default(\"A3\")",
+          "optional": true,
+          "array": false,
+          "card": "0..1",
+          "utype": "enum",
+          "links": {
+            "enum": "https://zod.dev/api#enums"
+          },
+          "doc": "The paper of the PDF it is written out to; A3 landscape when absent."
+        },
+        {
+          "name": "sheets",
+          "type": "z.array(WorkshopCanvasSheetSchema).min(1)",
+          "optional": false,
+          "array": true,
+          "card": "1..*",
+          "utype": "WorkshopCanvasSheetSchema[]",
+          "doc": "The cover first, then the sheets, in order."
+        }
+      ],
+      "extendsNames": [],
+      "values": [],
+      "refs": [
+        "cat-harness-tools/schemas/process/workshop.ts#Text",
+        "cat-harness-tools/schemas/process/workshop.ts#WorkshopCanvasSheetSchema"
+      ],
+      "unresolved": [],
+      "external": [
+        "z"
+      ],
+      "source": "zod",
+      "exported": true
+    },
+    {
+      "id": "cat-harness-tools/schemas/process/workshop.ts#WorkshopCanvasSheet",
+      "name": "WorkshopCanvasSheet",
+      "module": "cat-harness-tools/schemas/process/workshop.ts",
+      "kind": "type-alias",
+      "fields": [],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [],
+      "source": "typescript",
+      "exported": true
+    },
+    {
+      "id": "cat-harness-tools/schemas/process/workshop.ts#WorkshopCanvasSheetSchema",
+      "name": "WorkshopCanvasSheetSchema",
+      "module": "cat-harness-tools/schemas/process/workshop.ts",
+      "kind": "zod-object",
+      "fields": [
+        {
+          "name": "id",
+          "type": "Id",
+          "optional": false,
+          "array": false,
+          "card": "1..1"
+        },
+        {
+          "name": "label",
+          "type": "Text.optional()",
+          "optional": true,
+          "array": false,
+          "card": "0..1",
+          "utype": "Text",
+          "doc": "As the room calls it: \"Cover\", \"Sheet 3\"."
+        },
+        {
+          "name": "title",
+          "type": "Text",
+          "optional": false,
+          "array": false,
+          "card": "1..1"
+        },
+        {
+          "name": "intro",
+          "type": "Text.optional()",
+          "optional": true,
+          "array": false,
+          "card": "0..1",
+          "utype": "Text",
+          "doc": "One line under the title: what the sheet is for."
+        },
+        {
+          "name": "modules",
+          "type": "z.array(ModuleId).optional()",
+          "optional": true,
+          "array": true,
+          "card": "0..*",
+          "utype": "ModuleId[]",
+          "doc": "The modules whose journey questions are its annex (those not already one of its fields)."
+        },
+        {
+          "name": "sections",
+          "type": "z.array(z.object({ id: Id, title: Text.optional(), fields: z.array(WorkshopCanvasFieldSchema).min(1) }).strict()).min(1)",
+          "optional": false,
+          "array": true,
+          "card": "1..*",
+          "utype": "object[]",
+          "links": {
+            "object": "https://zod.dev/api#objects"
+          }
+        }
+      ],
+      "extendsNames": [],
+      "values": [],
+      "refs": [
+        "cat-harness-tools/schemas/process/workshop.ts#Id",
+        "cat-harness-tools/schemas/process/workshop.ts#ModuleId",
+        "cat-harness-tools/schemas/process/workshop.ts#Text",
+        "cat-harness-tools/schemas/process/workshop.ts#WorkshopCanvasFieldSchema"
+      ],
+      "unresolved": [],
+      "external": [
+        "z"
+      ],
+      "source": "zod",
       "exported": true
     },
     {
@@ -68780,6 +69092,15 @@
           "links": {
             "boolean": "https://zod.dev/api#booleans"
           }
+        },
+        {
+          "name": "canvas",
+          "type": "z.array(Id).optional()",
+          "optional": true,
+          "array": true,
+          "card": "0..*",
+          "utype": "Id[]",
+          "doc": "Canvas sheets (`canvas.sheets[].id`) the step shows as the on-screen form."
         },
         {
           "name": "summary",
@@ -69129,7 +69450,7 @@
           "array": false,
           "card": "0..1",
           "utype": "Text",
-          "doc": "The occasion, first on the frame's top bar (\"WHO Pre-GDHF Vignette\")."
+          "doc": "The occasion, first on the frame's top bar (\"Workshop vignette\")."
         },
         {
           "name": "subject",
@@ -114282,6 +114603,445 @@
       "exported": true
     },
     {
+      "id": "folio-assistant-core/schemas/figure-data.ts#AsDrawnFigureData",
+      "name": "AsDrawnFigureData",
+      "module": "folio-assistant-core/schemas/figure-data.ts",
+      "kind": "type-alias",
+      "fields": [],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [],
+      "source": "typescript",
+      "exported": true
+    },
+    {
+      "id": "folio-assistant-core/schemas/figure-data.ts#AsDrawnFigureSchema",
+      "name": "AsDrawnFigureSchema",
+      "module": "folio-assistant-core/schemas/figure-data.ts",
+      "kind": "zod-object",
+      "fields": [
+        {
+          "name": "$schema",
+          "type": "z.literal(\"as-drawn-figure/v1\")",
+          "optional": false,
+          "array": false,
+          "card": "1..1",
+          "utype": "\"as-drawn-figure/v1\""
+        },
+        {
+          "name": "figure",
+          "type": "z.object({ library: z.string().min(1), labels: z.array(z.string().regex(/^Fig\\. \\d+$/u)).min(1), caption: z.string().mi…",
+          "optional": false,
+          "array": false,
+          "card": "1..1",
+          "utype": "object",
+          "links": {
+            "object": "https://zod.dev/api#objects"
+          }
+        },
+        {
+          "name": "basis",
+          "type": "z.string().min(1)",
+          "optional": false,
+          "array": false,
+          "card": "1..1",
+          "utype": "string",
+          "links": {
+            "string": "https://zod.dev/api#strings"
+          }
+        },
+        {
+          "name": "region",
+          "type": "z.tuple([Num, Num, Num, Num])",
+          "optional": false,
+          "array": false,
+          "card": "1..1",
+          "utype": "tuple"
+        },
+        {
+          "name": "canvas",
+          "type": "z.object({ width: Num.positive(), height: Num.positive() }).strict()",
+          "optional": false,
+          "array": false,
+          "card": "1..1",
+          "utype": "object",
+          "links": {
+            "object": "https://zod.dev/api#objects"
+          }
+        },
+        {
+          "name": "clips",
+          "type": "z.array(z.object({ d: PathD, evenodd: z.literal(true).optional() }).strict())",
+          "optional": false,
+          "array": true,
+          "card": "0..*",
+          "utype": "object[]",
+          "links": {
+            "object": "https://zod.dev/api#objects"
+          }
+        },
+        {
+          "name": "shapes",
+          "type": "z.array(AsDrawnShapeSchema)",
+          "optional": false,
+          "array": true,
+          "card": "0..*",
+          "utype": "AsDrawnShapeSchema[]"
+        },
+        {
+          "name": "texts",
+          "type": "z.array(AsDrawnTextSchema)",
+          "optional": false,
+          "array": true,
+          "card": "0..*",
+          "utype": "AsDrawnTextSchema[]"
+        },
+        {
+          "name": "images",
+          "type": "z.array(AsDrawnImageSchema).optional()",
+          "optional": true,
+          "array": true,
+          "card": "0..*",
+          "utype": "AsDrawnImageSchema[]"
+        },
+        {
+          "name": "omitted",
+          "type": "z.object({ softMasked: z.number().int().positive(), why: z.string().min(1) }).strict().optional()",
+          "optional": true,
+          "array": false,
+          "card": "0..1",
+          "utype": "object",
+          "links": {
+            "object": "https://zod.dev/api#objects"
+          },
+          "doc": "What the PDF paints that the transcription leaves out, and why."
+        }
+      ],
+      "extendsNames": [],
+      "values": [],
+      "refs": [
+        "folio-assistant-core/schemas/figure-data.ts#AsDrawnImageSchema",
+        "folio-assistant-core/schemas/figure-data.ts#AsDrawnShapeSchema",
+        "folio-assistant-core/schemas/figure-data.ts#AsDrawnTextSchema",
+        "folio-assistant-core/schemas/figure-data.ts#Num",
+        "folio-assistant-core/schemas/figure-data.ts#PathD"
+      ],
+      "unresolved": [],
+      "external": [
+        "z"
+      ],
+      "source": "zod",
+      "exported": true
+    },
+    {
+      "id": "folio-assistant-core/schemas/figure-data.ts#AsDrawnImageSchema",
+      "name": "AsDrawnImageSchema",
+      "module": "folio-assistant-core/schemas/figure-data.ts",
+      "kind": "zod-object",
+      "fields": [
+        {
+          "name": "x",
+          "type": "Num",
+          "optional": false,
+          "array": false,
+          "card": "1..1"
+        },
+        {
+          "name": "y",
+          "type": "Num",
+          "optional": false,
+          "array": false,
+          "card": "1..1"
+        },
+        {
+          "name": "width",
+          "type": "Num.positive()",
+          "optional": false,
+          "array": false,
+          "card": "1..1",
+          "utype": "Num"
+        },
+        {
+          "name": "height",
+          "type": "Num.positive()",
+          "optional": false,
+          "array": false,
+          "card": "1..1",
+          "utype": "Num"
+        },
+        {
+          "name": "png",
+          "type": "z.string().min(1)",
+          "optional": false,
+          "array": false,
+          "card": "1..1",
+          "utype": "string",
+          "links": {
+            "string": "https://zod.dev/api#strings"
+          },
+          "doc": "Base64 PNG cropped from a 600 dpi render of the page."
+        },
+        {
+          "name": "clip",
+          "type": "ClipRefs.optional()",
+          "optional": true,
+          "array": false,
+          "card": "0..1",
+          "utype": "ClipRefs"
+        }
+      ],
+      "extendsNames": [],
+      "values": [],
+      "refs": [
+        "folio-assistant-core/schemas/figure-data.ts#ClipRefs",
+        "folio-assistant-core/schemas/figure-data.ts#Num"
+      ],
+      "unresolved": [],
+      "external": [
+        "z"
+      ],
+      "source": "zod",
+      "exported": true
+    },
+    {
+      "id": "folio-assistant-core/schemas/figure-data.ts#AsDrawnShapeSchema",
+      "name": "AsDrawnShapeSchema",
+      "module": "folio-assistant-core/schemas/figure-data.ts",
+      "kind": "zod-object",
+      "fields": [
+        {
+          "name": "d",
+          "type": "PathD",
+          "optional": false,
+          "array": false,
+          "card": "1..1"
+        },
+        {
+          "name": "fill",
+          "type": "UpperHex.optional()",
+          "optional": true,
+          "array": false,
+          "card": "0..1",
+          "utype": "UpperHex"
+        },
+        {
+          "name": "evenodd",
+          "type": "z.literal(true).optional()",
+          "optional": true,
+          "array": false,
+          "card": "0..1",
+          "utype": "true"
+        },
+        {
+          "name": "stroke",
+          "type": "UpperHex.optional()",
+          "optional": true,
+          "array": false,
+          "card": "0..1",
+          "utype": "UpperHex"
+        },
+        {
+          "name": "strokeWidth",
+          "type": "Num.nonnegative().optional()",
+          "optional": true,
+          "array": false,
+          "card": "0..1",
+          "utype": "Num"
+        },
+        {
+          "name": "dash",
+          "type": "z.array(Num.nonnegative()).optional()",
+          "optional": true,
+          "array": true,
+          "card": "0..*",
+          "utype": "Num[]"
+        },
+        {
+          "name": "cap",
+          "type": "z.enum([\"round\", \"square\"]).optional()",
+          "optional": true,
+          "array": false,
+          "card": "0..1",
+          "utype": "enum",
+          "links": {
+            "enum": "https://zod.dev/api#enums"
+          }
+        },
+        {
+          "name": "join",
+          "type": "z.enum([\"round\", \"bevel\"]).optional()",
+          "optional": true,
+          "array": false,
+          "card": "0..1",
+          "utype": "enum",
+          "links": {
+            "enum": "https://zod.dev/api#enums"
+          }
+        },
+        {
+          "name": "fillOpacity",
+          "type": "Num.min(0).max(1).optional()",
+          "optional": true,
+          "array": false,
+          "card": "0..1",
+          "utype": "Num"
+        },
+        {
+          "name": "strokeOpacity",
+          "type": "Num.min(0).max(1).optional()",
+          "optional": true,
+          "array": false,
+          "card": "0..1",
+          "utype": "Num"
+        },
+        {
+          "name": "clip",
+          "type": "ClipRefs.optional()",
+          "optional": true,
+          "array": false,
+          "card": "0..1",
+          "utype": "ClipRefs",
+          "doc": "Indices into `clips`: the shape is drawn inside all of them."
+        }
+      ],
+      "extendsNames": [],
+      "values": [],
+      "refs": [
+        "folio-assistant-core/schemas/figure-data.ts#ClipRefs",
+        "folio-assistant-core/schemas/figure-data.ts#Num",
+        "folio-assistant-core/schemas/figure-data.ts#PathD",
+        "folio-assistant-core/schemas/figure-data.ts#UpperHex"
+      ],
+      "unresolved": [],
+      "external": [
+        "z"
+      ],
+      "source": "zod",
+      "exported": true
+    },
+    {
+      "id": "folio-assistant-core/schemas/figure-data.ts#AsDrawnTextSchema",
+      "name": "AsDrawnTextSchema",
+      "module": "folio-assistant-core/schemas/figure-data.ts",
+      "kind": "zod-object",
+      "fields": [
+        {
+          "name": "x",
+          "type": "Num",
+          "optional": false,
+          "array": false,
+          "card": "1..1",
+          "doc": "The baseline origin of the run."
+        },
+        {
+          "name": "y",
+          "type": "Num",
+          "optional": false,
+          "array": false,
+          "card": "1..1"
+        },
+        {
+          "name": "size",
+          "type": "Num.positive()",
+          "optional": false,
+          "array": false,
+          "card": "1..1",
+          "utype": "Num"
+        },
+        {
+          "name": "text",
+          "type": "z.string().min(1)",
+          "optional": false,
+          "array": false,
+          "card": "1..1",
+          "utype": "string",
+          "links": {
+            "string": "https://zod.dev/api#strings"
+          }
+        },
+        {
+          "name": "weight",
+          "type": "z.number().int().min(100).max(900).optional()",
+          "optional": true,
+          "array": false,
+          "card": "0..1",
+          "utype": "number",
+          "links": {
+            "number": "https://zod.dev/api#numbers"
+          }
+        },
+        {
+          "name": "italic",
+          "type": "z.literal(true).optional()",
+          "optional": true,
+          "array": false,
+          "card": "0..1",
+          "utype": "true"
+        },
+        {
+          "name": "color",
+          "type": "UpperHex.optional()",
+          "optional": true,
+          "array": false,
+          "card": "0..1",
+          "utype": "UpperHex"
+        },
+        {
+          "name": "width",
+          "type": "Num.positive().optional()",
+          "optional": true,
+          "array": false,
+          "card": "0..1",
+          "utype": "Num",
+          "doc": "The printed width, so the run keeps its place in another font."
+        },
+        {
+          "name": "rotate",
+          "type": "Num.optional()",
+          "optional": true,
+          "array": false,
+          "card": "0..1",
+          "utype": "Num",
+          "doc": "Degrees clockwise, about the origin."
+        },
+        {
+          "name": "link",
+          "type": "z.string().url().optional()",
+          "optional": true,
+          "array": false,
+          "card": "0..1",
+          "utype": "string",
+          "links": {
+            "string": "https://zod.dev/api#strings"
+          },
+          "doc": "The glossary concept the label names (exact prefLabel or altLabel match)."
+        },
+        {
+          "name": "clip",
+          "type": "ClipRefs.optional()",
+          "optional": true,
+          "array": false,
+          "card": "0..1",
+          "utype": "ClipRefs"
+        }
+      ],
+      "extendsNames": [],
+      "values": [],
+      "refs": [
+        "folio-assistant-core/schemas/figure-data.ts#ClipRefs",
+        "folio-assistant-core/schemas/figure-data.ts#Num",
+        "folio-assistant-core/schemas/figure-data.ts#UpperHex"
+      ],
+      "unresolved": [],
+      "external": [
+        "z"
+      ],
+      "source": "zod",
+      "exported": true
+    },
+    {
       "id": "folio-assistant-core/schemas/figure-data.ts#Cell",
       "name": "Cell",
       "module": "folio-assistant-core/schemas/figure-data.ts",
@@ -114328,6 +115088,20 @@
       "external": [
         "z"
       ],
+      "source": "zod",
+      "exported": false
+    },
+    {
+      "id": "folio-assistant-core/schemas/figure-data.ts#ClipRefs",
+      "name": "ClipRefs",
+      "module": "folio-assistant-core/schemas/figure-data.ts",
+      "kind": "zod-array",
+      "fields": [],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [],
       "source": "zod",
       "exported": false
     },
@@ -114707,6 +115481,34 @@
       "external": [
         "z"
       ],
+      "source": "zod",
+      "exported": false
+    },
+    {
+      "id": "folio-assistant-core/schemas/figure-data.ts#Num",
+      "name": "Num",
+      "module": "folio-assistant-core/schemas/figure-data.ts",
+      "kind": "zod-scalar",
+      "fields": [],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [],
+      "source": "zod",
+      "exported": false
+    },
+    {
+      "id": "folio-assistant-core/schemas/figure-data.ts#PathD",
+      "name": "PathD",
+      "module": "folio-assistant-core/schemas/figure-data.ts",
+      "kind": "zod-scalar",
+      "fields": [],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [],
       "source": "zod",
       "exported": false
     },
@@ -115122,6 +115924,20 @@
       "external": [
         "z"
       ],
+      "source": "zod",
+      "exported": false
+    },
+    {
+      "id": "folio-assistant-core/schemas/figure-data.ts#UpperHex",
+      "name": "UpperHex",
+      "module": "folio-assistant-core/schemas/figure-data.ts",
+      "kind": "zod-scalar",
+      "fields": [],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [],
       "source": "zod",
       "exported": false
     },
@@ -160025,6 +160841,46 @@
       "array": false
     },
     {
+      "from": "cat-harness-tools/schemas/process/workshop.ts#CanvasOptionSchema",
+      "to": "cat-harness-tools/schemas/process/workshop.ts#Id",
+      "via": "id",
+      "kind": "field",
+      "optional": false,
+      "array": false
+    },
+    {
+      "from": "cat-harness-tools/schemas/process/workshop.ts#CanvasOptionSchema",
+      "to": "cat-harness-tools/schemas/process/workshop.ts#Text",
+      "via": "label",
+      "kind": "field",
+      "optional": false,
+      "array": false
+    },
+    {
+      "from": "cat-harness-tools/schemas/process/workshop.ts#CanvasRowSchema",
+      "to": "cat-harness-tools/schemas/process/workshop.ts#Id",
+      "via": "id",
+      "kind": "field",
+      "optional": false,
+      "array": false
+    },
+    {
+      "from": "cat-harness-tools/schemas/process/workshop.ts#CanvasRowSchema",
+      "to": "cat-harness-tools/schemas/process/workshop.ts#Text",
+      "via": "hint",
+      "kind": "field",
+      "optional": true,
+      "array": false
+    },
+    {
+      "from": "cat-harness-tools/schemas/process/workshop.ts#CanvasRowSchema",
+      "to": "cat-harness-tools/schemas/process/workshop.ts#Text",
+      "via": "label",
+      "kind": "field",
+      "optional": false,
+      "array": false
+    },
+    {
       "from": "cat-harness-tools/schemas/process/workshop.ts#LabFieldSchema",
       "to": "cat-harness-tools/schemas/process/workshop.ts#Id",
       "via": "id",
@@ -160078,6 +160934,14 @@
       "via": "text",
       "kind": "field",
       "optional": false,
+      "array": false
+    },
+    {
+      "from": "cat-harness-tools/schemas/process/workshop.ts#QuestionSchema",
+      "to": "cat-harness-tools/schemas/process/workshop.ts#Id",
+      "via": "id",
+      "kind": "field",
+      "optional": true,
       "array": false
     },
     {
@@ -160169,6 +161033,94 @@
       "array": false
     },
     {
+      "from": "cat-harness-tools/schemas/process/workshop.ts#WorkshopCanvasSchema",
+      "to": "cat-harness-tools/schemas/process/workshop.ts#Text",
+      "via": "description",
+      "kind": "field",
+      "optional": true,
+      "array": false
+    },
+    {
+      "from": "cat-harness-tools/schemas/process/workshop.ts#WorkshopCanvasSchema",
+      "to": "cat-harness-tools/schemas/process/workshop.ts#Text",
+      "via": "title",
+      "kind": "field",
+      "optional": false,
+      "array": false
+    },
+    {
+      "from": "cat-harness-tools/schemas/process/workshop.ts#WorkshopCanvasSchema",
+      "to": "cat-harness-tools/schemas/process/workshop.ts#WorkshopCanvasSheetSchema",
+      "via": "sheets",
+      "kind": "field",
+      "optional": false,
+      "array": true
+    },
+    {
+      "from": "cat-harness-tools/schemas/process/workshop.ts#WorkshopCanvasSheetSchema",
+      "to": "cat-harness-tools/schemas/process/workshop.ts#Id",
+      "via": "id",
+      "kind": "field",
+      "optional": false,
+      "array": false
+    },
+    {
+      "from": "cat-harness-tools/schemas/process/workshop.ts#WorkshopCanvasSheetSchema",
+      "to": "cat-harness-tools/schemas/process/workshop.ts#Id",
+      "via": "sections",
+      "kind": "field",
+      "optional": false,
+      "array": true
+    },
+    {
+      "from": "cat-harness-tools/schemas/process/workshop.ts#WorkshopCanvasSheetSchema",
+      "to": "cat-harness-tools/schemas/process/workshop.ts#ModuleId",
+      "via": "modules",
+      "kind": "field",
+      "optional": true,
+      "array": true
+    },
+    {
+      "from": "cat-harness-tools/schemas/process/workshop.ts#WorkshopCanvasSheetSchema",
+      "to": "cat-harness-tools/schemas/process/workshop.ts#Text",
+      "via": "intro",
+      "kind": "field",
+      "optional": true,
+      "array": false
+    },
+    {
+      "from": "cat-harness-tools/schemas/process/workshop.ts#WorkshopCanvasSheetSchema",
+      "to": "cat-harness-tools/schemas/process/workshop.ts#Text",
+      "via": "label",
+      "kind": "field",
+      "optional": true,
+      "array": false
+    },
+    {
+      "from": "cat-harness-tools/schemas/process/workshop.ts#WorkshopCanvasSheetSchema",
+      "to": "cat-harness-tools/schemas/process/workshop.ts#Text",
+      "via": "sections",
+      "kind": "field",
+      "optional": false,
+      "array": true
+    },
+    {
+      "from": "cat-harness-tools/schemas/process/workshop.ts#WorkshopCanvasSheetSchema",
+      "to": "cat-harness-tools/schemas/process/workshop.ts#Text",
+      "via": "title",
+      "kind": "field",
+      "optional": false,
+      "array": false
+    },
+    {
+      "from": "cat-harness-tools/schemas/process/workshop.ts#WorkshopCanvasSheetSchema",
+      "to": "cat-harness-tools/schemas/process/workshop.ts#WorkshopCanvasFieldSchema",
+      "via": "sections",
+      "kind": "field",
+      "optional": false,
+      "array": true
+    },
+    {
       "from": "cat-harness-tools/schemas/process/workshop.ts#WorkshopLabSchema",
       "to": "cat-harness-tools/schemas/process/workshop.ts#Id",
       "via": "scale",
@@ -160254,6 +161206,14 @@
       "via": "steps",
       "kind": "field",
       "optional": false,
+      "array": true
+    },
+    {
+      "from": "cat-harness-tools/schemas/process/workshop.ts#WorkshopLabStepSchema",
+      "to": "cat-harness-tools/schemas/process/workshop.ts#Id",
+      "via": "canvas",
+      "kind": "field",
+      "optional": true,
       "array": true
     },
     {
@@ -166063,6 +167023,214 @@
       "kind": "field",
       "optional": false,
       "array": true
+    },
+    {
+      "from": "folio-assistant-core/schemas/figure-data.ts#AsDrawnFigureSchema",
+      "to": "folio-assistant-core/schemas/figure-data.ts#AsDrawnImageSchema",
+      "via": "images",
+      "kind": "field",
+      "optional": true,
+      "array": true
+    },
+    {
+      "from": "folio-assistant-core/schemas/figure-data.ts#AsDrawnFigureSchema",
+      "to": "folio-assistant-core/schemas/figure-data.ts#AsDrawnShapeSchema",
+      "via": "shapes",
+      "kind": "field",
+      "optional": false,
+      "array": true
+    },
+    {
+      "from": "folio-assistant-core/schemas/figure-data.ts#AsDrawnFigureSchema",
+      "to": "folio-assistant-core/schemas/figure-data.ts#AsDrawnTextSchema",
+      "via": "texts",
+      "kind": "field",
+      "optional": false,
+      "array": true
+    },
+    {
+      "from": "folio-assistant-core/schemas/figure-data.ts#AsDrawnFigureSchema",
+      "to": "folio-assistant-core/schemas/figure-data.ts#Num",
+      "via": "canvas",
+      "kind": "field",
+      "optional": false,
+      "array": false
+    },
+    {
+      "from": "folio-assistant-core/schemas/figure-data.ts#AsDrawnFigureSchema",
+      "to": "folio-assistant-core/schemas/figure-data.ts#Num",
+      "via": "region",
+      "kind": "field",
+      "optional": false,
+      "array": false
+    },
+    {
+      "from": "folio-assistant-core/schemas/figure-data.ts#AsDrawnFigureSchema",
+      "to": "folio-assistant-core/schemas/figure-data.ts#PathD",
+      "via": "clips",
+      "kind": "field",
+      "optional": false,
+      "array": true
+    },
+    {
+      "from": "folio-assistant-core/schemas/figure-data.ts#AsDrawnImageSchema",
+      "to": "folio-assistant-core/schemas/figure-data.ts#ClipRefs",
+      "via": "clip",
+      "kind": "field",
+      "optional": true,
+      "array": false
+    },
+    {
+      "from": "folio-assistant-core/schemas/figure-data.ts#AsDrawnImageSchema",
+      "to": "folio-assistant-core/schemas/figure-data.ts#Num",
+      "via": "height",
+      "kind": "field",
+      "optional": false,
+      "array": false
+    },
+    {
+      "from": "folio-assistant-core/schemas/figure-data.ts#AsDrawnImageSchema",
+      "to": "folio-assistant-core/schemas/figure-data.ts#Num",
+      "via": "width",
+      "kind": "field",
+      "optional": false,
+      "array": false
+    },
+    {
+      "from": "folio-assistant-core/schemas/figure-data.ts#AsDrawnImageSchema",
+      "to": "folio-assistant-core/schemas/figure-data.ts#Num",
+      "via": "x",
+      "kind": "field",
+      "optional": false,
+      "array": false
+    },
+    {
+      "from": "folio-assistant-core/schemas/figure-data.ts#AsDrawnImageSchema",
+      "to": "folio-assistant-core/schemas/figure-data.ts#Num",
+      "via": "y",
+      "kind": "field",
+      "optional": false,
+      "array": false
+    },
+    {
+      "from": "folio-assistant-core/schemas/figure-data.ts#AsDrawnShapeSchema",
+      "to": "folio-assistant-core/schemas/figure-data.ts#ClipRefs",
+      "via": "clip",
+      "kind": "field",
+      "optional": true,
+      "array": false
+    },
+    {
+      "from": "folio-assistant-core/schemas/figure-data.ts#AsDrawnShapeSchema",
+      "to": "folio-assistant-core/schemas/figure-data.ts#Num",
+      "via": "dash",
+      "kind": "field",
+      "optional": true,
+      "array": true
+    },
+    {
+      "from": "folio-assistant-core/schemas/figure-data.ts#AsDrawnShapeSchema",
+      "to": "folio-assistant-core/schemas/figure-data.ts#Num",
+      "via": "fillOpacity",
+      "kind": "field",
+      "optional": true,
+      "array": false
+    },
+    {
+      "from": "folio-assistant-core/schemas/figure-data.ts#AsDrawnShapeSchema",
+      "to": "folio-assistant-core/schemas/figure-data.ts#Num",
+      "via": "strokeOpacity",
+      "kind": "field",
+      "optional": true,
+      "array": false
+    },
+    {
+      "from": "folio-assistant-core/schemas/figure-data.ts#AsDrawnShapeSchema",
+      "to": "folio-assistant-core/schemas/figure-data.ts#Num",
+      "via": "strokeWidth",
+      "kind": "field",
+      "optional": true,
+      "array": false
+    },
+    {
+      "from": "folio-assistant-core/schemas/figure-data.ts#AsDrawnShapeSchema",
+      "to": "folio-assistant-core/schemas/figure-data.ts#PathD",
+      "via": "d",
+      "kind": "field",
+      "optional": false,
+      "array": false
+    },
+    {
+      "from": "folio-assistant-core/schemas/figure-data.ts#AsDrawnShapeSchema",
+      "to": "folio-assistant-core/schemas/figure-data.ts#UpperHex",
+      "via": "fill",
+      "kind": "field",
+      "optional": true,
+      "array": false
+    },
+    {
+      "from": "folio-assistant-core/schemas/figure-data.ts#AsDrawnShapeSchema",
+      "to": "folio-assistant-core/schemas/figure-data.ts#UpperHex",
+      "via": "stroke",
+      "kind": "field",
+      "optional": true,
+      "array": false
+    },
+    {
+      "from": "folio-assistant-core/schemas/figure-data.ts#AsDrawnTextSchema",
+      "to": "folio-assistant-core/schemas/figure-data.ts#ClipRefs",
+      "via": "clip",
+      "kind": "field",
+      "optional": true,
+      "array": false
+    },
+    {
+      "from": "folio-assistant-core/schemas/figure-data.ts#AsDrawnTextSchema",
+      "to": "folio-assistant-core/schemas/figure-data.ts#Num",
+      "via": "rotate",
+      "kind": "field",
+      "optional": true,
+      "array": false
+    },
+    {
+      "from": "folio-assistant-core/schemas/figure-data.ts#AsDrawnTextSchema",
+      "to": "folio-assistant-core/schemas/figure-data.ts#Num",
+      "via": "size",
+      "kind": "field",
+      "optional": false,
+      "array": false
+    },
+    {
+      "from": "folio-assistant-core/schemas/figure-data.ts#AsDrawnTextSchema",
+      "to": "folio-assistant-core/schemas/figure-data.ts#Num",
+      "via": "width",
+      "kind": "field",
+      "optional": true,
+      "array": false
+    },
+    {
+      "from": "folio-assistant-core/schemas/figure-data.ts#AsDrawnTextSchema",
+      "to": "folio-assistant-core/schemas/figure-data.ts#Num",
+      "via": "x",
+      "kind": "field",
+      "optional": false,
+      "array": false
+    },
+    {
+      "from": "folio-assistant-core/schemas/figure-data.ts#AsDrawnTextSchema",
+      "to": "folio-assistant-core/schemas/figure-data.ts#Num",
+      "via": "y",
+      "kind": "field",
+      "optional": false,
+      "array": false
+    },
+    {
+      "from": "folio-assistant-core/schemas/figure-data.ts#AsDrawnTextSchema",
+      "to": "folio-assistant-core/schemas/figure-data.ts#UpperHex",
+      "via": "color",
+      "kind": "field",
+      "optional": true,
+      "array": false
     },
     {
       "from": "folio-assistant-core/schemas/figure-data.ts#DiigPhasesAdaptationSchema",

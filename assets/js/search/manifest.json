@@ -2,9 +2,9 @@
   "$schema": "folio-search-manifest/v1",
   "source": {
     "path": "assets/js/search-data.json",
-    "sha256": "873e93c225576fe0b55f02a99891e3bd2ee403688765ca68ada72c774fa4c0f7",
-    "entries": 10333,
-    "bytes": 15907417
+    "sha256": "5165c432f096d5e9edca7b240069545cf0df63ad28150a3c0323c81a3dcc1f4b",
+    "entries": 10429,
+    "bytes": 15820616
   },
   "scopes": [
     {
@@ -18,22 +18,29 @@
       "id": "cat-harness",
       "kind": "instance",
       "path": "assets/js/search/cat-harness.json",
-      "entries": 8351,
-      "bytes": 11993345,
+      "entries": 8400,
+      "bytes": 12120522,
       "index": {
         "path": "assets/js/search/cat-harness.idx.json",
-        "bytes": 37745768
+        "bytes": 38129774
       }
+    },
+    {
+      "id": "cat-harness-tools",
+      "kind": "instance",
+      "path": "assets/js/search/cat-harness-tools.json",
+      "entries": 15,
+      "bytes": 6816
     },
     {
       "id": "folio-assistant-core",
       "kind": "instance",
       "path": "assets/js/search/folio-assistant-core.json",
       "entries": 1908,
-      "bytes": 2824756,
+      "bytes": 2839229,
       "index": {
         "path": "assets/js/search/folio-assistant-core.idx.json",
-        "bytes": 8035434
+        "bytes": 8077631
       }
     },
     {
@@ -77,6 +84,13 @@
       "path": "assets/js/search/smart-base.json",
       "entries": 6,
       "bytes": 24924
+    },
+    {
+      "id": "who-iris",
+      "kind": "instance",
+      "path": "assets/js/search/who-iris.json",
+      "entries": 32,
+      "bytes": 168396
     }
   ],
   "remote": [
@@ -86,5 +100,15 @@
       "href": "id-lookup/?index=who-iris/",
       "entries": 53
     }
+  ],
+  "layers": [
+    "bootstrap",
+    "bootstrap-tools",
+    "cat-harness",
+    "cat-harness-tools",
+    "fhir-harness",
+    "folio-assistant-core",
+    "smart-base",
+    "who-iris"
   ]
 }
